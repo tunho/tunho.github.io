@@ -1,22 +1,14 @@
-# Languages
-#   Create a section for each of your site's languages.
-#   Documentation: https://docs.hugoblox.com/reference/language/
 
-# Default language
+
+ko:
+  title: 크리에이터 랜딩 페이지 | Hugo 테마
+  languageName: 한국어
+  languageCode: ko-kr
+  weight: 1
+
 en:
+  title: Creator's Landing Page | Hugo Theme
+  languageName: English
   languageCode: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
+  weight: 2
 
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  languageCode: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1

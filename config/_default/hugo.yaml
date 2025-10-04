@@ -9,12 +9,8 @@ baseURL: 'https://example.com/' # Website URL
 ############################
 ## PAGE OPTIONS
 ############################
-# config/_default/languages.yaml
-defaultContentLanguage: ko
-defaultContentLanguageInSubdir: true
-hasCJKLanguage: true
-removePathAccents: true
 
+defaultContentLanguage: ko
 # --- 중요! ---
 # 한국어(CJK) 지원을 위해 true로 변경해야 합니다.
 hasCJKLanguage: true 
@@ -24,17 +20,18 @@ removePathAccents: true
 
 # --- 다국어 설정 시작 ---
 languages:
-  en:
-    # 이 부분에 기존 title을 옮깁니다.
-    title: Creator's Landing Page | Hugo Theme # 영어 웹사이트 이름
-    languageName: English
-    contentDir: content/en
-    weight: 1
   ko:
-    title: 크리에이터 랜딩 페이지 | Hugo 테마 # 한국어 웹사이트 이름
+    title: 이준호의 페이지 # 한국어 웹사이트 이름
     languageName: 한국어
     contentDir: content/ko
+    weight: 1
+  en:
+    # 이 부분에 기존 title을 옮깁니다.
+    title: page of Jun HO LEE # 영어 웹사이트 이름
+    languageName: English
+    contentDir: content/en
     weight: 2
+
 
 cascade:
   # Blog post options

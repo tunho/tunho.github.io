@@ -1,13 +1,13 @@
 
 
 ko:
-  title: 크리에이터 랜딩 페이지 | Hugo 테마
+  title: 이준호의 페이지
   languageName: 한국어
   languageCode: ko-kr
   weight: 1
 
 en:
-  title: Creator's Landing Page | Hugo Theme
+  title: page of Jun HO LEE
   languageName: English
   languageCode: en-us
   weight: 2

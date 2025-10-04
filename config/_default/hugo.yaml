@@ -10,7 +10,7 @@ baseURL: 'https://example.com/' # Website URL
 ## PAGE OPTIONS
 ############################
 
-defaultContentLanguage: en
+defaultContentLanguage: ko
 # --- 중요! ---
 # 한국어(CJK) 지원을 위해 true로 변경해야 합니다.
 hasCJKLanguage: true 

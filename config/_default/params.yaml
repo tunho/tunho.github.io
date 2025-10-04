@@ -34,13 +34,11 @@ header:
     align: 'center'
     fixed_to_top: true
     logo:
-      text: ''
-      # Logo filename in `assets/media/` folder
-      filename: 'logo.svg'
+      text: ''                 # 텍스트는 비우고
+      filename: 'my-image.jpg'    # ← 여기에 파일명만 지정
+      alt: 'Junho Lee'         # (선택) 대체 텍스트
     button:
-      enable: true
-      text: 'Get Started'
-      url: 'https://hugoblox.com/templates/'
+      enable: false
     show_search: true
     show_theme_chooser: true
 

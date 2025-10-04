@@ -9,8 +9,12 @@ baseURL: 'https://example.com/' # Website URL
 ############################
 ## PAGE OPTIONS
 ############################
-
+# config/_default/languages.yaml
 defaultContentLanguage: ko
+defaultContentLanguageInSubdir: true
+hasCJKLanguage: true
+removePathAccents: true
+
 # --- 중요! ---
 # 한국어(CJK) 지원을 위해 true로 변경해야 합니다.
 hasCJKLanguage: true 

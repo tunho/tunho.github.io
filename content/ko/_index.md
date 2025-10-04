@@ -51,10 +51,29 @@ sections:
       # Reduce spacing
       spacing:
         padding: ["1rem", 0, "1rem", 0]
-  - block: markdown
+  - block: cta-image-paragraph
+    id: about
     content:
-    # Hugo의 figure 쇼트코드를 사용합니다. 이것은 HTML이 아닙니다.
-     text: '{{< figure src="my-image.jpg" alt="이준호 프로필 사진" class="mx-auto rounded-full" width="250px" >}}'
+      items:
+        # --- 👇 아이템을 이렇게 하나만 남깁니다 ---
+        - title: "안녕하세요, 이준호입니다 👋"
+          text: |
+            전북대학교 컴퓨터인공지능학부 3학년에 재학 중입니다.
+            
+            백엔드와 AI 기술에 큰 관심을 가지고 있으며, 새로운 기술을 배우고 적용하여 문제를 해결하는 과정에서 성장을 즐깁니다.
+          
+          # 'assets/media/' 폴더에 있는 본인 사진 파일명
+          image: my-image.jpg
+          
+          # 버튼은 GitHub 프로필 등 원하는 링크로 연결
+          button:
+            text: GitHub 방문하기
+            url: https://github.com/tunho # <-- 본인 GitHub 주소로 변경
+          
+    design:
+      # 섹션 배경색 등 필요에 따라 디자인을 추가할 수 있습니다.
+      css_class: "bg-gray-100 dark:bg-gray-900"
+
 
         
 

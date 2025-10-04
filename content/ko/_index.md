@@ -16,14 +16,7 @@ sections:
         text: 이력서 보기
         url: /resume.pdf
         icon: rocket-launch
-      secondary_action:
-        text: 포트폴리오
-        url: https://docs.hugoblox.com
-      announcement:
-        text: "Announcing the release of version 1."
-        link:
-          text: "Read more"
-          url: "/blog/"
+
     design:
     #   spacing:
     #     padding: [0, 0, 0, 0]
@@ -58,6 +51,13 @@ sections:
       # Reduce spacing
       spacing:
         padding: ["1rem", 0, "1rem", 0]
+  - block: markdown
+    content:
+    # Hugo의 figure 쇼트코드를 사용합니다. 이것은 HTML이 아닙니다.
+     text: '{{< figure src="/my-image.jpg" alt="이준호 프로필 사진" class="mx-auto rounded-full" width="250px" >}}'
+
+        
+
   - block: features
     id: features
     content:

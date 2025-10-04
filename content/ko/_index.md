@@ -1,5 +1,5 @@
 ---
-title: 'Home'
+title: '홈'
 date: 2023-10-24
 type: landing
 
@@ -10,14 +10,14 @@ design:
 sections:
   - block: hero
     content:
-      title: Build Your Landing Pages with Hugo Blox
-      text: 🧱 EASY. FREE (OPEN SOURCE). NO-CODE  🧱
+      title: 안녕하세요, 이준호입니다.
+      text: 전북대 컴퓨터인공지능학부 학사 3학년입니다.
       primary_action:
-        text: Get Started
+        text: 이력서 보기
         url: https://hugoblox.com/templates/
         icon: rocket-launch
       secondary_action:
-        text: Read the docs
+        text: 포트폴리오
         url: https://docs.hugoblox.com
       announcement:
         text: "Announcing the release of version 1."
@@ -43,18 +43,15 @@ sections:
   - block: stats
     content:
       items:
-        - statistic: "1M+"
+        - statistic: "백엔드"
           description: |
-            Websites built  
-            with Hugo Blox
-        - statistic: "10k+"
+            Fast API, Flask, express
+        - statistic: "프론트"
           description: |
-            GitHub stars  
-            since 2016
-        - statistic: "3k+"
+            vue, react, react-native, Flutter
+        - statistic: "AI"
           description: |
-            Discord community  
-            for support
+            Pytorch, Tensorflow, Sklearn
     design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"

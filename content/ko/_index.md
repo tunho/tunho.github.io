@@ -54,7 +54,7 @@ sections:
   - block: markdown
     content:
     # Hugo의 figure 쇼트코드를 사용합니다. 이것은 HTML이 아닙니다.
-     text: '{{< figure src="/my-image.jpg" alt="이준호 프로필 사진" class="mx-auto rounded-full" width="250px" >}}'
+     text: '{{< figure src="my-image.jpg" alt="이준호 프로필 사진" class="mx-auto rounded-full" width="250px" >}}'
 
         
 

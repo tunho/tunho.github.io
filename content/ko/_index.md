@@ -14,7 +14,7 @@ sections:
       text: 전북대 컴퓨터인공지능학부 학사 3학년입니다.
       primary_action:
         text: 이력서 보기
-        url: https://hugoblox.com/templates/
+        url: /resume.pdf
         icon: rocket-launch
       secondary_action:
         text: 포트폴리오

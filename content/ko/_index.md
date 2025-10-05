@@ -13,15 +13,24 @@ design:
   # Default section spacing
   spacing: "6rem"
 
+
+
+
 sections:
   - block: hero
     content:
-      title: 안녕하세요, 이준호입니다.
-      text: 전북대 컴퓨터인공지능학부 학사 3학년입니다.
+      title: "안녕하세요, 이준호입니다."
+      text: "전북대 컴퓨터인공지능학부 학사 3학년입니다."
       primary_action:
-        text: 이력서 보기
-        url: /resume.pdf
-        icon: rocket-launch
+        text: "전북대 이준호 소개 페이지"
+        url: "/ko/jbnu-junho-lee/"
+        icon: user
+      secondary_action:
+        text: "이력서 보기"
+        url: "/resume.pdf"
+        icon: document-text
+
+
 
     design:
     #   spacing:

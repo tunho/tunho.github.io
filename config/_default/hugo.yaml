@@ -101,4 +101,6 @@ markup:
 security:
   _merge: deep
 sitemap:
-  _merge: deep
+  changefreq: weekly
+  priority: 0.8
+

@@ -1,5 +1,13 @@
 ---
 
+date: 2023-10-24
+type: landing
+title: "전북대 이준호"
+slug: "jbnu-junho-lee"   # URL: /ko/jbnu-junho-lee/
+aliases: ["/ko/전북대-이준호/", "/ko/전북대학교-이준호/"]
+description: "전북대 컴퓨터인공지능학부 이준호(Junho Lee)의 연구/프로젝트 포트폴리오."
+keywords: ["전북대", "전북대학교", "JBNU", "컴퓨터인공지능학부", "이준호", "개발자"]
+draft: false
 
 design:
   # Default section spacing
@@ -59,7 +67,6 @@ sections:
             전북대학교 컴퓨터인공지능학부 3학년에 재학 중입니다.
             백엔드와 AI 기술에 큰 관심을 가지고 있으며, 
             새로운 기술을 배우고 적용하여 문제를 해결하는 과정에서 성장을 즐깁니다.
-            [전북대 이준호 소개 페이지](/ko/jbnu-junho-lee/)
 
           feature_icon: check
           features:

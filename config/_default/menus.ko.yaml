@@ -18,3 +18,6 @@ main:
   - parent: 리소스
     name: 블로그
     url: blog/
+  - name: "전북대 이준호"
+    pageRef: "/jbnu-junho-lee"
+    weight: 12

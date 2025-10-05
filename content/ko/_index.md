@@ -1,7 +1,12 @@
 ---
-title: '홈'
+
 date: 2023-10-24
 type: landing
+title: "전북대 컴퓨터인공지능학부 이준호 | Junho Lee (JBNU)"
+summary: "전북대학교 컴퓨터인공지능학부 소속. AI · 개발자 · Vue/FastAPI 포트폴리오."
+description: "전북대(전북대학교) 컴퓨터인공지능학부 이준호(Junho Lee)의 연구/프로젝트 포트폴리오."
+keywords: ["전북대", "전북대학교", "JBNU", "컴퓨터인공지능학부", "이준호", "딥러닝"]
+draft: false
 
 design:
   # Default section spacing
@@ -59,8 +64,17 @@ sections:
         - title: "안녕하세요, 이준호입니다 👋"
           text: |
             전북대학교 컴퓨터인공지능학부 3학년에 재학 중입니다.
-            
-            백엔드와 AI 기술에 큰 관심을 가지고 있으며, 새로운 기술을 배우고 적용하여 문제를 해결하는 과정에서 성장을 즐깁니다.
+            백엔드와 AI 기술에 큰 관심을 가지고 있으며, 
+            새로운 기술을 배우고 적용하여 문제를 해결하는 과정에서 성장을 즐깁니다.
+
+          feature_icon: check
+          features:
+            - "소속: 전북대학교"
+            - "연락처: 010-4825-3355"
+            - "이메일: tjens2322@naver.com"
+            - "인스타그램: jjjjjjj_111"
+
+
           
           # 'assets/media/' 폴더에 있는 본인 사진 파일명
           image: my-image.jpg

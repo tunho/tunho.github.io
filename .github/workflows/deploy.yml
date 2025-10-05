@@ -88,15 +88,9 @@ jobs:
         echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
         hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
-    - name: Generate Pagefind search index (if applicable)
+    - name: Generate Pagefind search index
       run: |
-        # Run only if pagefind is declared in dependencies or devDependencies
-        if [ -f "package.json" ] && node -e "p=require('./package.json');console.log((p.dependencies&&p.dependencies.pagefind)||(p.devDependencies&&p.devDependencies.pagefind)?'yes':'')" | grep -q yes; then
-          echo "pagefind detected in package.json -> generating index into public/pagefind"
-          (command -v pnpm >/dev/null 2>&1 && pnpm dlx pagefind --source "public") || npx --yes pagefind --source "public"
-        else
-          echo "pagefind not declared in package.json -> skipping index generation"
-        fi
+        (command -v pnpm >/dev/null 2>&1 && pnpm dlx pagefind --source "public") || npx --yes pagefind --source "public"
 
 
     - name: Upload artifact

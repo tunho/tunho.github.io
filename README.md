@@ -1,4 +1,4 @@
-# [Hugo Landing Page Theme](https://github.com/HugoBlox/theme-landing-page)
+**전북대 이준호 포트폴리오** → https://tunho.github.io/ko/jbnu-junho-lee/
 
 [![Screenshot](https://raw.githubusercontent.com/HugoBlox/theme-landing-page/main/.github/preview.webp)](https://hugoblox.com/templates/)
 

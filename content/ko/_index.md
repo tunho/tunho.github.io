@@ -59,7 +59,7 @@ sections:
             전북대학교 컴퓨터인공지능학부 3학년에 재학 중입니다.
             백엔드와 AI 기술에 큰 관심을 가지고 있으며, 
             새로운 기술을 배우고 적용하여 문제를 해결하는 과정에서 성장을 즐깁니다.
-            [전북대 이준호 소개 페이지]({{< relref "/jbnu-junho-lee" >}})
+            [전북대 이준호 소개 페이지](/ko/jbnu-junho-lee/)
 
           feature_icon: check
           features:

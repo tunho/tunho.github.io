@@ -21,3 +21,8 @@ main:
   - name: "전북대 이준호"
     pageRef: "/jbnu-junho-lee"
     weight: 12
+
+footer:
+  - name: "전북대 이준호"
+    pageRef: "/jbnu-junho-lee"
+    weight: 90

@@ -10,8 +10,7 @@ keywords: ["전북대", "전북대학교", "JBNU", "컴퓨터인공지능학부"
 images: [ "images/og-default.jpg" ]
 draft: false
 header:
-  image: "og-default.jpg" # <-- 이 한 줄을 추가해주세요!
-  caption: "" # (선택 사항)
+  image: "og-default.jpg" # <-- 이 설정이 가장 중요합니다.
 design:
   # Default section spacing
   spacing: "6rem"

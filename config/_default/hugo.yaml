@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: "전북대 이준호 | JBNU Computer & AI"
-baseURL: 'https://tunho.github.io' # Website URL
+baseURL: 'https://tunho.github.io/' # Website URL
 
 ############################
 ## PAGE OPTIONS

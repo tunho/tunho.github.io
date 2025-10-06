@@ -2,7 +2,7 @@
 title: 'Home'
 date: 2023-10-24
 type: landing
-
+images: [ "images/og-default.jpg" ]
 design:
   # Default section spacing
   spacing: "6rem"

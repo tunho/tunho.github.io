@@ -3,6 +3,16 @@
 # Documentation: https://docs.hugoblox.com/
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
+
+#홈페이지 대표 이미지 수정
+title: "Junho Lee"
+description: "JBNU · Medical AI · Full-stack"
+images:
+  - images/og-default.jpg
+social:
+  twitter: tunho
+
+  
 # Appearance
 appearance:
   mode: light
@@ -54,10 +64,3 @@ locale:
 
 
 
-#홈페이지 대표 이미지 수정
-title: "Junho Lee"
-description: "JBNU · Medical AI · Full-stack"
-images:
-  - images/og-default.jpg
-social:
-  twitter: tunho

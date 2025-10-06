@@ -4,8 +4,7 @@
   Undergraduate @ Jeonbuk National University (CS) · Member @ JBNU Medical AI Lab (MacsLAB)
   <br/>
   <a href="https://tunho.github.io">Portfolio</a> •
-  <a href="mailto:your_email@jbnu.ac.kr">Email</a> •
-  <a href="https://www.linkedin.com/in/your-link">LinkedIn</a> •
+  <a href="dlwnsgh2322@jbnu.ac.kr">Email</a> •
   <a href="https://github.com/tunho">GitHub</a>
 </p>
 

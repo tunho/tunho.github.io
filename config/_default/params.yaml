@@ -44,7 +44,7 @@ header:
     fixed_to_top: true
     logo:
       text: ''                 # 텍스트는 비우고
-      filename: 'my-image.jpg'    # ← 여기에 파일명만 지정
+      filename: 'title_logo.png'    # ← 여기에 파일명만 지정
       alt: 'Junho Lee'         # (선택) 대체 텍스트
     button:
       enable: false

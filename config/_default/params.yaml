@@ -51,3 +51,13 @@ footer:
 locale:
   date_format: 'Jan 2, 2006'
   time_format: '3:04 PM'
+
+
+
+#홈페이지 대표 이미지 수정
+title: "Junho Lee"
+description: "JBNU · Medical AI · Full-stack"
+images:
+  - images/og-default.jpg
+social:
+  twitter: tunho

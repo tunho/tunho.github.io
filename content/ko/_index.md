@@ -5,10 +5,7 @@ type: landing
 title: "전북대 이준호 – 포트폴리오(컴퓨터인공지능학부, MacsLAB)"
 slug: "jbnu-junho-lee"   # URL: /ko/jbnu-junho-lee/
 keywords: ["전북대", "전북대학교", "JBNU", "컴퓨터인공지능학부", "이준호", "개발자"]
-images: [ "images/og-default.jpg" ]
 draft: false
-header:
-  image: "og-default.jpg" # <-- 이 설정이 가장 중요합니다.
 design:
   # Default section spacing
   spacing: "6rem"

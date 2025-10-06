@@ -93,8 +93,8 @@ Full-stack 의료영상 웹앱. DICOM 파싱·표시, **자/화살표 측정**, 
 
 ## 📫 Contact
 - Portfolio: https://tunho.github.io  
-- Email: your_email@jbnu.ac.kr  
-- LinkedIn: https://www.linkedin.com/in/your-link
+- Email: dlwnsgh2322@jbnu.ac.kr  
+
 
 <!-- Footer note -->
 <p align="right"><i>Built with focus on practical AI × Product engineering.</i></p>

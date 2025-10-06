@@ -5,10 +5,12 @@ ko:
   languageName: 한국어
   languageCode: ko-kr
   weight: 1
+  baseURL: "https://tunho.github.io/"
 
 en:
   title: page of Jun HO LEE
   languageName: English
   languageCode: en-us
   weight: 2
+  baseURL: "https://tunho.github.io/"
 

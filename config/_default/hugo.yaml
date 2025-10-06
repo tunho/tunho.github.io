@@ -15,7 +15,7 @@ defaultContentLanguage: ko
 # 한국어(CJK) 지원을 위해 true로 변경해야 합니다.
 hasCJKLanguage: true 
 # 기본 언어(en)도 /en/ 경로를 사용하도록 설정하여 URL 구조를 통일합니다.
-defaultContentLanguageInSubdir: true
+defaultContentLanguageInSubdir: false
 removePathAccents: true
 
 # --- 다국어 설정 시작 ---

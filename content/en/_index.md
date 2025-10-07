@@ -109,7 +109,7 @@ sections:
             - '3,000+ users on Discord'
             - 'Share your site and get feedback'
           # Upload image to `assets/media/` and reference the filename here
-          image: coffee.jpg
+          image: tomato.jpg
           button:
             text: Join Discord
             url: https://discord.gg/z8wNYzb

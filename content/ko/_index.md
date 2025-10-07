@@ -146,7 +146,7 @@ sections:
             - '원하는 시간을 설정하여 타이머 기능을 한다.'
             - '특정 시간이 지나면, 표시된 시간의 색이 변한다.'
             - '시간이 끝나면 알람이 울린다.'
-          image: tomato.png
+          image: tomato.jpg
           button:
             text: 자세히 보기
             url: https://discord.gg/z8wNYzb

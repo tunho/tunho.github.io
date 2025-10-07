@@ -1,6 +1,6 @@
 main:
   - name: 홈
-    url: /ko/#top
+    url: /#top
     weight: 10
 
   - name: 소개

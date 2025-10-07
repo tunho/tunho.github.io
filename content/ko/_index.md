@@ -156,30 +156,35 @@ sections:
       # Section background color (CSS class)
       css_class: 'bg-gray-100 dark:bg-gray-900'
 
-  - block: testimonials
+  - block: experience
+    id: experience
     content:
-      title: ''
-      text: ''
+      title: Experience
+      text: '데이터와 코드를 통해 가치를 만들어온 여정입니다.'
       items:
-        - name: 'Hugo Smith'
-          role: 'Marketing Executive at X'
-          # Upload image to `assets/media/` and reference the filename here
-          image: 'testimonial-1.jpg'
-          text: 'Awesome, so easy to use and saved me so much work with the swappable pre-designed sections!'
+        - title: 메디컬 인공지능 학부연구생
+          company: 'MACS'
+          company_url: ''
+          date_start: '2025-07-01'
+          # 현재 재직 중이면 비워두세요
+          date_end: ''
+          description: |
+            * MNIST 학습 데이터를 이용한 손글씨 숫자 예측 모델
+            * 딥러닝 관련 논문 리딩 및 발표
+            * 실제 웹 사이트 배포 수행
+
     design:
-      spacing:
-        # Reduce bottom spacing so the testimonial appears vertically centered between sections
-        padding: ['6rem', 0, 0, 0]
+      flip_alt_rows: false
+
   - block: cta-card
     content:
-      title: Build your future-proof website
-      text: As easy as 1, 2, 3!
+      title: 함께 성장하는 AI 연구자
+      text: 새로운 의료 AI 기술을 통해 세상을 조금 더 정확하게 이해하고자 합니다.
       button:
-        text: Get Started
-        url: https://hugoblox.com/templates/
+        text: 프로젝트 살펴보기
+        url: /projects/
     design:
       card:
-        # Card background color (CSS class)
         css_class: 'bg-primary-300'
         css_style: ''
 ---

@@ -4,7 +4,7 @@ main:
     weight: 10
 
   - name: '소개 요약'
-    pageRef: /#about
+    url: /#about
     weight: 15
 
   - name: 피쳐

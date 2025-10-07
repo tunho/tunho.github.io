@@ -3,16 +3,16 @@ main:
     url: /ko/#top
     weight: 10
 
-  - name: '내 소개'
+  - name: '전북대 이준호'
     pageRef: '/jbnu-junho-lee'
     weight: 12
 
   - name: 피쳐
-    url: /features
+    url: /#features
     weight: 20
 
   - name: 솔루션
-    url: /solutions
+    url: /#solutions
     weight: 30
 
   - name: 리소스

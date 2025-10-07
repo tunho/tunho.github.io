@@ -7,7 +7,7 @@ main:
     url: /#about
     weight: 15
 
-  - name: 피쳐
+  - name: 주요 역량
     url: /#features
     weight: 20
 

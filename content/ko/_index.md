@@ -17,7 +17,7 @@ sections:
     content:
       title: '안녕하세요, 이준호입니다.'
       primary_action:
-        text: '소개 요악 페이지'
+        text: '소개 페이지'
         url: /jbnu-junho-lee
         icon: user
       secondary_action:

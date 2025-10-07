@@ -151,12 +151,9 @@ sections:
             text: 자세히 보기
             url: https://discord.gg/z8wNYzb
     design:
-    # Section background color (CSS class)
-      css_class: 'bg-gray-100 dark:bg-gray-900'
-
-    design:
       # Section background color (CSS class)
       css_class: 'bg-gray-100 dark:bg-gray-900'
+
   - block: testimonials
     content:
       title: ''

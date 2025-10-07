@@ -20,7 +20,7 @@ lastmod: 2025-10-05
 sections:
   - block: markdown
     content:
-      title: '전북대 이준호 (Junho Lee)'
+      title: '이준호 (Junho Lee)'
       text: |
         전북대학교 **컴퓨터인공지능학부** 소속의 이준호(Junho Lee)입니다. **MacsLAB(의료 AI 연구실)** 에서
         의료영상 분석과 딥러닝을 연구·개발하며, PyTorch 기반 모델링과 **FastAPI/Vue**를 활용한 **AI 서비스**

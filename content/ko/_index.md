@@ -70,6 +70,7 @@ sections:
           feature_icon: check
           features:
             - '소속: 전북대학교'
+            - '전공: 컴퓨터인공지능'
             - '연락처: 010-4825-3355'
             - '이메일: tjens2322@naver.com'
             - '인스타그램: jjjjjjj_111'
@@ -127,15 +128,15 @@ sections:
           button:
             text: Get Started
             url: https://hugoblox.com/templates/
-        - title: Large Community
-          text: Join our large community on Discord - ask questions and get live responses
-          feature_icon: bolt
+        - title: 옷 정리 및 코디 추천 웹앱
+          text: ''
+          feature_icon: check
           features:
-            - 'Dedicated support channel'
-            - '3,000+ users on Discord'
-            - 'Share your site and get feedback'
+            - '현재 소유 중인 옷을 등록 및 정리한다'
+            - '선호하는 스타일과 날씨 및 장소를 고려하여 코디를 추천한다'
+            - '사용자들 일상을 공유하는 커뮤니티 기능을 제공한다'
           # Upload image to `assets/media/` and reference the filename here
-          image: coffee.jpg
+          image: cody.png
           button:
             text: Join Discord
             url: https://discord.gg/z8wNYzb

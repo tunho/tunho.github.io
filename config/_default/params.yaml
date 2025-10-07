@@ -3,14 +3,12 @@
 # Documentation: https://docs.hugoblox.com/
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-
 #홈페이지 대표 이미지 수정
-title: "Junho Lee"
-description: "JBNU · Medical AI · Full-stack"
+title: 'Junho Lee'
+description: 'JBNU · Medical AI · Full-stack'
 social:
   twitter: tunho
 
-  
 # Appearance
 appearance:
   mode: light
@@ -43,9 +41,9 @@ header:
     align: 'center'
     fixed_to_top: true
     logo:
-      text: ''                 # 텍스트는 비우고
-      filename: 'my-image.jpg'    # ← 여기에 파일명만 지정
-      alt: 'Junho Lee'         # (선택) 대체 텍스트
+      text: '' # 텍스트는 비우고
+      filename: 'header-log.png' # ← 여기에 파일명만 지정
+      alt: 'Junho Lee' # (선택) 대체 텍스트
     button:
       enable: false
     show_search: true
@@ -60,6 +58,3 @@ footer:
 locale:
   date_format: 'Jan 2, 2006'
   time_format: '3:04 PM'
-
-
-

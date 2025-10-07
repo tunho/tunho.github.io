@@ -169,6 +169,20 @@ sections:
             • MNIST 손글씨 숫자 예측 모델 구현  
             • 딥러닝 관련 논문 리딩 및 발표  
             • 의료 영상 AI 프로젝트용 웹 서비스 배포 수행
+        - name: '**대학원(예정)'
+          icon: computer-desktop
+          description: |
+            ??
+            • ??
+            • ??
+            • ??
+        - name: '??'
+          icon: computer-desktop
+          description: |
+            ??
+            • ??
+            • ??
+            • ??
     design:
       spacing:
         padding: ['6rem', 0, 0, 0]
@@ -178,8 +192,8 @@ sections:
       title: 함께 성장하는 AI 연구자
       text: 새로운 의료 AI 기술을 통해 세상을 조금 더 정확하게 이해하고자 합니다.
       button:
-        text: 프로젝트 살펴보기
-        url: /projects/
+        text: 협업 제안하기
+        url: '#mailto: tjens2322@naver.com'
     design:
       card:
         css_class: 'bg-primary-300'

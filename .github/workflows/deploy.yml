@@ -27,76 +27,82 @@ jobs:
     if: github.repository_owner != 'HugoBlox'
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-      with:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
           # Fetch history for Hugo's .GitInfo and .Lastmod
-        fetch-depth: 0
+          fetch-depth: 0
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ env.NODE_VERSION }}
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
 
-    - name: Setup pnpm
-      if: hashFiles('package.json') != ''
-      uses: pnpm/action-setup@v4
+      - name: Setup pnpm
+        if: hashFiles('package.json') != ''
+        uses: pnpm/action-setup@v4
 
-    - name: Install dependencies
-      run: |
-        # Install Tailwind CLI if package.json exists
-        if [ -f "package.json" ]; then
-          echo "Installing Tailwind dependencies..."
-          pnpm install || npm install
-        fi
+      - name: Install dependencies
+        run: |
+          # Install Tailwind CLI if package.json exists
+          if [ -f "package.json" ]; then
+            echo "Installing Tailwind dependencies..."
+            pnpm install || npm install
+          fi
 
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v3
-      with:
-        hugo-version: ${{ env.WC_HUGO_VERSION }}
-        extended: true
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ env.WC_HUGO_VERSION }}
+          extended: true
 
-      # Cache dependencies (Go modules, node_modules) - stable, rarely changes
-    - uses: actions/cache@v4
-      with:
-        path: |
-          /tmp/hugo_cache_runner/
-          node_modules/
-          modules/*/node_modules/
-        key: ${{ runner.os }}-hugo-deps-${{ hashFiles('**/go.mod', '**/package-lock.json',
-          '**/pnpm-lock.yaml') }}
-        restore-keys: |
-          ${{ runner.os }}-hugo-deps-
+        # Cache dependencies (Go modules, node_modules) - stable, rarely changes
+      - uses: actions/cache@v4
+        with:
+          path: |
+            /tmp/hugo_cache_runner/
+            node_modules/
+            modules/*/node_modules/
+          key:
+            ${{ runner.os }}-hugo-deps-${{ hashFiles('**/go.mod', '**/package-lock.json',
+            '**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-hugo-deps-
 
-      # Cache Hugo resources (processed images, CSS) - invalidates only when assets/config change
-    - uses: actions/cache@v4
-      with:
-        path: resources/
-        key: ${{ runner.os }}-hugo-resources-${{ hashFiles('assets/**/*', 'config/**/*',
-          'hugo.yaml', 'package.json') }}
-        restore-keys: |
-          ${{ runner.os }}-hugo-resources-
+        # Cache Hugo resources (processed images, CSS) - invalidates only when assets/config change
+      - uses: actions/cache@v4
+        with:
+          path: resources/
+          key:
+            ${{ runner.os }}-hugo-resources-${{ hashFiles('assets/**/*', 'config/**/*',
+            'hugo.yaml', 'package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-hugo-resources-
 
-    - name: Setup Pages
-      id: pages
-      uses: actions/configure-pages@v5
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
 
-    - name: Build with Hugo
-      env:
-        HUGO_ENVIRONMENT: production
-      run: |
-        echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
-        hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Clear Hugo cache completely
+        run: |
+          echo "🧹 Clearing Hugo caches and generated resources..."
+          rm -rf public resources/_gen ~/.cache/hugo_cache
 
-    - name: Generate Pagefind search index
-      run: |
-        (command -v pnpm >/dev/null 2>&1 && pnpm dlx pagefind --source "public") || npx --yes pagefind --source "public"
+      - name: Build with Hugo
+        env:
+          HUGO_ENVIRONMENT: production
+        run: |
+          echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
+          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
+      - name: Generate Pagefind search index
+        run: |
+          (command -v pnpm >/dev/null 2>&1 && pnpm dlx pagefind --source "public") || npx --yes pagefind --source "public"
 
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v4
-      with:
-        path: ./public
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./public
 
   # Deploy website to GitHub Pages hosting
   deploy:
@@ -112,6 +118,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

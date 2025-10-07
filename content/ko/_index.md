@@ -95,13 +95,13 @@ sections:
       text: 인공지능 기술을 기반으로 의미 있는 가치를 만드는 개발자이자 연구자입니다. 🤖
       items:
         - name: 인공지능 연구
-          icon: brain
+          icon: cpu-chip
           description: 의료 영상 분석과 진단 시스템 개발을 중심으로 딥러닝 모델을 설계하고 최적화합니다.
         - name: 풀스택 개발
-          icon: laptop
+          icon: computer-desktop
           description: FastAPI와 Vue를 활용하여 AI 모델을 실제 서비스로 구현하는 엔드투엔드 시스템을 구축합니다.
         - name: 데이터 분석
-          icon: bar-chart
+          icon: chart-bar
           description: 다양한 데이터 전처리 및 시각화 기법을 통해 모델 성능과 신뢰성을 높입니다.
         - name: 문제 해결력
           icon: light-bulb

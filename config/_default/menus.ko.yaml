@@ -4,7 +4,7 @@ main:
     weight: 10
 
   - name: '소개 요약'
-    pageRef: '/jbnu-junho-lee'
+    pageRef: '/#about'
     weight: 12
 
   - name: 피쳐

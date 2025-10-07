@@ -121,7 +121,7 @@ sections:
           feature_icon: check
           features:
             - 'Dicom 파일을 해석하여 이미지로 보여준다.'
-            - '이미지를 조작하여 크기를 조작하고 밝기/대비를 조작한다.'
+            - '이미지를 조작하여 크기와 밝기/대비를 조절한다.'
             - '백엔드에 파일을 보내서, 골절 부위를 반환한다.'
           # Upload image to `assets/media/` and reference the filename here
           image: dicom.jpg
@@ -132,10 +132,9 @@ sections:
           text: ''
           feature_icon: check
           features:
-            - '현재 소유 중인 옷을 등록 및 정리한다'
-            - '선호하는 스타일과 날씨 및 장소를 고려하여 코디를 추천한다'
-            - '사용자들 일상을 공유하는 커뮤니티 기능을 제공한다'
-          # Upload image to `assets/media/` and reference the filename here
+            - '현재 소유 중인 옷을 등록 및 정리한다.'
+            - '선호 스타일·날씨·장소를 고려해 코디를 추천한다.'
+            - '사용자 일상을 공유하는 커뮤니티 기능을 제공한다.'
           image: cody.png
           button:
             text: Join Discord
@@ -144,13 +143,17 @@ sections:
           text: ''
           feature_icon: check
           features:
-            - 원하는 시간을 설정하여 타이머 기능을 한다.
-            - 특정 시간을 지나면, 표시된 시간의 색이 변한다.
-            - 시간이 끝나면 알람이 울린다.
+            - '원하는 시간을 설정하여 타이머 기능을 한다.'
+            - '특정 시간이 지나면, 표시된 시간의 색이 변한다.'
+            - '시간이 끝나면 알람이 울린다.'
           image: tomato.png
           button:
             text: 자세히 보기
             url: https://discord.gg/z8wNYzb
+  design:
+    # Section background color (CSS class)
+    css_class: 'bg-gray-100 dark:bg-gray-900'
+
     design:
       # Section background color (CSS class)
       css_class: 'bg-gray-100 dark:bg-gray-900'

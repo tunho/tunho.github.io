@@ -128,7 +128,7 @@ sections:
           image: dicom.jpg
           button:
             text: 자세히 보기
-            url: /project
+            url: /project/dicom
         - title: 옷 정리 및 코디 추천 웹앱
           text: ''
           feature_icon: check

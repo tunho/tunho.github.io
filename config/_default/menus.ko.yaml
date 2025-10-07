@@ -20,7 +20,7 @@ main:
     weight: 40
 
   - parent: resources
-    name: 블로그
+    name: 부가 정보
     pageRef: '/blog'
     weight: 41
 

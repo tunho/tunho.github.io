@@ -39,7 +39,7 @@ sections:
 
 
         **빠른 링크**
-        - [프로젝트](/#project) ·  [GitHub](https://github.com/tunho) . [LinkedIn](www.linkedin.com/in/준호-이-05a711310)
+        - [프로젝트](/#project) ·  [GitHub](https://github.com/tunho) . [LinkedIn](https://linkedin.com/in/준호-이-05a711310)
 
 sitemap:
   changefreq: weekly

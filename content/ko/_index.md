@@ -6,7 +6,7 @@ slug: 'jbnu-junho-lee' # URL: /ko/jbnu-junho-lee/
 keywords:
   ['전북대', '전북대학교', 'JBNU', '컴퓨터인공지능학부', '이준호', '개발자']
 header:
-  image: 'thumbnail.png' # <-- svg가 아닌 png 파일 이름으로 변경
+  image: 'my-image.png' # <-- svg가 아닌 png 파일 이름으로 변경
 draft: false
 design:
   # Default section spacing

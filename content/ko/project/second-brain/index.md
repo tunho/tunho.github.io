@@ -1,135 +1,42 @@
 ---
-title: 🧠 Sharpen your thinking with a second brain
-summary: Create a personal knowledge base and share your knowledge with your peers.
-date: 2023-10-26
-authors:
-  - admin
-tags:
-  - Second Brain
-  - Markdown
-image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
+title: 뽀모도로 타이머 프로젝트
+summary: 집중과 휴식을 관리하기 위한 Python 기반 생산성 타이머 애플리케이션입니다.
+date: 2025-10-05
 ---
 
-Create a personal knowledge base and share your knowledge with your peers.
+## 프로젝트 개요
 
-Hugo Blox web framework empowers you with one of the most flexible note-taking capabilities out there.
+이 프로젝트는 **집중력 향상과 작업 효율 관리**를 위해 개발된 **Python 기반 뽀모도로 타이머 애플리케이션**입니다.  
+개발자와 연구자가 일정한 주기로 집중과 휴식을 반복함으로써, 생산성을 극대화하도록 설계되었습니다.
 
-Create a powerful knowledge base that works on top of a local folder of plain text Markdown files.
+---
 
-Use it as your second brain, either publicly sharing your knowledge with your peers via your website, or via a private GitHub repository and password-protected site just for yourself.
+## 주요 기능
 
-## Mindmaps
+- ⏱️ **25분 집중 + 5분 휴식 루프**  
+  전통적인 뽀모도로 기법을 구현하여 일정한 집중 사이클 유지
+- 🔔 **알림 및 사운드 효과**  
+  사이클 종료 시 알림음 또는 시각적 신호 표시
+- 📊 **세션 통계**  
+  하루·주간 단위의 집중 시간과 완료 세션 수 자동 집계
+- ⚙️ **사용자 설정 지원**  
+  집중·휴식 시간, 반복 횟수, 알림 방식 등 개인 맞춤형 설정 가능
+- 💻 **간결한 UI**  
+  Python GUI 라이브러리(`tkinter`)를 활용한 직관적 인터페이스
 
-Hugo Blox supports a Markdown extension for mindmaps.
+---
 
-With this open format, can even edit your mindmaps in other popular tools such as Obsidian.
+## 사용 기술 스택
 
-Simply insert a Markdown code block labelled as `markmap` and optionally set the height of the mindmap as shown in the example below.
+- **Language:** Python
+- **Libraries:** Tkinter (GUI), time, threading, winsound (Windows)
+- **Version Control:** Git, GitHub
+- **Deployment:** PyInstaller를 이용한 독립 실행형 앱 빌드
 
-Mindmaps can be created by simply writing the items as a Markdown list within the `markmap` code block, indenting each item to create as many sub-levels as you need:
+---
 
-<div class="highlight">
-<pre class="chroma">
-<code>
-```markmap {height="200px"}
-- Hugo Modules
-  - Hugo Blox
-  - blox-plugins-netlify
-  - blox-plugins-netlify-cms
-  - blox-plugins-reveal
-```
-</code>
-</pre>
-</div>
+## 프로젝트 의의
 
-renders as
-
-```markmap {height="200px"}
-- Hugo Modules
-  - Hugo Blox
-  - blox-plugins-netlify
-  - blox-plugins-netlify-cms
-  - blox-plugins-reveal
-```
-
-Anh here's a more advanced mindmap with formatting, code blocks, and math:
-
-<div class="highlight">
-<pre class="chroma">
-<code>
-```markmap
-- Mindmaps
-  - Links
-    - [Hugo Blox Docs](https://docs.hugoblox.com/)
-    - [Discord Community](https://discord.gg/z8wNYzb)
-    - [GitHub](https://github.com/HugoBlox/hugo-blox-builder)
-  - Features
-    - Markdown formatting
-    - **inline** ~~text~~ *styles*
-    - multiline
-      text
-    - `inline code`
-    -
-      ```js
-      console.log('hello');
-      console.log('code block');
-      ```
-    - Math: $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$
-```
-</code>
-</pre>
-</div>
-
-renders as
-
-```markmap
-- Mindmaps
-  - Links
-    - [Hugo Blox Docs](https://docs.hugoblox.com/)
-    - [Discord Community](https://discord.gg/z8wNYzb)
-    - [GitHub](https://github.com/HugoBlox/hugo-blox-builder)
-  - Features
-    - Markdown formatting
-    - **inline** ~~text~~ *styles*
-    - multiline
-      text
-    - `inline code`
-    -
-      ```js
-      console.log('hello');
-      console.log('code block');
-      ```
-    - Math: $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$
-```
-
-## Highlighting
-
-<mark>Highlight</mark> important text with `mark`:
-
-```html
-<mark>Highlighted text</mark>
-```
-
-## Callouts
-
-Use [callouts](https://docs.hugoblox.com/reference/markdown/#callouts) (aka _asides_, _hints_, or _alerts_) to draw attention to notes, tips, and warnings.
-
-Use the `> [!NOTE]` syntax to create a callout.
-
-```markdown
-> [!NOTE]
-> A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
-```
-
-renders as
-
-> [!NOTE]
-> A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
-
-Or use the `warning` callout type so your readers don't miss critical details:
-
-> [!WARNING]
-> A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
-
-## Did you find this page helpful? Consider sharing it 🙌
+이 뽀모도로 타이머는 단순한 시간 관리 도구를 넘어,  
+**자기 주도적 학습과 개발 습관 형성을 돕는 도구**로 설계되었습니다.  
+짧고 집중된 시간 관리 루틴을 통해 꾸준한 학습과 프로젝트 개발의 리듬을 만들어갑니다.

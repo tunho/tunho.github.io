@@ -4,8 +4,8 @@ main:
     weight: 10
 
   - name: '소개 요약'
-    pageRef: '/#about'
-    weight: 12
+    pageRef: /#about
+    weight: 15
 
   - name: 피쳐
     url: /#features
@@ -23,6 +23,11 @@ main:
     name: 블로그
     pageRef: '/blog'
     weight: 41
+
+  - parent: resources
+    name: 소개
+    pageRef: '/jbnu-junho-lee'
+    weight: 42
 
 footer:
   - name: '전북대 이준호'

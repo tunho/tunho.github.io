@@ -18,7 +18,7 @@ sections:
       title: '안녕하세요, 이준호입니다.'
       primary_action:
         text: '소개 요악 페이지'
-        url: '/jbnu-junho-lee'
+        url: /jbnu-junho-lee
         icon: user
       secondary_action:
         text: '이력서 보기'
@@ -80,11 +80,8 @@ sections:
 
           # 버튼은 GitHub 프로필 등 원하는 링크로 연결
           button:
-            text: GitHub 방문하기
-            url: https://github.com/tunho # <-- 본인 GitHub 주소로 변경
-          button:
             text: 자세히 보기
-            url: '/introduce'
+            url: '/jbnu-junho-lee'
 
     design:
       # 섹션 배경색 등 필요에 따라 디자인을 추가할 수 있습니다.

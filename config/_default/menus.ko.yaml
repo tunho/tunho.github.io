@@ -28,6 +28,10 @@ main:
     name: 상세 소개
     pageRef: '/jbnu-junho-lee'
     weight: 42
+  - parent: resources
+    name: 프로젝트 설명
+    pageRef: 'project'
+    weight: 43
 
 footer:
   - name: '전북대 이준호'

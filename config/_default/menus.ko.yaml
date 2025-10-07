@@ -3,7 +3,7 @@ main:
     url: /ko/#top
     weight: 10
 
-  - name: '소개'
+  - name: 소개
     url: /#about
     weight: 15
 
@@ -11,7 +11,7 @@ main:
     url: /#features
     weight: 20
 
-  - name: 솔루션
+  - name: 프로젝트
     url: /#project
     weight: 30
 

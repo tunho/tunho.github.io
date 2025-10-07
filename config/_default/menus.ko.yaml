@@ -25,7 +25,7 @@ main:
     weight: 41
 
   - parent: resources
-    name: 소개
+    name: 상세 소개
     pageRef: '/jbnu-junho-lee'
     weight: 42
 

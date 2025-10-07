@@ -17,7 +17,7 @@ sections:
     content:
       title: '안녕하세요, 이준호입니다.'
       primary_action:
-        text: '소개 페이지'
+        text: '자세히 보기'
         url: /jbnu-junho-lee
         icon: user
       secondary_action:
@@ -127,8 +127,8 @@ sections:
           # Upload image to `assets/media/` and reference the filename here
           image: dicom.jpg
           button:
-            text: Get Started
-            url: https://hugoblox.com/templates/
+            text: 자세히 보기
+            url: /project
         - title: 옷 정리 및 코디 추천 웹앱
           text: ''
           feature_icon: check
@@ -138,8 +138,8 @@ sections:
             - '사용자 일상을 공유하는 커뮤니티 기능을 제공한다.'
           image: cody.png
           button:
-            text: Join Discord
-            url: https://discord.gg/z8wNYzb
+            text: 자세히 보기
+            url: /project
         - title: 뽀모도로 타이머 공부 앱
           text: ''
           feature_icon: check
@@ -150,7 +150,7 @@ sections:
           image: tomato.png
           button:
             text: 자세히 보기
-            url: https://discord.gg/z8wNYzb
+            url: /project
 
     design:
       # Section background color (CSS class)
@@ -159,7 +159,7 @@ sections:
   - block: features
     id: experience
     content:
-      title: '연구 및 경력'
+      title: '경력'
       text: '데이터와 코드를 통해 가치를 만들어온 여정입니다.'
       items:
         - name: '메디컬 인공지능 학부연구생'
@@ -173,16 +173,12 @@ sections:
           icon: computer-desktop
           description: |
             ??
-            • ??
-            • ??
-            • ??
+
         - name: '??'
           icon: computer-desktop
           description: |
             ??
-            • ??
-            • ??
-            • ??
+
     design:
       spacing:
         padding: ['6rem', 0, 0, 0]
@@ -193,7 +189,7 @@ sections:
       text: 새로운 의료 AI 기술을 통해 세상을 조금 더 정확하게 이해하고자 합니다.
       button:
         text: 협업 제안하기
-        url: '#mailto: tjens2322@naver.com'
+        url: 'mailto:tjens2322@naver.com'
     design:
       card:
         css_class: 'bg-primary-300'

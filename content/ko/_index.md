@@ -156,25 +156,21 @@ sections:
       # Section background color (CSS class)
       css_class: 'bg-gray-100 dark:bg-gray-900'
 
-  - block: experience
-    id: experience
+  - block: testimonials
     content:
-      title: Experience
+      title: '연구 및 경험'
       text: '데이터와 코드를 통해 가치를 만들어온 여정입니다.'
       items:
-        - title: 메디컬 인공지능 학부연구생
-          company: 'MACS'
-          company_url: ''
-          date_start: '2025-07-01'
-          # 현재 재직 중이면 비워두세요
-          date_end: ''
-          description: |
-            * MNIST 학습 데이터를 이용한 손글씨 숫자 예측 모델
-            * 딥러닝 관련 논문 리딩 및 발표
-            * 실제 웹 사이트 배포 수행
-
+        - name: '메디컬 인공지능 학부연구생'
+          role: '전북대학교 의공학과 MACS 연구실'
+          image: 'experience-1.jpg'
+          text: |
+            • MNIST 학습 데이터를 이용한 손글씨 숫자 예측 모델 구현  
+            • 딥러닝 관련 논문 리딩 및 세미나 발표  
+            • 의료 영상 AI 프로젝트를 위한 웹 서비스 배포 수행
     design:
-      flip_alt_rows: false
+      spacing:
+        padding: ['6rem', 0, 0, 0]
 
   - block: cta-card
     content:

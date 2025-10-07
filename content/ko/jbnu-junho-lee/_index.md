@@ -22,10 +22,13 @@ sections:
     content:
       title: '이준호 (Junho Lee)'
       text: |
-        전북대학교 **컴퓨터인공지능학부** 소속의 이준호(Junho Lee)입니다. **MacsLAB(의료 AI 연구실)** 에서
-        의료영상 분석과 딥러닝을 연구·개발하며, PyTorch 기반 모델링과 **FastAPI/Vue**를 활용한 **AI 서비스**
-        구현에 관심이 많습니다. 학부 연구생 및 전북대 재학생으로 참여한 프로젝트를 정리해 구인·연구자분들이
-        제 역량과 관심사를 빠르게 파악하실 수 있도록 이 페이지를 구성했습니다.
+        안녕하세요. 전북대학교 컴퓨터인공지능학부 소속 이준호(Junho Lee) 입니다.
+        현재 **MacsLAB(의료 AI 연구실)**에서 의료영상 분석과 딥러닝 모델 개발을 연구하고 있으며,
+        PyTorch를 활용한 모델링과 FastAPI·Vue을 이용한 개발 및 AI 서비스 구현에 높은 관심을 가지고 있습니다.
+
+        의료 AI 분야의 연구 경험을 토대로, 모델 성능 향상과 실용적 서비스화를 동시에 추구하고 있습니다.
+        이 페이지에서는 학부 연구생으로 참여한 다양한 프로젝트를 통해
+        제가 쌓아온 기술적 역량과 연구 방향성을 한눈에 확인하실 수 있습니다.
 
 
         **최근 프로젝트**
@@ -36,7 +39,7 @@ sections:
 
 
         **빠른 링크**
-        - [프로젝트](/#project) ·  [GitHub](https://github.com/tunho)
+        - [프로젝트](/#project) ·  [GitHub](https://github.com/tunho) . [LinkedIn](www.linkedin.com/in/준호-이-05a711310)
 
 sitemap:
   changefreq: weekly

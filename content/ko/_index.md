@@ -16,7 +16,6 @@ sections:
   - block: hero
     content:
       title: '안녕하세요, 이준호입니다.'
-      text: '전북대 컴퓨터인공지능학부 학사 3학년입니다.'
       primary_action:
         text: '소개 요악 페이지'
         url: '/jbnu-junho-lee'

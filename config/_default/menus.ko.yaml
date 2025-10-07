@@ -3,7 +3,7 @@ main:
     url: /ko/#top
     weight: 10
 
-  - name: '전북대 이준호'
+  - name: '소개 요약'
     pageRef: '/jbnu-junho-lee'
     weight: 12
 

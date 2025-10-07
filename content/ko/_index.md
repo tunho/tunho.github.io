@@ -140,6 +140,17 @@ sections:
           button:
             text: Join Discord
             url: https://discord.gg/z8wNYzb
+        - title: 뽀모도로 타이머 공부 앱
+          text: ''
+          feature_icon: check
+          features:
+            - 원하는 시간을 설정하여 타이머 기능을 한다.
+            - 특정 시간을 지나면, 표시된 시간의 색이 변한다.
+            - 시간이 끝나면 알람이 울린다.
+          image: tomato.png
+          button:
+            text: 자세히 보기
+            url: /tomato
     design:
       # Section background color (CSS class)
       css_class: 'bg-gray-100 dark:bg-gray-900'

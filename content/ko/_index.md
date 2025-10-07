@@ -65,10 +65,7 @@ sections:
       items:
         # --- 👇 아이템을 이렇게 하나만 남깁니다 ---
         - title: '안녕하세요, 이준호입니다 👋'
-          text: |
-            전북대학교 컴퓨터인공지능학부 3학년에 재학 중입니다.
-            백엔드와 AI 기술에 큰 관심을 가지고 있으며, 
-            새로운 기술을 배우고 적용하여 문제를 해결하는 과정에서 성장을 즐깁니다.
+          text: ''
 
           feature_icon: check
           features:
@@ -76,6 +73,7 @@ sections:
             - '연락처: 010-4825-3355'
             - '이메일: tjens2322@naver.com'
             - '인스타그램: jjjjjjj_111'
+            - '나이 : 23세(03년생)'
 
           # 'assets/media/' 폴더에 있는 본인 사진 파일명
           image: my-image.jpg
@@ -84,6 +82,9 @@ sections:
           button:
             text: GitHub 방문하기
             url: https://github.com/tunho # <-- 본인 GitHub 주소로 변경
+          button:
+            text: 자세히 보기
+            url: '/introduce'
 
     design:
       # 섹션 배경색 등 필요에 따라 디자인을 추가할 수 있습니다.

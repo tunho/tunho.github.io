@@ -36,10 +36,7 @@ sections:
 
 
         **빠른 링크**
-        - [프로젝트](/ko/projects/) · [소개](/ko/about/) · [GitHub](https://github.com/tunho)
-
-        **연락처**
-        - 이메일: tjens2322@naver.com · 전화: 010-4825-3355
+        - [프로젝트](/#project) ·  [GitHub](https://github.com/tunho)
 
 sitemap:
   changefreq: weekly

@@ -150,7 +150,7 @@ sections:
           image: tomato.png
           button:
             text: 자세히 보기
-            url: /project.tomato
+            url: /project/tomato
 
     design:
       # Section background color (CSS class)

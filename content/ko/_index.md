@@ -139,7 +139,7 @@ sections:
           image: cody.png
           button:
             text: 자세히 보기
-            url: /project
+            url: /project/cody
         - title: 뽀모도로 타이머 공부 앱
           text: ''
           feature_icon: check
@@ -150,7 +150,7 @@ sections:
           image: tomato.png
           button:
             text: 자세히 보기
-            url: /project
+            url: /project.tomato
 
     design:
       # Section background color (CSS class)

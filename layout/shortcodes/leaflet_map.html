@@ -1,0 +1,12 @@
+<div id="map-{{ .Ordinal }}" style="height: {{ .Get "height" | default "400px" }}; width: {{ .Get "width" | default "100%" }};"></div>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+    var map = L.map('map-{{ .Ordinal }}').setView([{{ .Get "lat" }}, {{ .Get "lon" }}], {{ .Get "zoom" | default 13 }});
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    L.marker([{{ .Get "lat" }}, {{ .Get "lon" }}]).addTo(map)
+        .bindPopup('{{ .Get "popup" | default "여기에요!" }}')
+        .openPopup();
+</script>

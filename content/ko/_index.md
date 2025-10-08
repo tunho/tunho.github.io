@@ -182,35 +182,18 @@ sections:
     design:
       spacing:
         padding: ['6rem', 0, 0, 0]
-  - block: contact
-    id: contact
+  - block: blank
+    id: location
     content:
       title: 오시는 길
-      text: '전북대학교 공과대학 7호관에 있습니다.'
-      # 연락처 정보 (필요 없으면 삭제 가능)
-      email: tjens2322@naver.com
-      phone: 010-4825-3355
-      address:
-        street: 567 Baekje-daero, Deokjin-gu
-        city: Jeonju-si
-        region: Jeollabuk-do
-        postcode: '54896'
-        country: South Korea
-        country_code: KR
+      text: |
+        전북대학교 공과대학 7호관(9호관)에 있습니다.
+        <br>
+---
 
-      coordinates:
-        latitude: '35.8469'
-        longitude: '127.1294'
-      directions:
-        text: '경로 안내'
-        url: 'https://www.google.com/maps/dir/?api=1&destination=35.8469,127.1294'
-      map:
-        provider: 'google' # 'google' 또는 'mapbox'
-        api_key: 'AIzaSyCiiWeJO739hCJR_YVRKiuF9p8e0SwYoqQ' # 구글 지도 API 키가 필요합니다.
-        zoom: 16
-    design:
-      css_class: 'bg-gray-100 dark:bg-gray-900'
-
+<div class="flex justify-center">
+  <iframe src="http://googleusercontent.com/maps.google.com/3" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
   - block: cta-card
     content:
       title: 함께 성장하는 AI 연구자

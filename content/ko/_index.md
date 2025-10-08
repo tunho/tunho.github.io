@@ -189,11 +189,12 @@ sections:
       text: |
         전북대학교 공과대학 7호관(9호관)에 있습니다.
         <br>
----
-
-<div class="flex justify-center">
-  <iframe src="http://googleusercontent.com/maps.google.com/3" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+        <div class="flex justify-center">
+          <iframe src="http://googleusercontent.com/maps.google.com/3"
+                  width="100%" height="450" style="border:0;"
+                  allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
   - block: cta-card
     content:
       title: 함께 성장하는 AI 연구자

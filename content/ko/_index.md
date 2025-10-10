@@ -182,18 +182,22 @@ sections:
     design:
       spacing:
         padding: ['6rem', 0, 0, 0]
-  - block: blank
+  - block: markdown
     id: location
     content:
-      title: 오시는 길
+      title: '오시는 길'
       text: |
-        전북대학교 공과대학 7호관(9호관)에 있습니다.
-        <br>
----
+        전북대학교 공과대학 7호관(9호관)에 있습니다.  
+        <br><br>
 
-<div class="flex justify-center">
-  <iframe src="http://googleusercontent.com/maps.google.com/3" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+        <div class="flex justify-center">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.8039403927413!2d127.12515417638984!3d35.84691397253226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35702f78ad5e5c0b%3A0x6f5e5d36e189a0db!2z7KCc64Ko64yA6rSR7Jet7IucIOyngOyYgeyLnCDslYjrj5k!5e0!3m2!1sko!2skr!4v1698153912345"
+            width="100%" height="450" style="border:0;"
+            allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
   - block: cta-card
     content:
       title: 함께 성장하는 AI 연구자

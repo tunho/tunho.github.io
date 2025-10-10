@@ -190,7 +190,7 @@ sections:
       view: card
       count: 3
       filters:
-        folders: 'ko/selfdev' # ⚠️ 꼭 문자열로!
+        folder: 'ko/selfdev' # ⚠️ 꼭 문자열로!
     design:
       css_class: 'bg-gray-100 dark:bg-gray-900'
 

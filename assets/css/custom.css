@@ -1,3 +1,10 @@
+/* Tailwind reset 보호: 모든 가상요소 초기화로 인한 충돌 방지 */
+:before,
+:after {
+  all: unset;
+  box-sizing: border-box;
+}
+
 /* 모든 이미지 요소에 공통 오버레이 컨테이너 적용 */
 img,
 .blox-cta-image-paragraph .card-img,
@@ -16,15 +23,15 @@ img::after,
 .blox-cta-image-paragraph .card-img::after,
 .blox-features img::after,
 .blox-collection img::after {
-  content: ' '; /* 기본값 비워두고 JS에서 동적 삽입 가능 */
-  position: absolute;
+  content: ' ' !important; /* 기본값 비워두고 JS에서 동적 삽입 가능 */
+  position: absolute !important;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* 검은 반투명 레이어 */
-  color: #fff;
-  display: flex;
+  background: rgba(0, 0, 0, 0.4) !important; /* 검은 반투명 레이어 */
+  color: #fff !important;
+  display: flex !important;
   align-items: center;
   justify-content: center;
   opacity: 0;
@@ -33,6 +40,7 @@ img::after,
   font-size: 1.2rem;
   text-align: center;
   pointer-events: none;
+  z-index: 5;
 }
 
 /* hover 시 표시 */
@@ -40,9 +48,11 @@ img:hover::after,
 .blox-cta-image-paragraph .card-img:hover::after,
 .blox-features img:hover::after,
 .blox-collection img:hover::after {
-  opacity: 1;
-  content: '자세히 보기'; /* 원하는 문구로 변경 가능 */
+  opacity: 1 !important;
+  content: '자세히 보기' !important; /* 원하는 문구로 변경 가능 */
 }
+
+/* Hero 섹션 오버레이 효과 */
 .hero-overlay {
   position: relative; /* 자식 요소(가상 레이어)의 위치 기준점 */
   isolation: isolate; /* z-index 쌓임 순서 격리 */
@@ -50,19 +60,17 @@ img:hover::after,
 
 /* 이미지 위에 추가될 반투명 레이어 */
 .hero-overlay::before {
-  content: '';
+  content: '' !important;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-
-  /* 👇 검은색 배경에 50% 투명도 적용 */
-  /* 색상(0, 0, 0)과 투명도(0.5)를 원하는 값으로 조절하세요. */
-  background-color: rgba(0, 0, 0, 0.5);
-
+  background-color: rgba(0, 0, 0, 0.5); /* 배경 어둡게 */
   z-index: 1; /* 레이어를 텍스트 뒤, 배경 이미지 바로 위로 보냄 */
 }
+
+/* 개별 이미지 래퍼용 (필요 시 사용) */
 .img-wrapper {
   position: relative;
   display: inline-block;
@@ -71,14 +79,14 @@ img:hover::after,
 }
 
 .img-wrapper::after {
-  content: '자세히 보기';
+  content: '자세히 보기' !important;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  color: white;
+  background: rgba(0, 0, 0, 0.4) !important;
+  color: white !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,11 +94,14 @@ img:hover::after,
   transition: 0.3s ease;
   font-weight: 600;
   font-size: 1.2rem;
+  z-index: 5;
 }
 
 .img-wrapper:hover::after {
-  opacity: 1;
+  opacity: 1 !important;
 }
+
+/* 적용 여부 확인용 테두리 (임시 테스트용) */
 body {
   outline: 5px solid lime !important;
 }

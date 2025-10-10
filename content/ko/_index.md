@@ -186,11 +186,11 @@ sections:
     id: self-development
     content:
       title: '자기개발 및 성장 루틴'
-      text: '꾸준함과 배움을 통해 스스로를 발전시키는 루틴입니다.'
+      text: '꾸준한 루틴으로 스스로 성장합니다.'
       view: card
       count: 3
       filters:
-        folders: selfdev
+        folders: 'selfdev' # ⚠️ 꼭 문자열로!
     design:
       css_class: 'bg-gray-100 dark:bg-gray-900'
 

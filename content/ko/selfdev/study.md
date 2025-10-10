@@ -1,8 +1,9 @@
 ---
 title: '학습 프로젝트'
-summary: '온라인 강의와 실습을 병행하며 새로운 기술을 익힙니다.'
+summary: '온라인 강의 + 개인 프로젝트를 병행하며 성장'
 date: 2025-10-10
-image: study.jpg
+image:
+  filename: study.jpg
 ---
 
-FastCampus, Coursera 등의 플랫폼에서 최신 기술을 학습합니다.
+강의에서 배운 내용을 바로 코드로 실습하며 체화합니다.

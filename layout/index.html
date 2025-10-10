@@ -5,8 +5,8 @@
   site.Data.homepage.blocks }} {{/* 2. 각 블록을 돌면서 내용을 페이지에 직접
   출력하기 */}} {{ range $blocks }} {{/* 여기서부터가 각 컬렉션을 만드는
   코드입니다. */}} {{ $folderPath := .content.filters.folder }} {{ $itemCount :=
-  .content.count }} {{ $filteredPages := where site.RegularPages "Section"
-  $folderPath }}
+  .content.count }} {{ $filteredPages := where site.RegularPages ".File.Dir"
+  "startswith" $folderPath }}
 
   <div class="collection {{ .design.css_class }}">
     <h2>{{ .content.title }}</h2>

@@ -193,24 +193,15 @@ sections:
         folder: 'ko/selfdev' # ⚠️ 꼭 문자열로!
     design:
       css_class: 'bg-gray-100 dark:bg-gray-900'
-  - block: portfolio
+  - block: collection
     id: interests
     content:
       title: '관심사 및 영감'
       text: '다양한 분야에서 아이디어와 기술을 탐구합니다.'
-      items:
-        - title: '주식 투자'
-          summary: '데이터 기반의 시장 분석과 가치 중심 투자'
-          image: stock.jpg
-        - title: 'Design & UX'
-          summary: '심플하고 직관적인 사용자 경험 설계'
-          image: design.jpg
-        - title: 'Music & Sound'
-          summary: '음악적 몰입과 감정의 흐름을 분석'
-          image: music.jpg
-        - title: 'Photography'
-          summary: '감성과 시선을 기술로 담기'
-          image: photo.jpg
+      view: card
+      count: 4
+      filters:
+        folder: 'ko/interests'
     design:
       css_class: 'bg-gray-100 dark:bg-gray-900'
 

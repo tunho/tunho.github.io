@@ -190,9 +190,10 @@ sections:
       view: card
       count: 3
       filters:
-        folder: 'ko/selfdev' # ⚠️ 꼭 문자열로!
+        folders: 'ko/selfdev' # ⚠️ 꼭 문자열로!
     design:
       css_class: 'bg-gray-100 dark:bg-gray-900'
+
   - block: collection
     id: interests
     content:
@@ -201,7 +202,7 @@ sections:
       view: card
       count: 4
       filters:
-        folder: 'ko/interests'
+        folders: 'ko/interests'
     design:
       css_class: 'bg-gray-100 dark:bg-gray-900'
 

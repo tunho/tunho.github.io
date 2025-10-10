@@ -91,3 +91,6 @@ img:hover::after,
 .img-wrapper:hover::after {
   opacity: 1;
 }
+body {
+  outline: 5px solid lime !important;
+}

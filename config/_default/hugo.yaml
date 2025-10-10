@@ -104,6 +104,3 @@ canonifyURLs: false
 params:
   customCSS:
     - 'css/custom.css'
-params:
-  customJS:
-    - "js/custom.js"

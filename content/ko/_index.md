@@ -156,6 +156,18 @@ sections:
       # Section background color (CSS class)
       css_class: 'bg-gray-100 dark:bg-gray-900'
 
+  - block: collection
+    id: self-development
+    content:
+      title: '자기개발 및 성장 루틴'
+      text: '꾸준한 루틴으로 스스로 성장합니다.'
+      view: card
+      count: 3
+      filters:
+        folder: ko/selfdev
+    design:
+      css_class: 'bg-gray-100 dark:bg-gray-900'
+
   - block: features
     id: experience
     content:
@@ -182,15 +194,22 @@ sections:
     design:
       spacing:
         padding: ['6rem', 0, 0, 0]
-  - block: collection
-    id: self-development
+
+  - block: cta-image-paragraph
+    id: interests
     content:
-      title: '자기개발 및 성장 루틴'
-      text: '꾸준한 루틴으로 스스로 성장합니다.'
-      view: card
-      count: 3
-      filters:
-        folder: ko/selfdev
+      title: '관심사 및 영감'
+      text: '다양한 분야에서 아이디어와 기술을 탐구합니다.'
+      items:
+        - title: '주식 투자'
+          text: '데이터 기반의 시장 분석과 가치 중심 투자'
+          image: stock.png
+        - title: 'Design & UX'
+          text: '심플하고 직관적인 사용자 경험 설계'
+          image: design.png
+        - title: 'Music & Sound'
+          text: '음악적 몰입과 감정의 흐름을 분석'
+          image: music.jpg
     design:
       css_class: 'bg-gray-100 dark:bg-gray-900'
 

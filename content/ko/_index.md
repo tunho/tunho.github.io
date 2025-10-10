@@ -208,6 +208,7 @@ sections:
     content:
       title: '오시는 길'
       text: |
+
         전북대학교 공과대학 7호관에 있습니다.  
         <br><br>
 
@@ -219,6 +220,7 @@ sections:
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
+
 
   - block: cta-card
     content:

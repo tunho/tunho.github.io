@@ -112,6 +112,13 @@ sections:
         - name: 지속적인 학습
           icon: book-open
           description: 최신 AI 논문과 기술 트렌드를 탐구하며, 새로운 아이디어를 프로젝트에 적용합니다.
+  - block: markdown
+    id: project-title
+    content:
+      title: 프로젝트
+      text: ''
+    design:
+      css_class: 'text-center pb-0'
 
   - block: cta-image-paragraph
     id: project
@@ -184,6 +191,13 @@ sections:
       spacing:
         padding: ['6rem', 0, 0, 0]
 
+  - block: markdown
+    id: project-title
+    content:
+      title: 관심사
+      text: ''
+    design:
+      css_class: 'text-center pb-0'
   - block: cta-image-paragraph
     id: interests
     content:

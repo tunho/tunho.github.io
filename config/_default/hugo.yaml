@@ -3,7 +3,7 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: "전북대 이준호 | JBNU Computer & AI"
+title: '전북대 이준호 | JBNU Computer & AI'
 baseURL: 'https://tunho.github.io/' # Website URL
 
 ############################
@@ -13,7 +13,7 @@ baseURL: 'https://tunho.github.io/' # Website URL
 defaultContentLanguage: ko
 # --- 중요! ---
 # 한국어(CJK) 지원을 위해 true로 변경해야 합니다.
-hasCJKLanguage: true 
+hasCJKLanguage: true
 # 기본 언어(en)도 /en/ 경로를 사용하도록 설정하여 URL 구조를 통일합니다.
 defaultContentLanguageInSubdir: false
 removePathAccents: true
@@ -31,7 +31,6 @@ languages:
     languageName: English
     contentDir: content/en
     weight: 2
-
 
 cascade:
   # Blog post options
@@ -61,10 +60,6 @@ cascade:
 ############################
 ## LANGUAGE
 ############################
-
-
-
-
 
 ############################
 ## ADVANCED
@@ -105,3 +100,7 @@ sitemap:
   priority: 0.8
 
 canonifyURLs: false
+
+params:
+  customCSS:
+    - css/custom.css

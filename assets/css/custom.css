@@ -191,3 +191,60 @@ img.w-full:hover::after {
 .blox-cta-image-paragraph .md\:grid > div:first-child:hover::after {
   opacity: 1;
 }
+
+/* ======================================================
+   CTA 이미지 단락 블록 - 이미지 오버레이 스타일
+   ====================================================== */
+
+/* 이미지를 감싸는 부모 div를 선택합니다. 
+   이 div가 오버레이 효과의 기준점이 됩니다. */
+.blox-cta-image-paragraph .md\:grid > div:first-child {
+  position: relative; /* 자식인 가상요소(::before, ::after)의 위치 기준 */
+  overflow: hidden; /* 둥근 모서리 밖으로 튀어나가는 요소 숨기기 */
+  border-radius: 12px; /* 테두리를 둥글게 */
+}
+
+/* 검은색 반투명 오버레이 레이어 */
+.blox-cta-image-paragraph .md\:grid > div:first-child::before {
+  content: '';
+  position: absolute;
+  inset: 0; /* top, right, bottom, left를 모두 0으로 설정 */
+  background: rgba(0, 0, 0, 0.5); /* 반투명 검은 배경 */
+  opacity: 0; /* 평소에는 투명하게 */
+  transition: opacity 0.3s ease-in-out; /* 부드러운 전환 효과 */
+  z-index: 1; /* 텍스트보다 아래에 위치 */
+}
+
+/* '자세히 보기' 텍스트 */
+.blox-cta-image-paragraph .md\:grid > div:first-child::after {
+  content: '자세히 보기';
+  position: absolute;
+  inset: 0;
+
+  /* 텍스트를 정중앙에 배치 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* 텍스트 스타일 */
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+
+  opacity: 0; /* 평소에는 투명하게 */
+  transition: opacity 0.3s ease-in-out; /* 부드러운 전환 효과 */
+  z-index: 2; /* 오버레이보다 위에 위치 */
+}
+
+/* 부모 div에 마우스를 올렸을 때(hover) 오버레이와 텍스트 표시 */
+.blox-cta-image-paragraph .md\:grid > div:first-child:hover::before,
+.blox-cta-image-paragraph .md\:grid > div:first-child:hover::after {
+  opacity: 1; /* 불투명하게 만듦 */
+}
+
+/* 내부 이미지가 부모 div를 꽉 채우도록 설정 (필요시 사용) */
+.blox-cta-image-paragraph .md\:grid > div:first-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 이미지가 잘리더라도 비율을 유지하며 꽉 채움 */
+}

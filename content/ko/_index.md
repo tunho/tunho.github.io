@@ -190,8 +190,7 @@ sections:
       view: card
       count: 3
       filters:
-        folders: >
-          ko/selfdev
+        folders: ['ko/selfdev'] # ✅ 배열로 지정 (uint8 버그 회피)
     design:
       css_class: 'bg-gray-100 dark:bg-gray-900'
 
@@ -203,8 +202,7 @@ sections:
       view: card
       count: 4
       filters:
-        folders: >
-          ko/interests
+        folders: ['ko/interests'] # ✅ 배열로 지정
     design:
       css_class: 'bg-gray-100 dark:bg-gray-900'
 

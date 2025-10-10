@@ -1,32 +1,29 @@
-/* =============================
-   Hugo Blox 전용 오버레이 (HTML 수정 없이)
-   ============================= */
+/* Hugo Blox 이미지 오버레이 (background-image + img 모두 대응) */
 
-/* 이미지 감싸는 카드 컨테이너 공통 설정 */
+/* 이미지 카드 공통 */
 .blox-cta-image-paragraph .card-img,
 .blox-features img,
 .blox-collection img {
   position: relative;
   display: block;
-  overflow: hidden;
   border-radius: 12px;
+  overflow: hidden;
 }
 
-/* 반투명 오버레이 */
+/* 배경 이미지가 있을 경우를 위해 ::after로 레이어 추가 */
 .blox-cta-image-paragraph .card-img::after,
 .blox-features img::after,
 .blox-collection img::after {
   content: '';
   position: absolute;
-  inset: 0; /* top, right, bottom, left = 0 */
+  inset: 0;
   background: rgba(0, 0, 0, 0.4);
   opacity: 0;
   transition: opacity 0.3s ease;
-  pointer-events: none;
   z-index: 1;
 }
 
-/* 텍스트 오버레이 (가상 요소로 표시) */
+/* 텍스트 오버레이 (가상요소로 직접 표시) */
 .blox-cta-image-paragraph .card-img::before,
 .blox-features img::before,
 .blox-collection img::before {
@@ -42,10 +39,9 @@
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 2;
-  pointer-events: none;
 }
 
-/* hover 시 두 가상요소 표시 */
+/* hover 시 활성화 */
 .blox-cta-image-paragraph .card-img:hover::after,
 .blox-cta-image-paragraph .card-img:hover::before,
 .blox-features img:hover::after,
@@ -55,7 +51,46 @@
   opacity: 1;
 }
 
-/* 테스트용 시각 확인 */
-body {
-  outline: 3px solid lime !important;
+/* img-wrapper용 (HTML 직접 넣은 경우) */
+.img-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.img-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.img-wrapper::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.img-wrapper::before {
+  content: '자세히 보기';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.img-wrapper:hover::after,
+.img-wrapper:hover::before {
+  opacity: 1;
 }

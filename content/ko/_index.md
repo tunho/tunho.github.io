@@ -156,6 +156,18 @@ sections:
       # Section background color (CSS class)
       css_class: 'bg-gray-100 dark:bg-gray-900'
 
+  - block: collection
+    id: self-development
+    content:
+      title: '자기개발 및 성장 루틴'
+      text: '꾸준한 루틴으로 스스로 성장합니다.'
+      view: card
+      count: 3
+      filters:
+        folder: ko/selfdev
+    design:
+      css_class: 'bg-gray-100 dark:bg-gray-900'
+
   - block: features
     id: experience
     content:
@@ -182,17 +194,6 @@ sections:
     design:
       spacing:
         padding: ['6rem', 0, 0, 0]
-  - block: collection
-    id: self-development
-    content:
-      title: '자기개발 및 성장 루틴'
-      text: '꾸준한 루틴으로 스스로 성장합니다.'
-      view: card
-      count: 3
-      filters:
-        folder: ko/selfdev
-    design:
-      css_class: 'bg-gray-100 dark:bg-gray-900'
 
   - block: collection
     id: interests

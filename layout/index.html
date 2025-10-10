@@ -1,22 +1,41 @@
 <main>
-  <h1>My Page</h1>
+  <h1 style="color: red; text-align: center">페이지 디버깅 모드</h1>
 
-  {{/* 1. YAML 파일에서 데이터 가져오기 */}} {{ $blocks :=
-  site.Data.homepage.blocks }} {{/* 2. 각 블록을 돌면서 내용을 페이지에 직접
-  출력하기 */}} {{ range $blocks }} {{/* 여기서부터가 각 컬렉션을 만드는
-  코드입니다. */}} {{ $folderPath := .content.filters.folder }} {{ $itemCount :=
-  .content.count }} {{ $filteredPages := where site.RegularPages ".File.Dir"
-  "startswith" $folderPath }}
+  {{ $blocks := site.Data.homepage.blocks }} {{ range $i, $block := $blocks }}
+  <div
+    style="
+      border: 2px solid red;
+      margin: 20px;
+      padding: 10px;
+      background-color: #f9f9f9;
+    "
+  >
+    <h3>--- {{ add $i 1 }}번째 블록 디버깅 시작 ---</h3>
 
-  <div class="collection {{ .design.css_class }}">
-    <h2>{{ .content.title }}</h2>
-    <p>{{ .content.text }}</p>
+    {{ $folderPath := .content.filters.folder }}
+    <p>
+      <strong>1. YAML에 설정된 폴더 경로:</strong>
+      <code>{{ $folderPath }}</code>
+    </p>
+
+    {{ $filteredPages := where site.RegularPages ".File.Dir" "startswith"
+    $folderPath }}
+    <p>
+      <strong>2. 위 경로에서 찾은 글의 개수:</strong>
+      <code>{{ len $filteredPages }}</code>
+    </p>
+
+    <p><strong>3. 찾은 글 목록 (제목과 실제 파일 경로):</strong></p>
     <ul>
-      {{ range first $itemCount $filteredPages }}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ range $filteredPages }}
+      <li>{{ .Title }} (파일 위치: <code>{{ .File.Path }}</code>)</li>
+      {{ else }}
+      <li>
+        <strong>⚠️ 경고: 이 폴더에서 글을 하나도 찾지 못했습니다!</strong>
+      </li>
       {{ end }}
     </ul>
+    <h3>--- 디버깅 끝 ---</h3>
   </div>
-  <hr />
-  {{/* 컬렉션 사이에 구분선 추가 */}} {{ end }}
+  {{ end }}
 </main>

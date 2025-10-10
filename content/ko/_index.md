@@ -190,9 +190,9 @@ sections:
         전북대학교 공과대학 7호관(9호관)에 있습니다.
         <br>
         <div class="flex justify-center">
-          <iframe src="http://googleusercontent.com/maps.google.com/3"
-                  width="100%" height="450" style="border:0;"
-                  allowfullscreen="" loading="lazy"
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.09458931166!2d127.1264378763592!3d35.87103572097869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3570228e3b7af0c9%3A0x6b83f333331b6683!2z7KCE67aA64yA7ZWc6rWQIOqzte2VmeyCsOq4gA!5e0!3m2!1sko!2skr!4v1728592003882!5m2!1sko!2skr" 
+                  width="100%" height="450" style="border:0;" 
+                  allowfullscreen="" loading="lazy" 
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
   - block: cta-card

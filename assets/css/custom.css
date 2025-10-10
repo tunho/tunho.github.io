@@ -61,5 +61,33 @@ img:hover::after,
   /* 색상(0, 0, 0)과 투명도(0.5)를 원하는 값으로 조절하세요. */
   background-color: rgba(0, 0, 0, 0.5);
 
-  z-index: -1; /* 레이어를 텍스트 뒤, 배경 이미지 바로 위로 보냄 */
+  z-index: 1; /* 레이어를 텍스트 뒤, 배경 이미지 바로 위로 보냄 */
+}
+.img-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.img-wrapper::after {
+  content: '자세히 보기';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s ease;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.img-wrapper:hover::after {
+  opacity: 1;
 }

@@ -116,6 +116,7 @@ sections:
   - block: cta-image-paragraph
     id: project
     content:
+      title: 프로젝트
       items:
         - title: Dicom 뷰어
           text: ''
@@ -154,18 +155,6 @@ sections:
 
     design:
       # Section background color (CSS class)
-      css_class: 'bg-gray-100 dark:bg-gray-900'
-
-  - block: collection
-    id: self-development
-    content:
-      title: '자기개발 및 성장 루틴'
-      text: '꾸준한 루틴으로 스스로 성장합니다.'
-      view: card
-      count: 3
-      filters:
-        folder: ko/selfdev
-    design:
       css_class: 'bg-gray-100 dark:bg-gray-900'
 
   - block: features
@@ -214,14 +203,14 @@ sections:
       css_class: 'bg-gray-100 dark:bg-gray-900'
 
   - block: collection
-    id: interests
+    id: self-development
     content:
-      title: '관심사 및 영감'
-      text: '다양한 분야에서 아이디어와 기술을 탐구합니다.'
+      title: '자기개발 및 성장 루틴'
+      text: '꾸준한 루틴으로 스스로 성장합니다.'
       view: card
-      count: 4
+      count: 3
       filters:
-        folder: ko/interests
+        folder: 'ko/selfdev' # ✅ 복수형
     design:
       css_class: 'bg-gray-100 dark:bg-gray-900'
 

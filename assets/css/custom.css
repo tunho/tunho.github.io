@@ -1,19 +1,16 @@
-/* Hugo Blox 이미지 오버레이 (background-image + img 모두 대응) */
+/* ===========================
+   .w-full 이미지 오버레이 전용
+   =========================== */
 
-/* 이미지 카드 공통 */
-.blox-cta-image-paragraph .card-img,
-.blox-features img,
-.blox-collection img {
-  position: relative;
-  display: block;
+img.w-full {
+  position: relative !important; /* 가상요소가 표시되게 함 */
+  display: block !important; /* block-level로 변경 */
   border-radius: 12px;
-  overflow: hidden;
+  overflow: hidden; /* 오버레이 영역 깔끔하게 */
 }
 
-/* 배경 이미지가 있을 경우를 위해 ::after로 레이어 추가 */
-.blox-cta-image-paragraph .card-img::after,
-.blox-features img::after,
-.blox-collection img::after {
+/* 검은 반투명 레이어 */
+img.w-full::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -23,10 +20,8 @@
   z-index: 1;
 }
 
-/* 텍스트 오버레이 (가상요소로 직접 표시) */
-.blox-cta-image-paragraph .card-img::before,
-.blox-features img::before,
-.blox-collection img::before {
+/* 중앙 텍스트 */
+img.w-full::after {
   content: '자세히 보기';
   position: absolute;
   inset: 0;
@@ -41,56 +36,8 @@
   z-index: 2;
 }
 
-/* hover 시 활성화 */
-.blox-cta-image-paragraph .card-img:hover::after,
-.blox-cta-image-paragraph .card-img:hover::before,
-.blox-features img:hover::after,
-.blox-features img:hover::before,
-.blox-collection img:hover::after,
-.blox-collection img:hover::before {
-  opacity: 1;
-}
-
-/* img-wrapper용 (HTML 직접 넣은 경우) */
-.img-wrapper {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  border-radius: 12px;
-}
-
-.img-wrapper img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.img-wrapper::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 1;
-}
-
-.img-wrapper::before {
-  content: '자세히 보기';
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-weight: 600;
-  font-size: 1.2rem;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 2;
-}
-
-.img-wrapper:hover::after,
-.img-wrapper:hover::before {
+/* hover 시 표시 */
+img.w-full:hover::before,
+img.w-full:hover::after {
   opacity: 1;
 }

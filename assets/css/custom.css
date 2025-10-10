@@ -1,44 +1,61 @@
-.img-wrapper {
+/* =============================
+   Hugo Blox 전용 오버레이 (HTML 수정 없이)
+   ============================= */
+
+/* 이미지 감싸는 카드 컨테이너 공통 설정 */
+.blox-cta-image-paragraph .card-img,
+.blox-features img,
+.blox-collection img {
   position: relative;
-  display: inline-block;
+  display: block;
   overflow: hidden;
   border-radius: 12px;
 }
 
-.img-wrapper img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-/* 오버레이 레이어 */
-.img-wrapper::after {
+/* 반투명 오버레이 */
+.blox-cta-image-paragraph .card-img::after,
+.blox-features img::after,
+.blox-collection img::after {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0; /* top, right, bottom, left = 0 */
   background: rgba(0, 0, 0, 0.4);
   opacity: 0;
   transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 1;
 }
 
-/* 텍스트 오버레이 */
-.img-wrapper .overlay-text {
+/* 텍스트 오버레이 (가상 요소로 표시) */
+.blox-cta-image-paragraph .card-img::before,
+.blox-features img::before,
+.blox-collection img::before {
+  content: '자세히 보기';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
   font-weight: 600;
   font-size: 1.2rem;
   opacity: 0;
   transition: opacity 0.3s ease;
+  z-index: 2;
+  pointer-events: none;
 }
 
-/* hover 시 표시 */
-.img-wrapper:hover::after,
-.img-wrapper:hover .overlay-text {
+/* hover 시 두 가상요소 표시 */
+.blox-cta-image-paragraph .card-img:hover::after,
+.blox-cta-image-paragraph .card-img:hover::before,
+.blox-features img:hover::after,
+.blox-features img:hover::before,
+.blox-collection img:hover::after,
+.blox-collection img:hover::before {
   opacity: 1;
+}
+
+/* 테스트용 시각 확인 */
+body {
+  outline: 3px solid lime !important;
 }

@@ -30,17 +30,19 @@ sections:
       #     padding: [0, 0, 0, 0]
       #     margin: [0, 0, 0, 0]
       # For full-screen, add `min-h-screen` below
-      css_class: 'dark'
-      background:
-        color: 'navy'
-        image:
-          # Add your image background to `assets/media/`.
-          filename: bg-triangles.svg
-          filters:
-            brightness: 0.5
-          size: cover
-          position: center
-          parallax: false
+    css_class: 'dark hero-overlay'
+    background:
+      color: 'navy'
+      image:
+        # Add your image background to `assets/media/`.
+        filename: bg-triangles.svg
+        filters:
+          # 이 밝기 필터는 그대로 두거나 제거해도 괜찮습니다.
+          # 오버레이 색상이 적용되면 불필요할 수 있습니다.
+          brightness: 0.5
+        size: cover
+        position: center
+        parallax: false
   - block: stats
     content:
       items:

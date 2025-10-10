@@ -182,10 +182,10 @@ sections:
     design:
       spacing:
         padding: ['6rem', 0, 0, 0]
-  - block: blank
+  - block: markdown
     id: location
     content:
-      title: 오시는 길
+      title: '오시는 길'
       text: |
         전북대학교 공과대학 7호관(9호관)에 있습니다.
         <br>

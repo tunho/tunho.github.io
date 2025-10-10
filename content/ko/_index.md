@@ -182,6 +182,27 @@ sections:
     design:
       spacing:
         padding: ['6rem', 0, 0, 0]
+  - block: cta-grid
+    id: self-development
+    content:
+      title: '자기개발 및 성장 루틴'
+      text: '꾸준한 루틴을 통해 스스로 성장합니다.'
+      items:
+        - title: '독서와 기록'
+          icon: book-open
+          text: '기술·자기계발 서적을 읽고 google note에 정리'
+          url: '/selfdev/reading'
+        - title: '운동 루틴'
+          icon: dumbbell
+          text: '매주 3회 이상 피트니스로 집중력 유지'
+          url: '/selfdev/fitness'
+        - title: '학습 프로젝트'
+          icon: graduation-cap
+          text: '온라인 강의와 실습 프로젝트 병행'
+          url: '/selfdev/study'
+    design:
+      css_class: 'bg-gray-100 dark:bg-gray-900'
+
   - block: markdown
     id: location
     content:

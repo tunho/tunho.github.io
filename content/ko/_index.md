@@ -245,10 +245,6 @@ sections:
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
-        <div class="img-wrapper">
-          <img src="/images/dicom.jpg" alt="Dicom 뷰어">
-          <span class="overlay-text">자세히 보기</span>
-        </div>
 
   - block: cta-card
     content:

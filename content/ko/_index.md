@@ -190,7 +190,8 @@ sections:
       view: card
       count: 3
       filters:
-        folders: 'ko/selfdev'
+        folders: >
+          ko/selfdev
     design:
       css_class: 'bg-gray-100 dark:bg-gray-900'
 
@@ -202,7 +203,8 @@ sections:
       view: card
       count: 4
       filters:
-        folders: 'ko/interests'
+        folders: >
+          ko/interests
     design:
       css_class: 'bg-gray-100 dark:bg-gray-900'
 

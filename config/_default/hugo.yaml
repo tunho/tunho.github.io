@@ -106,3 +106,9 @@ params:
     - 'css/custom.css' # 기존 CSS 설정
   customJS:
     - 'js/custom.js' # 새로 추가할 JS 설정
+
+# --- layouts 폴더를 최우선으로 사용하도록 강제하는 설정 ---
+module:
+  mounts:
+    - source: layouts
+      target: layouts

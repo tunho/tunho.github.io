@@ -12,26 +12,54 @@ main:
     weight: 20
 
   - name: 프로젝트
-    url: /#project
+    url: /#project-title
     weight: 30
 
-  - name: 리소스
-    identifier: resources
+  - name: 경력
+    url: /#experience
+    weight: 35
+
+  - name: 관심사
+    url: /#interest
+    weight: 39
+
+  - name: 프로젝트 상세
+    identifier: project
     weight: 40
 
-  - parent: resources
-    name: 부가 정보
-    pageRef: '/blog'
+  - parent: project
+    name: dicom뷰어
+    pageRef: '/project/dicom'
     weight: 41
 
-  - parent: resources
-    name: 상세 소개
-    pageRef: '/jbnu-junho-lee'
+  - parent: project
+    name: 옷 코디 추천
+    pageRef: '/project/cody'
     weight: 42
-  - parent: resources
-    name: 프로젝트 설명
-    pageRef: 'project'
+
+  - parent: project
+    name: 뽀모도로
+    pageRef: '/project/tomato'
     weight: 43
+
+  - name: 부가 정보
+    identifier: resources
+    weight: 50
+
+  - parent: resources
+    name: 내 상세 소개
+    pageRef: '/blog/my-introduce'
+    weight: 51
+
+  - parent: resources
+    name: 전북대학교
+    pageRef: '/blog/jb-uni'
+    weight: 52
+
+  - parent: resources
+    name: 연구실 소개
+    pageRef: '/blog/macs-lab'
+    weight: 53
 
 footer:
   - name: '전북대 이준호'

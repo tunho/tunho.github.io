@@ -1,48 +1,52 @@
 ---
 # Display name
-title: 吳健雄
+title: 이준호
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: Junho Lee
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Junho
+last_name: Lee
 
 # Pronouns (optional)
-pronouns: she/her
+pronouns: he/him
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: 💻
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position/tagline
-role: Professor of Artificial Intelligence
+role: Undergraduate Student · Medical AI Researcher
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Stanford University
-    url: https://www.stanford.edu/
+  - name: Jeonbuk National University (JBNU)
+    url: https://www.jbnu.ac.kr/
+  - name: MacsLAB · Medical AI Lab
+    url: https://macslab.jbnu.ac.kr/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio:
+  I'm an undergraduate student in Computer Science at Jeonbuk National University.
+  I’m passionate about AI-driven medical imaging systems and full-stack development integrating FastAPI and Vue.
 
 # Social Networking
-# Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'mailto:tunho.dev@gmail.com'
     label: E-mail Me
+  - icon: brands/github
+    url: https://github.com/tunho
   - icon: brands/x
     url: https://x.com/BuildLore
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/junho-lee-ai
   - icon: brands/instagram
     url: https://www.instagram.com/
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/
-  # Link to a PDF of your resume/CV - upload it to `static/uploads/resume.pdf`
   - icon: academicons/cv
     url: uploads/resume.pdf
     label: Download my resume
@@ -50,13 +54,13 @@ profiles:
     url: ./post/index.xml
     label: Subscribe to my blog via RSS feed
 
-# Highlight the author in author lists? (true/false)
 highlight_name: true
 
-# Author's website URL
-website: ""
+website: 'https://tunho.github.io/'
 ---
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include
-distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops
-self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Junho Lee is an undergraduate student in the Department of Computer Artificial Intelligence at **Jeonbuk National University (JBNU)**,  
+currently conducting research at **MacsLAB (Medical AI Laboratory)**.
+
+His work focuses on **AI-based medical imaging systems**, **DICOM analysis**, and **full-stack application development** using  
+**FastAPI (Python)** and **Vue 3 + TypeScript**. He aims to build intelligent, user-friendly diagnostic platforms integrating deep learning and clinical usability.

@@ -62,6 +62,5 @@ locale:
 params:
   customCSS:
     - 'css/custom.css'
-params:
   customJS:
-    - "js/custom.js"
+    - 'js/custom.js'

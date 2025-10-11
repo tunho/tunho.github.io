@@ -109,6 +109,10 @@ params:
 
 # --- layouts 폴더를 최우선으로 사용하도록 강제하는 설정 ---
 module:
-  mounts:
-    - source: layouts
-      target: layouts
+  imports:
+    # 1. 테마의 기본 플러그인들을 먼저 불러옵니다.
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind
+    # 2. 가장 마지막에 현재 프로젝트 폴더(.)를 불러와서
+    #    로컬 layouts 폴더의 파일로 모든 것을 덮어쓰도록 합니다.
+    - path: .

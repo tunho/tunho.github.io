@@ -1,0 +1,13 @@
+<!-- /layouts/partials/custom/overlay-image.html -->
+<div class="relative group w-full max-w-md mx-auto rounded-xl overflow-hidden">
+  <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" class="w-full
+  transition-transform duration-300 group-hover:scale-105" />
+  <div
+    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+  ></div>
+  <div
+    class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white font-semibold text-lg"
+  >
+    {{ .Get "text" }}
+  </div>
+</div>

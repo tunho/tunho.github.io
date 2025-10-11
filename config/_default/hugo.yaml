@@ -106,3 +106,10 @@ params:
     - 'css/custom.css' # 기존 CSS 설
   customJS: # <-- 이 부분을 다시 추가합니다.
     - 'js/custom.js'
+
+module:
+  mounts:
+    - source: layouts
+      target: layouts
+    - source: layouts/blox
+      target: layouts/blox

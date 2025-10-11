@@ -57,27 +57,27 @@ jobs:
           extended: true
 
         # Cache dependencies (Go modules, node_modules) - stable, rarely changes
-      - uses: actions/cache@v4
-        with:
-          path: |
-            /tmp/hugo_cache_runner/
-            node_modules/
-            modules/*/node_modules/
-          key:
-            ${{ runner.os }}-hugo-deps-${{ hashFiles('**/go.mod', '**/package-lock.json',
-            '**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-hugo-deps-
+      # - uses: actions/cache@v4
+      #   with:
+      #     path: |
+      #       /tmp/hugo_cache_runner/
+      #       node_modules/
+      #       modules/*/node_modules/
+      #     key:
+      #       ${{ runner.os }}-hugo-deps-${{ hashFiles('**/go.mod', '**/package-lock.json',
+      #       '**/pnpm-lock.yaml') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-hugo-deps-
 
-        # Cache Hugo resources (processed images, CSS) - invalidates only when assets/config change
-      - uses: actions/cache@v4
-        with:
-          path: resources/
-          key:
-            ${{ runner.os }}-hugo-resources-${{ hashFiles('assets/**/*', 'config/**/*',
-            'hugo.yaml', 'package.json') }}
-          restore-keys: |
-            ${{ runner.os }}-hugo-resources-
+      # Cache Hugo resources (processed images, CSS) - invalidates only when assets/config change
+      # - uses: actions/cache@v4
+      #   with:
+      #     path: resources/
+      #     key:
+      #       ${{ runner.os }}-hugo-resources-${{ hashFiles('assets/**/*', 'config/**/*',
+      #       'hugo.yaml', 'package.json') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-hugo-resources-
 
       - name: Setup Pages
         id: pages

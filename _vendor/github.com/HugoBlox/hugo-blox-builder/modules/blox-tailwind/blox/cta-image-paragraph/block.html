@@ -32,19 +32,21 @@ Initialise */}} {{ $page := .wcPage }} {{ $block := .wcBlock }}
       />
     </div>
     {{ else }}
-    <img
-      class="w-full"
-      src="{{$image.RelPermalink}}"
-      width="{{$image.Width}}"
-      height="{{$image.Height}}"
-      alt="{{$title | plainify}}"
-      {{
-      if
-      (modBool
-      $idx
-      2)}}style="order: 1"
-      {{end}}
-    />
+    <div class="image-overlay-wrapper">
+      <img
+        class="w-full"
+        src="{{$image.RelPermalink}}"
+        width="{{$image.Width}}"
+        height="{{$image.Height}}"
+        alt="{{$title | plainify}}"
+        {{
+        if
+        (modBool
+        $idx
+        2)}}style="order: 1"
+        {{end}}
+      />
+    </div>
     {{ end }} {{ else }} {{ errorf "%s uses the `cta-image-paragraph` blox which
     specifies a non-existent `image` at `assets/%s`. Please add the image to
     this folder and try again." $page.File.Path $image_path }} {{ end }}

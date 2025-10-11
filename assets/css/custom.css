@@ -51,3 +51,29 @@
   height: 100%;
   object-fit: cover;
 }
+/* ===== 이미지 슬라이더 효과 ===== */
+.slider .wc-block-content {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider .wc-block-content > div {
+  min-width: 100%;
+  animation: slide 12s infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

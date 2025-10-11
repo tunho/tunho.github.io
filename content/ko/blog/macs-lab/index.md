@@ -1,3 +1,8 @@
+---
+title: macs 연구실 소개
+date: 2025-10-05
+---
+
 **MacsLAB(Medical AI & Computer Science Laboratory)**은  
 전북대학교 **컴퓨터인공지능학부**의 **이경수 교수님**이 이끄는 연구실로,  
 **의료영상 인공지능(Medical Imaging AI)**과 **딥러닝 기반 컴퓨터비전** 연구를 중심으로 활동하고 있습니다.

@@ -1,0 +1,65 @@
+{{/* 파일 경로: layouts/partials/blocks/cta-image-paragraph.html */}} {{ $page
+:= .page }} {{ $block := .block }} {{ with $block.content }}
+<div class="container section-max-w">
+  <div class="flex flex-col">
+    {{ range $idx, $item := .items }}
+    <div class="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
+      {{ $is_first_item_even := modBool $idx 2 }} {{ $is_image_on_right := (and
+      (not $.page.Params.design.flip_columns) $is_first_item_even) }} {{/*
+      이미지 섹션 */}}
+      <div class="{{ if $is_image_on_right }}md:order-last{{ end }}">
+        {{ with $item.image }} {{ $resource := ($page.Resources.GetMatch
+        .filename) }} {{ with $resource }} {{ $image := .Resize "1200x" }} {{/*
+        ✅ 바로 이 부분! 이미지를 감싸는 div가 추가되었습니다. */}}
+        <div class="image-overlay-wrapper">
+          <img
+            class="w-full rounded-lg"
+            src="{{ $image.RelPermalink }}"
+            width="{{ $image.Width }}"
+            height="{{ $image.Height }}"
+            alt="{{ $item.title | plainify }}"
+          />
+        </div>
+        {{ end }} {{ end }}
+      </div>
+
+      {{/* 텍스트 콘텐츠 섹션 */}}
+      <div class="mt-4 md:mt-0">
+        <h2 class="text-4xl font-extrabold mb-4">
+          {{ $item.title | $.page.RenderString | safeHTML }}
+        </h2>
+        {{ with $item.text }}
+        <p class="mb-6">{{ . | $.page.RenderString | safeHTML }}</p>
+        {{ end }} {{ with $item.features }}
+        <ul class="list-none space-y-4">
+          {{ range . }}
+          <li class="flex items-center">
+            <div class="text-primary-600 dark:text-primary-500 mr-3">
+              <svg
+                class="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <span>{{ . | $.page.RenderString | safeHTML }}</span>
+          </li>
+          {{ end }}
+        </ul>
+        {{ end }} {{ with $item.button }}
+        <a href="{{ .url | relLangURL }}" class="btn btn-primary mt-6"
+          >{{ .text }}</a
+        >
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

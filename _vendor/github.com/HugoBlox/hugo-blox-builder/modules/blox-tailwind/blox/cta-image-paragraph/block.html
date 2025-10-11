@@ -14,39 +14,35 @@ Initialise */}} {{ $page := .wcPage }} {{ $block := .wcBlock }}
     {{ if ne $image.MediaType.SubType "gif" }} {{ $responsive := partial
     "functions/process_responsive_image.html" (dict "image" $image "mode" "fit"
     "sizes" (slice 400 600 800 1200) ) }}
-    <div class="image-overlay-wrapper">
-      <img
-        class="w-full"
-        srcset="{{ $responsive.srcset }}"
-        sizes="(max-width: 768px) 100vw, 50vw"
-        src="{{ $responsive.fallback.RelPermalink }}"
-        width="{{ $responsive.fallback.Width }}"
-        height="{{ $responsive.fallback.Height }}"
-        alt="{{$title | plainify}}"
-        {{
-        if
-        (modBool
-        $idx
-        2)}}style="order: 1"
-        {{end}}
-      />
-    </div>
+    <img
+      class="w-full"
+      srcset="{{ $responsive.srcset }}"
+      sizes="(max-width: 768px) 100vw, 50vw"
+      src="{{ $responsive.fallback.RelPermalink }}"
+      width="{{ $responsive.fallback.Width }}"
+      height="{{ $responsive.fallback.Height }}"
+      alt="{{$title | plainify}}"
+      {{
+      if
+      (modBool
+      $idx
+      2)}}style="order: 1"
+      {{end}}
+    />
     {{ else }}
-    <div class="image-overlay-wrapper">
-      <img
-        class="w-full"
-        src="{{$image.RelPermalink}}"
-        width="{{$image.Width}}"
-        height="{{$image.Height}}"
-        alt="{{$title | plainify}}"
-        {{
-        if
-        (modBool
-        $idx
-        2)}}style="order: 1"
-        {{end}}
-      />
-    </div>
+    <img
+      class="w-full"
+      src="{{$image.RelPermalink}}"
+      width="{{$image.Width}}"
+      height="{{$image.Height}}"
+      alt="{{$title | plainify}}"
+      {{
+      if
+      (modBool
+      $idx
+      2)}}style="order: 1"
+      {{end}}
+    />
     {{ end }} {{ else }} {{ errorf "%s uses the `cta-image-paragraph` blox which
     specifies a non-existent `image` at `assets/%s`. Please add the image to
     this folder and try again." $page.File.Path $image_path }} {{ end }}
@@ -79,7 +75,7 @@ Initialise */}} {{ $page := .wcPage }} {{ $block := .wcBlock }}
           class="ml-2 -mr-1 w-5 h-5"
           fill="currentColor"
           viewBox="0 0 20 20"
-          xmlns="http://www.w_3.org/2000/svg"
+          xmlns="http://www.w3.org/2000/svg"
         >
           <path
             fill-rule="evenodd"

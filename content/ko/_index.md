@@ -15,7 +15,7 @@ design:
 sections:
   - block: hero
     content:
-      title: '웹사이트 업데이트 테스트 중입니다.'
+      title: '안녕하세요, 이준호입니다.'
       primary_action:
         text: '자세히 보기'
         url: /jbnu-junho-lee

@@ -49,17 +49,17 @@ main:
   - parent: resources
     name: 내 상세 소개
     pageRef: '/blog/my-introduce'
-    weight: 51
+    weight: 52
 
   - parent: resources
     name: 전북대학교
     pageRef: '/blog/jb-uni'
-    weight: 52
+    weight: 53
 
   - parent: resources
     name: 연구실 소개
     pageRef: '/blog/macs-lab'
-    weight: 53
+    weight: 51
 
 footer:
   - name: '전북대 이준호'

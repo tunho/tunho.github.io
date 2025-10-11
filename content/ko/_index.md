@@ -186,7 +186,6 @@ sections:
     design:
       spacing:
         padding: ['6rem', 0, 0, 0]
-
   - block: markdown
     id: interest
     content:
@@ -194,23 +193,130 @@ sections:
       text: ''
     design:
       css_class: 'text-center pb-0'
-  - block: cta-image-paragraph
-    id: interests
+
+  - block: markdown
+    id: slider
     content:
-      title: '관심사 및 영감'
-      text: '다양한 분야에서 아이디어와 기술을 탐구합니다.'
-      items:
-        - title: '주식 투자'
-          text: '데이터 기반의 시장 분석과 가치 중심 투자'
-          image: stock.png
-        - title: 'Design & UX'
-          text: '심플하고 직관적인 사용자 경험 설계'
-          image: design.png
-        - title: 'Music & Sound'
-          text: '음악적 몰입과 감정의 흐름을 분석'
-          image: music.jpg
-    design:
-      css_class: 'bg-gray-100 dark:bg-gray-900'
+      title: ''
+      text: |
+        <!-- ✅ 이미지 슬라이더 시작 -->
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="stock.png" alt="주식 투자">
+              <div class="caption">
+                <h3>💹 주식 투자</h3>
+                <p>데이터 기반의 시장 분석과 가치 중심 투자</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="design.png" alt="Design & UX">
+              <div class="caption">
+                <h3>🎨 Design & UX</h3>
+                <p>심플하고 직관적인 사용자 경험 설계</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="music.jpg" alt="Music & Sound">
+              <div class="caption">
+                <h3>🎵 Music & Sound</h3>
+                <p>음악적 몰입과 감정의 흐름을 분석</p>
+              </div>
+            </div>
+          </div>
+          <button class="prev">❮</button>
+          <button class="next">❯</button>
+        </div>
+
+        <style>
+        .slider-container {
+          position: relative;
+          width: 100%;
+          max-width: 900px;
+          margin: 40px auto;
+          overflow: hidden;
+          border-radius: 12px;
+          box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        .slider {
+          display: flex;
+          transition: transform 0.6s ease;
+        }
+        .slide {
+          position: relative;
+          flex-shrink: 0;
+          width: 100%;
+        }
+        .slide img {
+          width: 100%;
+          height: 500px;
+          object-fit: cover;
+          border-radius: 12px;
+        }
+        .caption {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background: rgba(0, 0, 0, 0.45);
+          color: white;
+          text-align: center;
+          padding: 20px 10px;
+        }
+        .caption h3 {
+          margin: 0;
+          font-size: 1.4rem;
+          font-weight: 600;
+        }
+        .caption p {
+          margin: 4px 0 0;
+          font-size: 1rem;
+          opacity: 0.9;
+        }
+        button.prev, button.next {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background: rgba(0,0,0,0.5);
+          color: white;
+          border: none;
+          font-size: 2rem;
+          padding: 0 0.6rem;
+          cursor: pointer;
+          border-radius: 8px;
+          z-index: 5;
+        }
+        button.prev:hover, button.next:hover {
+          background: rgba(0,0,0,0.7);
+        }
+        button.prev { left: 10px; }
+        button.next { right: 10px; }
+
+        @media (max-width: 768px) {
+          .slide img { height: 300px; }
+          .caption h3 { font-size: 1.1rem; }
+          .caption p { font-size: 0.9rem; }
+        }
+        </style>
+
+        <script>
+        let index = 0;
+        const slider = document.currentScript.parentElement.querySelector('.slider');
+        const slides = slider.querySelectorAll('.slide');
+        const total = slides.length;
+        const prevBtn = slider.parentElement.querySelector('.prev');
+        const nextBtn = slider.parentElement.querySelector('.next');
+
+        function moveSlide(step) {
+          index = (index + step + total) % total;
+          slider.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        prevBtn.addEventListener('click', () => moveSlide(-1));
+        nextBtn.addEventListener('click', () => moveSlide(1));
+        setInterval(() => moveSlide(1), 4000);
+        </script>
+        <!-- ✅ 이미지 슬라이더 끝 -->
 
   - block: collection
     id: self-development
@@ -288,3 +394,25 @@ sections:
         css_class: 'bg-primary-300'
         css_style: ''
 ---
+
+<style>
+/* ===== 인라인 슬라이더 효과 ===== */
+.slider-section .wc-block-content {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-section .wc-block-content > div {
+  flex: 0 0 100%;
+  transition: transform 1s ease;
+  animation: slide 12s infinite;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+</style>

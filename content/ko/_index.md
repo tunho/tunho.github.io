@@ -15,10 +15,10 @@ design:
 sections:
   - block: hero
     content:
-      title: '안녕하세요, 이준호입니다.'
+      title: '<span style="white-space: nowrap;">안녕하세요, 이준호입니다.</span>'
       primary_action:
         text: '자세히 보기'
-        url: /jbnu-junho-lee
+        url: /blog/my-introduce
         icon: user
       secondary_action:
         text: '이력서 보기'
@@ -26,21 +26,17 @@ sections:
         icon: document-text
 
     design:
-      #   spacing:
-      #     padding: [0, 0, 0, 0]
-      #     margin: [0, 0, 0, 0]
-      # For full-screen, add `min-h-screen` below
       css_class: 'dark'
       background:
         color: 'navy'
         image:
-          # Add your image background to `assets/media/`.
           filename: bg-triangles.svg
           filters:
             brightness: 0.5
           size: cover
           position: center
           parallax: false
+
   - block: stats
     content:
       items:
@@ -82,7 +78,7 @@ sections:
           # 버튼은 GitHub 프로필 등 원하는 링크로 연결
           button:
             text: 자세히 보기
-            url: '/jbnu-junho-lee'
+            url: '/blog/my-introduce'
 
     design:
       # 섹션 배경색 등 필요에 따라 디자인을 추가할 수 있습니다.
@@ -192,7 +188,7 @@ sections:
         padding: ['6rem', 0, 0, 0]
 
   - block: markdown
-    id: project-title
+    id: interest
     content:
       title: 관심사
       text: ''
@@ -227,6 +223,40 @@ sections:
         folder: 'ko/selfdev' # ✅ 복수형
     design:
       css_class: 'bg-gray-100 dark:bg-gray-900'
+
+  - block: markdown
+    id: overlay-demo
+    content:
+      text: |
+        <!-- 🔹 제목 오버레이 (다크모드 대응 + 투명도 효과) -->
+        <div class="relative inline-block group mb-8">
+          <h2 class="relative z-20 text-3xl font-bold text-center mb-6 
+                    text-gray-900 dark:text-white 
+                    transition-transform duration-300 group-hover:scale-105">
+            연락 및 방문 하기
+          </h2>
+          <div class="absolute inset-0 
+                      bg-black/50 
+                      rounded-xl z-10 
+                      opacity-0 group-hover:opacity-100 
+                      transition-opacity duration-300"></div>
+        </div>
+
+        <!-- 🔹 이미지 오버레이 (투명도 + 텍스트 오버레이 적용 예시) -->
+        <div class="relative group w-full max-w-2xl mx-auto rounded-xl overflow-hidden shadow-lg">
+          <img src="contact.png" alt="예시 이미지" 
+              class="w-full transition-transform duration-300 group-hover:scale-105" />
+          <!-- 🩶 투명도 레이어 -->
+          <div class="absolute inset-0 
+                      bg-black/50 
+                      opacity-100 
+                      transition-opacity duration-300"></div>
+          <!-- ✍️ 텍스트 오버레이 -->
+          <div class="absolute inset-0 flex items-center justify-center 
+                      text-white font-semibold text-2xl text-center px-6">
+            이미지 위에 투명도 레이어 , 연락 및 방문하기 텍스트에 hover 시 오버레이를 적용(14번)
+          </div>
+        </div>
 
   - block: markdown
     id: location

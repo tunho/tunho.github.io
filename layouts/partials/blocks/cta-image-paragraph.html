@@ -9,8 +9,8 @@
       이미지 섹션 */}}
       <div class="{{ if $is_image_on_right }}md:order-last{{ end }}">
         {{ with $item.image }} {{ $resource := ($page.Resources.GetMatch
-        .filename) }} {{ with $resource }} {{ $image := .Resize "1200x" }} {{/*
-        ✅ 바로 이 부분! 이미지를 감싸는 div가 추가되었습니다. */}}
+        .filename) }} {{ with $resource }} {{/* <-- div가 이 블록 안으로
+        들어와야 합니다. */}} {{ $image := .Resize "1200x" }}
         <div class="image-overlay-wrapper">
           <img
             class="w-full rounded-lg"

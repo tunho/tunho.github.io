@@ -109,16 +109,16 @@ params:
 
 # --- layouts 폴더를 최우선으로 사용하도록 강제하는 설정 ---
 # --- 모듈 및 로컬 폴더 마운트 설정 ---
+# --- 모듈 및 특정 파일 마운트 설정 ---
 module:
   imports:
     - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify
     - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind
   mounts:
-    # 가장 중요: 로컬 layouts 폴더를 Hugo의 가상 layouts 폴더로 마운트합니다.
-    # 이렇게 하면 로컬 파일이 테마 파일을 덮어쓰게 됩니다.
-    - source: layouts
-      target: layouts
-
-    # assets 폴더도 동일하게 마운트하여 일관성을 유지합니다.
+    # assets 폴더는 기존처럼 마운트합니다.
     - source: assets
       target: assets
+
+    # 가장 중요: 템플릿 파일 하나를 직접 지정하여 덮어쓰도록 합니다.
+    - source: layouts/partials/blocks/cta-image-paragraph.html
+      target: layouts/partials/blocks/cta-image-paragraph.html

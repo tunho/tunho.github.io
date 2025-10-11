@@ -109,6 +109,10 @@ params:
 
 # --- layouts 폴더를 최우선으로 사용하도록 강제하는 설정 ---
 module:
-  mounts:
-    - source: layouts
-      target: layouts
+  imports:
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-core
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind
+    # --- 가장 중요: 마지막에 현재 프로젝트 폴더(.)를 추가하여
+    # --- 로컬 layouts 폴더의 파일들이 항상 최우선으로 적용되게 함 ---
+    - path: .

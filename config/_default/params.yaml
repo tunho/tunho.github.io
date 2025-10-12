@@ -66,6 +66,8 @@ params:
   customJS: # <-- 이 부분을 다시 추가합니다.
     - 'js/custom.js'
 
+
+
 style:
   css: 'css/custom.css'
 

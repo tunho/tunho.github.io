@@ -337,10 +337,17 @@ sections:
         <!-- 🔹 제목 오버레이 (다크모드 대응 + 투명도 효과) -->
         <div class="relative inline-block group mb-8">
           <h2 class="relative z-20 text-3xl font-bold text-center mb-6 
-                    text-gray-900 dark:text-white 
-                    transition-transform duration-300 group-hover:scale-105">
-            연락 및 방문 하기
-          </h2>
+           text-gray-900 dark:text-white 
+           transition-all duration-300 
+           hover:scale-105 hover:text-white 
+           before:absolute before:inset-0 before:rounded-lg 
+           before:bg-black/50 before:opacity-0 hover:before:opacity-60 
+           before:transition-opacity before:duration-300 overflow-hidden">
+          <span class="relative z-10">연락 및 방문하기</span>
+            <span class="relative z-10 block text-base font-normal mt-2 text-gray-600 dark:text-gray-300">
+          (이미지 위에 투명도 레이어, 연락 및 방문하기 텍스트에 hover 시 오버레이를 적용(14번))
+        </span>
+        </h2>
           <div class="absolute inset-0 
                       bg-black/50 
                       rounded-xl z-10 
@@ -360,7 +367,7 @@ sections:
           <!-- ✍️ 텍스트 오버레이 -->
           <div class="absolute inset-0 flex items-center justify-center 
                       text-white font-semibold text-2xl text-center px-6">
-            이미지 위에 투명도 레이어 , 연락 및 방문하기 텍스트에 hover 시 오버레이를 적용(14번)
+            
           </div>
         </div>
 
@@ -393,8 +400,103 @@ sections:
       card:
         css_class: 'bg-primary-300'
         css_style: ''
+  - block: markdown
+    id: fab
+    content:
+      title: ''
+      text: |
+        <!-- ✅ Floating Action Buttons (6개 이상) -->
+        <div class="fab-container">
+          <a href="mailto:tjens2322@gmail.com" class="fab" title="E-mail">📧</a>
+          <a href="https://github.com/tunho" class="fab" title="GitHub">💻</a>
+          <a href="https://x.com/BuildLore" class="fab" title="X">𝕏</a>
+          <a href="https://linkedin.com/in/준호-이-05a711310" class="fab" title="LinkedIn">💼</a>
+          <a href="https://www.instagram.com/" class="fab" title="Instagram">📷</a>
+          <a href="resume.pdf" class="fab" title="Resume">📄</a>
+        </div>
+
+        <style>
+        .fab-container {
+          position: fixed;
+          bottom: 24px;
+          right: 24px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          z-index: 9999;
+        }
+        .fab {
+          width: 52px;
+          height: 52px;
+          background: #2563eb;
+          color: white;
+          font-size: 24px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+          transition: transform 0.2s ease, background 0.3s;
+          text-decoration: none;
+        }
+        .fab:hover {
+          transform: translateY(-4px);
+          background: #1e40af;
+        }
+        </style>
+  - block: markdown
+    id: gallery
+    content:
+      title: '나의 목표 (출처: unsplash)'
+      text: |
+        <div class="grid grid-cols-3 gap-4">
+          <img src="https://plus.unsplash.com/premium_photo-1681910241563-a3bd7a4c2ec9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687">
+          <img src="https://images.unsplash.com/photo-1550713450-94c9b4fc9f25?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1974" alt="marry" class="rounded-lg shadow-md">
+          <img src="https://plus.unsplash.com/premium_photo-1681469490618-c24cc20bef1c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=785" alt="money" class="rounded-lg shadow-md">
+        </div>
+  - block: markdown
+    id: theme-change-note
+    content:
+      title: ''
+      text: |
+
+  - block: markdown
+    id: hover-test
+    content:
+      title: '🎨 Hover 테스트 버튼(30번) 다른 버튼들에도 적용'
+      text: |
+        <div class="text-center my-8">
+          <button class="btn-test">(원래는 hover시 반투명,검정색 혹은 변화없음 -> red로 변경)</button>
+        </div>
+
+        <p class="text-center text-sm text-gray-500 dark:text-gray-400 mt-12">
+          &lt;버튼 혹은 link 등 기본 테마 색상 <span class="text-primary-600">검정과 하늘색으로 변경(32번)</span>&gt;
+        </p>
+
+        <p class="text-center text-sm text-gray-500 dark:text-gray-400 mt-12">
+          &lt;부가 정보와 프로젝트 자기개발 페이지들에<span class="text-primary-600"> 홈페이지에서 텍스트 양쪽 정렬이 최소 5군데 이상 적용되었는가 (후공개 14번) 적용</span>&gt;
+        </p>
+
+
+
+        <style>
+        .btn-test {
+          background-color: #2563eb;
+          color: white;
+          border: none;
+          padding: 16px 30px;
+          font-size: 1.1rem;
+          border-radius: 12px;
+          cursor: pointer;
+          transition: background-color 0.3s ease, transform 0.2s ease;
+        }
 ---
 
+<hr class="mt-12 mb-6 opacity-30">
+
+<p class="text-center text-sm text-gray-500 dark:text-gray-400">
+  &lt;버튼 혹은 link 등 기본 테마 색상 <span style="color:#38bdf8;">보라색 → 하늘색 변경</span>&gt;
+</p>
 <style>
 /* ===== 인라인 슬라이더 효과 ===== */
 .slider-section .wc-block-content {
@@ -404,15 +506,15 @@ sections:
 }
 
 .slider-section .wc-block-content > div {
-  flex: 0 0 100%;
-  transition: transform 1s ease;
-  animation: slide 12s infinite;
+flex: 0 0 100%;
+transition: transform 1s ease;
+animation: slide 12s infinite;
 }
 
 @keyframes slide {
-  0% { transform: translateX(0); }
-  33% { transform: translateX(-100%); }
-  66% { transform: translateX(-200%); }
-  100% { transform: translateX(0); }
+0% { transform: translateX(0); }
+33% { transform: translateX(-100%); }
+66% { transform: translateX(-200%); }
+100% { transform: translateX(0); }
 }
 </style>

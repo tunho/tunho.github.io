@@ -113,5 +113,3 @@ module:
       target: layouts
     - source: layouts/blox
       target: layouts/blox
-appearance:
-  mode: dark

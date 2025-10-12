@@ -210,7 +210,7 @@ sections:
         <div class="slider-container">
           <div class="slider">
             <div class="slide">
-              <img src="{{ "contact.png" | relURL }}" alt="Stock Investing">
+              <img src="stock.png" alt="Stock Investing">
               <div class="caption">
                 <h3>💹 Stock Investing</h3>
                 <p>Data-driven market analysis and value-oriented investing</p>

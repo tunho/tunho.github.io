@@ -1,20 +1,67 @@
-# Navigation Links
-#   To link a page section, specify the URL as a hash `/#` followed by the `id` of the section.
-#   The `weight` parameter defines the order that the links will appear in.
-
 main:
   - name: Home
     url: /#top
     weight: 10
-  - name: Features
+
+  - name: About
+    url: /#about
+    weight: 15
+
+  - name: Core Competencies
     url: /#features
     weight: 20
-  - name: Solutions
-    url: /#solutions
+
+  - name: Projects
+    url: /#project-title
     weight: 30
-  - name: Resources
+
+  - name: Experience
+    url: /#experience
+    weight: 35
+
+  - name: Interests
+    url: /#interest
+    weight: 39
+
+  - name: Project Details
+    identifier: project
     weight: 40
-    hasChildren: true
-  - parent: Resources
-    name: Blog
-    url: blog/
+
+  - parent: project
+    name: DICOM Viewer
+    pageRef: '/project/dicom'
+    weight: 41
+
+  - parent: project
+    name: Outfit Recommendation
+    pageRef: '/project/cody'
+    weight: 42
+
+  - parent: project
+    name: Pomodoro
+    pageRef: '/project/tomato'
+    weight: 43
+
+  - name: Additional Information
+    identifier: resources
+    weight: 50
+
+  - parent: resources
+    name: My Introduction
+    pageRef: '/blog/my-introduce'
+    weight: 52
+
+  - parent: resources
+    name: Jeonbuk National University
+    pageRef: '/blog/jb-uni'
+    weight: 53
+
+  - parent: resources
+    name: Research Lab Introduction
+    pageRef: '/blog/macs-lab'
+    weight: 51
+
+footer:
+  - name: 'JBNU Junho Lee'
+    pageRef: '/jbnu-junho-lee'
+    weight: 90

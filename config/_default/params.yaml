@@ -11,7 +11,7 @@ social:
 
 # Appearance
 appearance:
-  mode: light
+  mode: dark
   color: indigo
 
 # SEO
@@ -68,5 +68,4 @@ params:
 
 style:
   css: 'css/custom.css'
-appearance:
-  mode: dark
+

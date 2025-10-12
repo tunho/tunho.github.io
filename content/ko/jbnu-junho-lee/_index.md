@@ -3,6 +3,9 @@ type: landing
 title: '이준호'
 slug: 'jbnu-junho-lee'
 aliases: ['/ko/전북대-이준호/', '/ko/전북대학교-이준호/']
+aliases:
+  - "/ko/jbnu-junho-lee/"
+  - "/ko/jbnu-junho-lee/index.html"
 description: '전북대 컴퓨터인공지능학부 이준호(Junho Lee)의 포트폴리오.'
 keywords:
   [
@@ -23,6 +26,7 @@ sections:
       title: '이준호 (Junho Lee)'
       text: |
         <div class="text-justify">
+        
         안녕하세요. 전북대학교 **컴퓨터인공지능학부** 소속 학부생 **이준호(Junho Lee)** 입니다.  
         현재 **MacsLAB(의료 AI 연구실)**에서 의료영상 분석과 딥러닝 모델 개발을 연구하고 있으며,  
         **AI 모델의 정확도 향상**, **의료 데이터 전처리 자동화**, 그리고 **웹 기반 의료영상 뷰어 개발**에 집중하고 있습니다.

@@ -1,44 +1,43 @@
 ---
-# Display name
+# 표시 이름
 title: 이준호
 
-# Name pronunciation (optional)
+# 이름 발음 (선택 사항)
 name_pronunciation: Junho Lee
 
-# Full name (for SEO)
+# 전체 이름 (SEO용)
 first_name: Junho
 last_name: Lee
 
-# Pronouns (optional)
+# 대명사 (선택 사항)
 pronouns: he/him
 
-# Status emoji
+# 상태 이모지
 status:
   icon: 💻
 
-# Is this the primary user of the site?
+# 이 사이트의 주 사용자 여부
 superuser: true
 
-# Role/position/tagline
-role: Undergraduate Student · Medical AI Researcher
+# 역할 / 직함
+role: 전북대학교 컴퓨터인공지능학부 학부생 · 의료 AI 연구원
 
-# Organizations/Affiliations to show in About widget
+# 소속 (About 위젯에 표시됨)
 organizations:
-  - name: Jeonbuk National University (JBNU)
+  - name: 전북대학교 (Jeonbuk National University, JBNU)
     url: https://www.jbnu.ac.kr/
-  - name: MacsLAB · Medical AI Lab
+  - name: MacsLAB · Medical AI 연구실
     url: https://macslab.jbnu.ac.kr/
 
-# Short bio (displayed in user profile at end of posts)
-bio:
-  I'm an undergraduate student in Computer Science at Jeonbuk National University.
-  I’m passionate about AI-driven medical imaging systems and full-stack development integrating FastAPI and Vue.
+# 간단한 소개 (게시물 하단 프로필에 표시됨)
+bio: 전북대학교 컴퓨터인공지능학부 학부생으로,
+  AI 기반 의료 영상 시스템과 FastAPI · Vue 통합 풀스택 개발에 관심이 있습니다.
 
-# Social Networking
+# 소셜 네트워크
 profiles:
   - icon: at-symbol
     url: 'mailto:tunho.dev@gmail.com'
-    label: E-mail Me
+    label: 이메일 보내기
   - icon: brands/github
     url: https://github.com/tunho
   - icon: brands/x
@@ -49,18 +48,22 @@ profiles:
     url: https://www.instagram.com/
   - icon: academicons/cv
     url: uploads/resume.pdf
-    label: Download my resume
+    label: 이력서 다운로드
   - icon: rss
     url: ./post/index.xml
-    label: Subscribe to my blog via RSS feed
+    label: RSS 피드 구독
 
+# 이름 강조
 highlight_name: true
 
+# 개인 웹사이트
 website: 'https://tunho.github.io/'
 ---
 
-Junho Lee is an undergraduate student in the Department of Computer Artificial Intelligence at **Jeonbuk National University (JBNU)**,  
-currently conducting research at **MacsLAB (Medical AI Laboratory)**.
+이준호는 **전북대학교(Jeonbuk National University, JBNU)**  
+**컴퓨터인공지능학부**에 재학 중이며, 현재 **MacsLAB(의료 AI 연구실)**에서 연구를 진행하고 있습니다.
 
-His work focuses on **AI-based medical imaging systems**, **DICOM analysis**, and **full-stack application development** using  
-**FastAPI (Python)** and **Vue 3 + TypeScript**. He aims to build intelligent, user-friendly diagnostic platforms integrating deep learning and clinical usability.
+그의 연구는 **AI 기반 의료 영상 시스템**, **DICOM 분석**,  
+그리고 **FastAPI(Python)**와 **Vue 3 + TypeScript**를 활용한 **풀스택 애플리케이션 개발**에 중점을 두고 있습니다.
+
+그는 딥러닝과 임상적 사용성을 결합한 **지능적이고 사용자 친화적인 진단 플랫폼**을 구축하는 것을 목표로 하고 있습니다.

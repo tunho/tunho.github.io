@@ -1,6 +1,6 @@
 ---
 # Display name
-title: 이준호
+title: Junho Lee
 
 # Name pronunciation (optional)
 name_pronunciation: Junho Lee

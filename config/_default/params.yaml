@@ -67,3 +67,5 @@ params:
 
 style:
   css: 'css/custom.css'
+appearance:
+  mode: dark

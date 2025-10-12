@@ -210,7 +210,7 @@ sections:
         <div class="slider-container">
           <div class="slider">
             <div class="slide">
-              <img src="stock.png" alt="Stock Investing">
+              <img src="{{ "contact.png" | relURL }}" alt="Stock Investing">
               <div class="caption">
                 <h3>💹 Stock Investing</h3>
                 <p>Data-driven market analysis and value-oriented investing</p>
@@ -333,7 +333,7 @@ sections:
       view: card
       count: 3
       filters:
-        folder: 'ko/selfdev' # ✅ plural
+        folder: 'en/selfdev' # ✅ plural
     design:
       css_class: 'bg-gray-100 dark:bg-gray-900'
 

@@ -19,10 +19,10 @@ marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: 'Jeonbuk National University (JBNU) Junho Lee · 전북대 이준호'
-    description: '전북대학교 컴퓨터인공지능학부 이준호(준호 이) 개인 포트폴리오 · JBNU · 전북대'
+    org_name: 'Jeonbuk National University (JBNU) · Junho Lee (이준호)'
+    description: '전북대학교 컴퓨터인공지능학부 소속 이준호(Junho Lee)의 포트폴리오입니다. 의료 AI 연구(Medical AI)와 FastAPI·Vue 기반 풀스택 개발 프로젝트를 소개합니다.'
     twitter: 'GetResearchDev'
-    image: 'og-default.jpg'
+    image: 'icon.png'
   analytics:
     google_analytics: ''
     baidu_tongji: ''

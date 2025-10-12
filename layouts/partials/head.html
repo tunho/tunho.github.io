@@ -1,0 +1,60 @@
+<!-- ✅ Custom SEO Head for Hugo Blox -->
+{{- $page := .wcPage | default . -}}
+{{- $site := site -}}
+
+<title>{{ if $page.Title }}{{ $page.Title }} | {{ end }}{{ $site.Title }}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- 🔍 기본 메타 -->
+<meta name="description" content="{{ with $page.Params.description }}{{ . }}{{ else }}{{ $site.Params.marketing.seo.description }}{{ end }}">
+<meta name="keywords" content="{{ delimit (or $page.Params.keywords (slice "전북대" "이준호" "JBNU" "Medical AI" "Portfolio")) ", " }}">
+<meta name="author" content="Junho Lee, JBNU">
+<link rel="icon" href="{{ $site.Params.marketing.favicon | absURL }}" type="image/x-icon">
+
+<!-- 🌐 Open Graph (카카오, 네이버, 페북, 슬랙 등) -->
+<meta property="og:type" content="{{ $site.Params.marketing.seo.site_type }}">
+<meta property="og:site_name" content="{{ $site.Params.marketing.seo.org_name }}">
+<meta property="og:title" content="{{ if $page.Title }}{{ $page.Title }} | {{ end }}{{ $site.Title }}">
+<meta property="og:description" content="{{ $site.Params.marketing.seo.description }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ $site.Params.marketing.seo.image | absURL }}">
+
+<!-- 🐦 Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ if $page.Title }}{{ $page.Title }} | {{ end }}{{ $site.Title }}">
+<meta name="twitter:description" content="{{ $site.Params.marketing.seo.description }}">
+<meta name="twitter:image" content="{{ $site.Params.marketing.seo.image | absURL }}">
+<meta name="twitter:site" content="@{{ $site.Params.marketing.seo.twitter }}">
+
+<!-- 🧭 다국어 hreflang (한국어 / 영어 SEO 동시 인덱싱) -->
+<link rel="alternate" hreflang="ko" href="{{ .Permalink | relLangURL }}">
+{{- with site.GetPage "en" -}}
+<link rel="alternate" hreflang="en" href="{{ .Permalink | relLangURL }}">
+{{- end -}}
+
+<!-- 📦 구조화 데이터 (Person Schema) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Junho Lee",
+  "alternateName": "이준호",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "Jeonbuk National University (JBNU)"
+  },
+  "jobTitle": "Undergraduate Student · Medical AI Researcher",
+  "url": "https://tunho.github.io/",
+  "sameAs": [
+    "https://github.com/tunho",
+    "https://linkedin.com/in/준호-이-05a711310",
+    "https://x.com/BuildLore"
+  ],
+  "image": "{{ $site.Params.marketing.seo.image | absURL }}"
+}
+</script>
+
+<!-- 🧩 스타일/스크립트 -->
+{{- partial "head/css.html" . -}}
+{{- partial "head/js.html" . -}}

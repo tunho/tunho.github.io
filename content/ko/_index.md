@@ -400,7 +400,7 @@ sections:
       card:
         css_class: 'bg-primary-300'
         css_style: ''
-- block: markdown
+  - block: markdown
     id: fab
     content:
       title: ''

@@ -414,7 +414,7 @@ sections:
       title: ''
       text: |
         <!-- ✅ Floating Action Buttons (6개 이상) -->
-         <div>
+         <div class="fab-container">
           <a href="mailto:tjens2322@gmail.com" class="fab" title="E-mail">📧</a>
           <a href="https://github.com/tunho" class="fab" title="GitHub">💻</a>
           <a href="#" class="fab" title="X"

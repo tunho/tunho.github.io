@@ -405,47 +405,47 @@ sections:
     content:
       title: ''
       text: |
-        <!-- ✅ Floating Action Buttons (6개 이상) -->
-        <div class="fab-container">
-          <a href="mailto:tjens2322@gmail.com" class="fab" title="E-mail">📧</a>
-          <a href="https://github.com/tunho" class="fab" title="GitHub">💻</a>
-          <a href="#" class="fab" title="X"
-             onclick="alert('X는 아직 준비 중입니다... (계정 없음)'); return false;">𝕏</a>
-          <a href="https://linkedin.com/in/준호-이-05a711310" class="fab" title="LinkedIn">💼</a>
-          <a href="#" class="fab" title="Instagram"
-             onclick="alert('Instagram은 아직 준비 중입니다... (계정 없음)'); return false;">📷</a>
-          <a href="resume.pdf" class="fab" title="Resume">📄</a>
-        </div>
+          <!-- ✅ Floating Action Buttons (6개 이상) -->
+          <div class="fab-container">
+            <a href="mailto:tjens2322@gmail.com" class="fab" title="E-mail">📧</a>
+            <a href="https://github.com/tunho" class="fab" title="GitHub">💻</a>
+            <a href="#" class="fab" title="X"
+               onclick="alert('X는 아직 준비 중입니다... (계정 없음)'); return false;">𝕏</a>
+            <a href="https://linkedin.com/in/준호-이-05a711310" class="fab" title="LinkedIn">💼</a>
+            <a href="#" class="fab" title="Instagram"
+               onclick="alert('Instagram은 아직 준비 중입니다... (계정 없음)'); return false;">📷</a>
+            <a href="resume.pdf" class="fab" title="Resume">📄</a>
+          </div>
 
-        <style>
-        .fab-container {
-          position: fixed;
-          bottom: 24px;
-          right: 24px;
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-          z-index: 9999;
-        }
-        .fab {
-          width: 52px;
-          height: 52px;
-          background: #2563eb;
-          color: white;
-          font-size: 24px;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-          transition: transform 0.2s ease, background 0.3s;
-          text-decoration: none;
-        }
-        .fab:hover {
-          transform: translateY(-4px);
-          background: #1e40af;
-        }
-        </style>
+          <style>
+          .fab-container {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 9999;
+          }
+          .fab {
+            width: 52px;
+            height: 52px;
+            background: #2563eb;
+            color: white;
+            font-size: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.2s ease, background 0.3s;
+            text-decoration: none;
+          }
+          .fab:hover {
+            transform: translateY(-4px);
+            background: #1e40af;
+          }
+          </style>
 
   - block: markdown
     id: gallery

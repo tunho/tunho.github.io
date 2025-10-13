@@ -425,8 +425,8 @@ sections:
 
         </div>
 
-            <style>
-            .fab-container {
+        <style>
+        .fab-container {
               position: fixed;
               bottom: 24px;
               right: 24px;
@@ -435,7 +435,7 @@ sections:
               gap: 10px;
               z-index: 9999;
             }
-            .fab {
+        .fab {
               width: 52px;
               height: 52px;
               background: #2563eb;
@@ -453,7 +453,7 @@ sections:
               transform: translateY(-4px);
               background: #1e40af;
             }
-            </style>
+        </style>
 
   - block: markdown
     id: gallery

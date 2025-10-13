@@ -140,7 +140,7 @@ sections:
           image: dicom.jpg
           button:
             text: Learn more
-            url: 'en/project/dicom'
+            url: '/en/project/dicom'
         - title: Wardrobe Organizer & Outfit Recommendation Web App
           text: ''
           feature_icon: check
@@ -151,7 +151,7 @@ sections:
           image: cody.png
           button:
             text: Learn more
-            url: 'en/project/cody'
+            url: '/en/project/cody'
         - title: Pomodoro Study Timer App
           text: ''
           feature_icon: check
@@ -162,7 +162,7 @@ sections:
           image: tomato.png
           button:
             text: Learn more
-            url: 'en/project/tomato'
+            url: '/en/project/tomato'
 
     design:
       # Section background color (CSS class)
@@ -425,35 +425,35 @@ sections:
 
         </div>
 
-        <style>
-        .fab-container {
-          position: fixed;
-          bottom: 24px;
-          right: 24px;
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-          z-index: 9999;
-        }
-        .fab {
-          width: 52px;
-          height: 52px;
-          background: #2563eb;
-          color: white;
-          font-size: 24px;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-          transition: transform 0.2s ease, background 0.3s;
-          text-decoration: none;
-        }
-        .fab:hover {
-          transform: translateY(-4px);
-          background: #1e40af;
-        }
-        </style>
+            <style>
+            .fab-container {
+              position: fixed;
+              bottom: 24px;
+              right: 24px;
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              z-index: 9999;
+            }
+            .fab {
+              width: 52px;
+              height: 52px;
+              background: #2563eb;
+              color: white;
+              font-size: 24px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+              transition: transform 0.2s ease, background 0.3s;
+              text-decoration: none;
+            }
+            .fab:hover {
+              transform: translateY(-4px);
+              background: #1e40af;
+            }
+            </style>
 
   - block: markdown
     id: gallery

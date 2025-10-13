@@ -414,6 +414,7 @@ sections:
       title: ''
       text: |
         <!-- ✅ Floating Action Buttons (6개 이상) -->
+         <div>
           <a href="mailto:tjens2322@gmail.com" class="fab" title="E-mail">📧</a>
           <a href="https://github.com/tunho" class="fab" title="GitHub">💻</a>
           <a href="#" class="fab" title="X"
@@ -423,7 +424,7 @@ sections:
              onclick="alert('Instagram is under preparation... (No account yet)'); return false;">📷</a>
           <a href="resume.pdf" class="fab" title="Resume">📄</a>
 
-        </div>
+         </div>
 
         <style>
         .fab-container {

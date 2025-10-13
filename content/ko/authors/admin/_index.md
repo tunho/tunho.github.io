@@ -40,18 +40,11 @@ profiles:
     label: 이메일 보내기
   - icon: brands/github
     url: https://github.com/tunho
-  - icon: brands/x
-    url: https://x.com/BuildLore
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/junho-lee-ai
-  - icon: brands/instagram
-    url: https://www.instagram.com/
   - icon: academicons/cv
-    url: uploads/resume.pdf
+    url: resume.pdf
     label: 이력서 다운로드
-  - icon: rss
-    url: ./post/index.xml
-    label: RSS 피드 구독
 
 # 이름 강조
 highlight_name: true

@@ -24,7 +24,7 @@ sections:
       title: '<span style="white-space: nowrap;">Hello, I’m Junho Lee.</span>'
       primary_action:
         text: 'Learn more'
-        url: /blog/my-introduce
+        url: en/blog/my-introduce
         icon: user
       secondary_action:
         text: 'View Resume'
@@ -85,7 +85,7 @@ sections:
           # Link the button to your GitHub profile or any desired page
           button:
             text: Learn more
-            url: '/blog/my-introduce'
+            url: 'en/blog/my-introduce'
 
     design:
       # You can add section background color and other design options here.
@@ -140,7 +140,7 @@ sections:
           image: dicom.jpg
           button:
             text: Learn more
-            url: /project/dicom
+            url: en/project/dicom
         - title: Wardrobe Organizer & Outfit Recommendation Web App
           text: ''
           feature_icon: check
@@ -151,7 +151,7 @@ sections:
           image: cody.png
           button:
             text: Learn more
-            url: /project/cody
+            url: en/project/cody
         - title: Pomodoro Study Timer App
           text: ''
           feature_icon: check
@@ -162,7 +162,7 @@ sections:
           image: tomato.png
           button:
             text: Learn more
-            url: /project/tomato
+            url: en/project/tomato
 
     design:
       # Section background color (CSS class)

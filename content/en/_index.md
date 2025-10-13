@@ -24,7 +24,7 @@ sections:
       title: '<span style="white-space: nowrap;">Hello, I’m Junho Lee.</span>'
       primary_action:
         text: 'Learn more'
-        url: en/blog/my-introduce
+        url: /blog/my-introduce
         icon: user
       secondary_action:
         text: 'View Resume'
@@ -140,7 +140,7 @@ sections:
           image: dicom.jpg
           button:
             text: Learn more
-            url: en/project/dicom
+            url: /project/dicom
         - title: Wardrobe Organizer & Outfit Recommendation Web App
           text: ''
           feature_icon: check
@@ -151,7 +151,7 @@ sections:
           image: cody.png
           button:
             text: Learn more
-            url: en/project/cody
+            url: /project/cody
         - title: Pomodoro Study Timer App
           text: ''
           feature_icon: check
@@ -162,7 +162,7 @@ sections:
           image: tomato.png
           button:
             text: Learn more
-            url: en/project/tomato
+            url: /project/tomato
 
     design:
       # Section background color (CSS class)
@@ -333,7 +333,7 @@ sections:
       view: card
       count: 3
       filters:
-        folder: 'en/selfdev' # ✅ plural
+        folder: '/selfdev' # ✅ plural
     design:
       css_class: 'bg-gray-100 dark:bg-gray-900'
 

@@ -414,15 +414,15 @@ sections:
       title: ''
       text: |
         <!-- ✅ Floating Action Buttons (6개 이상) -->
-        <div class="fab-container">
           <a href="mailto:tjens2322@gmail.com" class="fab" title="E-mail">📧</a>
           <a href="https://github.com/tunho" class="fab" title="GitHub">💻</a>
           <a href="#" class="fab" title="X"
-             onclick="alert('X는 아직 준비 중입니다... (계정 없음)'); return false;">𝕏</a>
+             onclick="alert('X is under preparation... (No account yet)'); return false;">𝕏</a>
           <a href="https://linkedin.com/in/준호-이-05a711310" class="fab" title="LinkedIn">💼</a>
           <a href="#" class="fab" title="Instagram"
-             onclick="alert('Instagram은 아직 준비 중입니다... (계정 없음)'); return false;">📷</a>
+             onclick="alert('Instagram is under preparation... (No account yet)'); return false;">📷</a>
           <a href="resume.pdf" class="fab" title="Resume">📄</a>
+
         </div>
 
         <style>

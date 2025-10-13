@@ -41,18 +41,11 @@ profiles:
     label: E-mail Me
   - icon: brands/github
     url: https://github.com/tunho
-  - icon: brands/x
-    url: https://x.com/BuildLore
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/junho-lee-ai
-  - icon: brands/instagram
-    url: https://www.instagram.com/
   - icon: academicons/cv
     url: uploads/resume.pdf
     label: Download my resume
-  - icon: rss
-    url: ./post/index.xml
-    label: Subscribe to my blog via RSS feed
 
 highlight_name: true
 

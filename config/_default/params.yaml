@@ -23,6 +23,7 @@ marketing:
     description: '전북대학교 컴퓨터인공지능학부 소속 이준호의 포트폴리오입니다. 의료 AI 연구(Medical AI)와 FastAPI·Vue 기반 풀스택 개발 프로젝트를 소개합니다.'
     twitter: 'GetResearchDev'
     image: 'icon.png'
+  favicon: "favicon.ico" 
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -32,7 +33,7 @@ marketing:
   verification:
     google: ''
     baidu: ''
-  favicon: "favicon.ico"  
+   
 
 # Site header
 header:
@@ -53,7 +54,7 @@ header:
 # Site footer
 footer:
   copyright:
-    notice: '© {year} My Company'
+    notice: '© {year} Junho Lee'
 
 # Localization
 locale:

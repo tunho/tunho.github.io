@@ -36,12 +36,12 @@ bio: 전북대학교 컴퓨터인공지능학부 학부생으로,
 # 소셜 네트워크
 profiles:
   - icon: at-symbol
-    url: 'mailto:tunho.dev@gmail.com'
+    url: 'mailto:tjens2322@gmail.com'
     label: 이메일 보내기
   - icon: brands/github
     url: https://github.com/tunho
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/junho-lee-ai
+    url: https://linkedin.com/in/준호-이-05a711310
   - icon: academicons/cv
     url: resume.pdf
     label: 이력서 다운로드

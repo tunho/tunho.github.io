@@ -1,6 +1,6 @@
 ---
 title: Privacy
-date: 2023-12-01
+date: 2025-10-14
 share: false
 ---
 

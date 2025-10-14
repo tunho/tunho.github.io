@@ -78,6 +78,7 @@ sections:
             - 'Email: tjens2322@naver.com'
             - 'Instagram: jjjjjjj_111'
             - 'Age: 23 (born in 2003)'
+            - 'Introduction Summary: I am an undergraduate student in the Department of Computer and Artificial Intelligence at Chonbuk National University. I am interested in AI-based medical imaging systems and integrated full-stack development.'
 
           # Filename of your photo in the `assets/media/` folder
           image: my-image.jpg

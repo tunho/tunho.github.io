@@ -37,22 +37,15 @@ bio:
 # Social Networking
 profiles:
   - icon: at-symbol
-    url: 'mailto:tunho.dev@gmail.com'
-    label: E-mail Me
+    url: 'mailto:tjens2322@gmail.com'
+    label: email
   - icon: brands/github
     url: https://github.com/tunho
-  - icon: brands/x
-    url: https://x.com/BuildLore
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/junho-lee-ai
-  - icon: brands/instagram
-    url: https://www.instagram.com/
+    url: https://linkedin.com/in/준호-이-05a711310
   - icon: academicons/cv
-    url: uploads/resume.pdf
-    label: Download my resume
-  - icon: rss
-    url: ./post/index.xml
-    label: Subscribe to my blog via RSS feed
+    url: resume.pdf
+    label: resume
 
 highlight_name: true
 

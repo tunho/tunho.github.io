@@ -24,7 +24,7 @@ sections:
       title: '<span style="white-space: nowrap;">Hello, I’m Junho Lee.</span>'
       primary_action:
         text: 'Learn more'
-        url: /blog/my-introduce
+        url: '/en/blog/my-introduce'
         icon: user
       secondary_action:
         text: 'View Resume'
@@ -85,7 +85,7 @@ sections:
           # Link the button to your GitHub profile or any desired page
           button:
             text: Learn more
-            url: '/blog/my-introduce'
+            url: '/en/blog/my-introduce'
 
     design:
       # You can add section background color and other design options here.
@@ -140,7 +140,7 @@ sections:
           image: dicom.jpg
           button:
             text: Learn more
-            url: /project/dicom
+            url: '/en/project/dicom'
         - title: Wardrobe Organizer & Outfit Recommendation Web App
           text: ''
           feature_icon: check
@@ -151,7 +151,7 @@ sections:
           image: cody.png
           button:
             text: Learn more
-            url: /project/cody
+            url: '/en/project/cody'
         - title: Pomodoro Study Timer App
           text: ''
           feature_icon: check
@@ -162,7 +162,7 @@ sections:
           image: tomato.png
           button:
             text: Learn more
-            url: /project/tomato
+            url: '/en/project/tomato'
 
     design:
       # Section background color (CSS class)
@@ -333,7 +333,7 @@ sections:
       view: card
       count: 3
       filters:
-        folder: 'en/selfdev' # ✅ plural
+        folder: '/en/selfdev' # ✅ plural
     design:
       css_class: 'bg-gray-100 dark:bg-gray-900'
 
@@ -413,44 +413,47 @@ sections:
     content:
       title: ''
       text: |
-        <!-- ✅ Floating Action Buttons (6 or more) -->
-        <div class="fab-container">
+        <!-- ✅ Floating Action Buttons (6개 이상) -->
+         <div class="fab-container">
           <a href="mailto:tjens2322@gmail.com" class="fab" title="E-mail">📧</a>
           <a href="https://github.com/tunho" class="fab" title="GitHub">💻</a>
-          <a href="https://x.com/BuildLore" class="fab" title="X">𝕏</a>
+          <a href="#" class="fab" title="X"
+             onclick="alert('X is under preparation... (No account yet)'); return false;">𝕏</a>
           <a href="https://linkedin.com/in/준호-이-05a711310" class="fab" title="LinkedIn">💼</a>
-          <a href="https://www.instagram.com/" class="fab" title="Instagram">📷</a>
+          <a href="#" class="fab" title="Instagram"
+             onclick="alert('Instagram is under preparation... (No account yet)'); return false;">📷</a>
           <a href="resume.pdf" class="fab" title="Resume">📄</a>
-        </div>
+
+         </div>
 
         <style>
         .fab-container {
-          position: fixed;
-          bottom: 24px;
-          right: 24px;
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-          z-index: 9999;
-        }
+              position: fixed;
+              bottom: 24px;
+              right: 24px;
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              z-index: 9999;
+            }
         .fab {
-          width: 52px;
-          height: 52px;
-          background: #2563eb;
-          color: white;
-          font-size: 24px;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-          transition: transform 0.2s ease, background 0.3s;
-          text-decoration: none;
-        }
-        .fab:hover {
-          transform: translateY(-4px);
-          background: #1e40af;
-        }
+              width: 52px;
+              height: 52px;
+              background: #2563eb;
+              color: white;
+              font-size: 24px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+              transition: transform 0.2s ease, background 0.3s;
+              text-decoration: none;
+            }
+            .fab:hover {
+              transform: translateY(-4px);
+              background: #1e40af;
+            }
         </style>
 
   - block: markdown

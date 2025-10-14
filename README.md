@@ -4,7 +4,6 @@
   Undergraduate @ Jeonbuk National University (CS) · Member @ JBNU Medical AI Lab (MacsLAB)
   <br/>
   <a href="https://tunho.github.io">Portfolio</a> •
-  <a href="dlwnsgh2322@jbnu.ac.kr">Email</a> •
   <a href="https://github.com/tunho">GitHub</a>
 </p>
 
@@ -41,7 +40,7 @@ Full-stack 의료영상 웹앱. DICOM 파싱·표시, **자/화살표 측정**, 
 - Back: FastAPI(이미지·메타 추출, 모델 추론 라우트), CORS/정적 파일  
 - Deploy: AWS EC2(5000 Front, 8000 Proxy→Backend), pm2, Nginx/Express 프록시  
 - AI: PyTorch 모델(AFF/골절 등) inference 연동  
-**Links**: [Demo/Docs](https://tunho.github.io) · [Repo(front)](https://github.com/tunho/REPO_FRONT) · [Repo(server)](https://github.com/tunho/REPO_SERVER)
+
 
 ---
 
@@ -49,7 +48,7 @@ Full-stack 의료영상 웹앱. DICOM 파싱·표시, **자/화살표 측정**, 
 미니맥스 + 알파베타 가지치기 + **우선순위 기반 후보수 필터링**.  
 - 방어 중심 평가(상대 3/4 즉시 차단, 열림(open) 정도 가중치)  
 - 대각선/가로/세로 패턴 스코어링 정교화, 즉시 승리/방어 수 최우선  
-**Links**: [Repo](https://github.com/tunho/REPO_OMOK)
+
 
 ---
 
@@ -57,7 +56,7 @@ Full-stack 의료영상 웹앱. DICOM 파싱·표시, **자/화살표 측정**, 
 교내용 코디 추천·옷장 관리/커뮤니티 미니앱.  
 - Pinia 스토어(게시글·댓글·옷장·즐겨찾기), 세션스토리지 로컬 퍼시스턴스  
 - 라우팅 가드, 이미지 업로드/프리뷰, 기본 추천 로직, 날씨 박스 UI  
-**Links**: [Repo](https://github.com/tunho/REPO_WARDROBE)
+
 
 ---
 

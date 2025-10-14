@@ -113,3 +113,8 @@ module:
       target: layouts
     - source: layouts/blox
       target: layouts/blox
+
+
+features:
+  social:
+    enable: false

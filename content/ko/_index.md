@@ -1,5 +1,5 @@
 ---
-date: 2023-10-24
+date: 2025-10-18
 type: landing
 title: '전북대 이준호 – 포트폴리오(컴퓨터인공지능학부, MacsLAB)'
 slug: 'jbnu-junho-lee' # URL: /ko/jbnu-junho-lee/

@@ -331,7 +331,7 @@ sections:
     design:
       css_class: 'bg-gray-100 dark:bg-gray-900'
 
-- block: markdown
+  - block: markdown
     id: values
     content:
       title: '나의 가치관'

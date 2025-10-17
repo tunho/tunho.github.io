@@ -50,6 +50,10 @@ jobs:
             pnpm install || npm install
           fi
 
+      - name: Clear Hugo cache (fix nil Fingerprint)
+        run: |
+          rm -rf _vendor resources/_gen .hugo_cache
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:

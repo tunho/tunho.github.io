@@ -41,3 +41,15 @@ section.flex.flex-row.flex-wrap.justify-center.pt-4.text-xl {
   display: none !important;
 }
 
+.powered-by {
+  display: none !important;
+}
+
+.text-center a[href='/privacy/'],
+.text-center a[href='/terms/'],
+.text-center a[href='/privacy/'] + span,
+.text-center a[href='/terms/'] + span,
+.text-center a[href='/privacy/'] + *,
+.text-center a[href='/terms/'] + * {
+  display: none !important;
+}

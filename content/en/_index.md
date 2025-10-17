@@ -339,6 +339,47 @@ sections:
       css_class: 'bg-gray-100 dark:bg-gray-900'
 
   - block: markdown
+    id: values
+    content:
+      title: 'My Values'
+      text: |
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+          
+          <!-- Card 1: Sincerity -->
+          <a href="beliefs/sincerity" class="block bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 text-center transition transform hover:-translate-y-2 hover:shadow-lg">
+            <div class="text-4xl mb-3">💖</div>
+            <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Sincerity</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+              I put my heart into everything I do.  
+              I value the process more than the result and take every project seriously, no matter how small.
+            </p>
+          </a>
+
+          <!-- Card 2: Empathy -->
+          <a href="beliefs/empathy" class="block bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 text-center transition transform hover:-translate-y-2 hover:shadow-lg">
+            <div class="text-4xl mb-3">🤝</div>
+            <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Empathy</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+              I value people before technology.  
+              I believe great services are born from understanding and consideration.
+            </p>
+          </a>
+
+          <!-- Card 3: Growth -->
+          <a href="beliefs/growth" class="block bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 text-center transition transform hover:-translate-y-2 hover:shadow-lg">
+            <div class="text-4xl mb-3">🌱</div>
+            <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Growth</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+              I am not afraid of failure.  
+              I keep learning and improving to become a better version of myself every day.
+            </p>
+          </a>
+
+        </div>
+    design:
+      css_class: 'bg-gray-100 dark:bg-gray-900 py-12'
+
+  - block: markdown
     id: overlay-demo
     content:
       text: |

@@ -331,6 +331,26 @@ sections:
     design:
       css_class: 'bg-gray-100 dark:bg-gray-900'
 
+  - block: collection
+    id: values
+    content:
+      title: '나의 가치관'
+      text: '기술보다 중요한 것은 사람을 이해하고 함께 성장하는 마음입니다. 💭'
+      view: card
+      columns: 3
+      items:
+        - title: '진정성 (Sincerity)'
+          icon: heart
+          text: '작은 프로젝트라도 진심을 담아 임합니다. 결과보다 과정에서의 성실함이 더 큰 가치를 만든다고 믿습니다.'
+        - title: '공감 (Empathy)'
+          icon: smile
+          text: '사용자, 팀원, 그리고 연구 데이터를 대할 때 항상 사람의 관점에서 생각합니다. 기술은 결국 사람을 위한 도구이니까요.'
+        - title: '성장 (Growth)'
+          icon: trending-up
+          text: '실패를 두려워하지 않고, 경험을 통해 배우며 꾸준히 더 나은 사람이자 개발자가 되려 합니다.'
+    design:
+      css_class: 'bg-gray-100 dark:bg-gray-900'
+
   - block: markdown
     id: overlay-demo
     content:
@@ -406,47 +426,47 @@ sections:
     content:
       title: ''
       text: |
-          <!-- ✅ Floating Action Buttons (6개 이상) -->
-          <div class="fab-container">
-            <a href="mailto:tjens2322@gmail.com" class="fab" title="E-mail">📧</a>
-            <a href="https://github.com/tunho" class="fab" title="GitHub">💻</a>
-            <a href="#" class="fab" title="X"
-               onclick="alert('X는 아직 준비 중입니다... (계정 없음)'); return false;">𝕏</a>
-            <a href="https://linkedin.com/in/준호-이-05a711310" class="fab" title="LinkedIn">💼</a>
-            <a href="#" class="fab" title="Instagram"
-               onclick="alert('Instagram은 아직 준비 중입니다... (계정 없음)'); return false;">📷</a>
-            <a href="resume.pdf" class="fab" title="Resume">📄</a>
-          </div>
+        <!-- ✅ Floating Action Buttons (6개 이상) -->
+        <div class="fab-container">
+          <a href="mailto:tjens2322@gmail.com" class="fab" title="E-mail">📧</a>
+          <a href="https://github.com/tunho" class="fab" title="GitHub">💻</a>
+          <a href="#" class="fab" title="X"
+             onclick="alert('X는 아직 준비 중입니다... (계정 없음)'); return false;">𝕏</a>
+          <a href="https://linkedin.com/in/준호-이-05a711310" class="fab" title="LinkedIn">💼</a>
+          <a href="#" class="fab" title="Instagram"
+             onclick="alert('Instagram은 아직 준비 중입니다... (계정 없음)'); return false;">📷</a>
+          <a href="resume.pdf" class="fab" title="Resume">📄</a>
+        </div>
 
-          <style>
-          .fab-container {
-            position: fixed;
-            bottom: 24px;
-            right: 24px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            z-index: 9999;
-          }
-          .fab {
-            width: 52px;
-            height: 52px;
-            background: #2563eb;
-            color: white;
-            font-size: 24px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            transition: transform 0.2s ease, background 0.3s;
-            text-decoration: none;
-          }
-          .fab:hover {
-            transform: translateY(-4px);
-            background: #1e40af;
-          }
-          </style>
+        <style>
+        .fab-container {
+          position: fixed;
+          bottom: 24px;
+          right: 24px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          z-index: 9999;
+        }
+        .fab {
+          width: 52px;
+          height: 52px;
+          background: #2563eb;
+          color: white;
+          font-size: 24px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+          transition: transform 0.2s ease, background 0.3s;
+          text-decoration: none;
+        }
+        .fab:hover {
+          transform: translateY(-4px);
+          background: #1e40af;
+        }
+        </style>
 
   - block: markdown
     id: gallery

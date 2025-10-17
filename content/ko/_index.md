@@ -331,25 +331,43 @@ sections:
     design:
       css_class: 'bg-gray-100 dark:bg-gray-900'
 
-  - block: collection
+  - block: markdown
     id: values
     content:
       title: '나의 가치관'
-      text: '기술보다 중요한 것은 사람을 이해하고 함께 성장하는 마음입니다. 💭'
-      view: card
-      columns: 3
-      items:
-        - title: '진정성 (Sincerity)'
-          icon: heart
-          text: '작은 프로젝트라도 진심을 담아 임합니다. 결과보다 과정에서의 성실함이 더 큰 가치를 만든다고 믿습니다.'
-        - title: '공감 (Empathy)'
-          icon: smile
-          text: '사용자, 팀원, 그리고 연구 데이터를 대할 때 항상 사람의 관점에서 생각합니다. 기술은 결국 사람을 위한 도구이니까요.'
-        - title: '성장 (Growth)'
-          icon: trending-up
-          text: '실패를 두려워하지 않고, 경험을 통해 배우며 꾸준히 더 나은 사람이자 개발자가 되려 합니다.'
+      text: |
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+          <!-- 카드 1 -->
+          <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 text-center transition-transform hover:-translate-y-2">
+            <div class="text-4xl mb-3">💖</div>
+            <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">진정성 (Sincerity)</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+              모든 일에 진심을 담습니다. 결과보다 과정을 소중히 여기며,
+              작은 프로젝트라도 책임감을 가지고 꾸준히 임합니다.
+            </p>
+          </div>
+
+          <!-- 카드 2 -->
+          <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 text-center transition-transform hover:-translate-y-2">
+            <div class="text-4xl mb-3">🤝</div>
+            <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">공감 (Empathy)</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+              기술보다 사람을 먼저 생각합니다.  
+              이해와 배려에서 좋은 서비스가 만들어진다고 믿습니다.
+            </p>
+          </div>
+
+          <!-- 카드 3 -->
+          <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 text-center transition-transform hover:-translate-y-2">
+            <div class="text-4xl mb-3">🌱</div>
+            <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">성장 (Growth)</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+              실패를 두려워하지 않고, 오늘보다 더 나은 내가 되기 위해 꾸준히 배우고 나아갑니다.
+            </p>
+          </div>
+        </div>
     design:
-      css_class: 'bg-gray-100 dark:bg-gray-900'
+      css_class: 'bg-gray-100 dark:bg-gray-900 py-12'
 
   - block: markdown
     id: overlay-demo

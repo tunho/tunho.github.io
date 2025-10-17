@@ -1,7 +1,6 @@
 ---
 title: '공감 (Empathy)'
-date: 2025-10-18
-type: page
+date: 2025-10-01
 summary: '사람을 먼저 이해하고, 기술보다 마음으로 소통하기'
 ---
 

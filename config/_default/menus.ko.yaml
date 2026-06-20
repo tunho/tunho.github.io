@@ -28,18 +28,18 @@ main:
     weight: 40
 
   - parent: project
-    name: dicom뷰어
-    pageRef: '/project/dicom'
+    name: AFF 진단 시스템
+    url: 'https://github.com/tunho/aff-diagnosis-system'
     weight: 41
 
   - parent: project
-    name: 옷 코디 추천
-    pageRef: '/project/cody'
+    name: 무릎각 잔차 보정
+    url: 'https://github.com/tunho/squat-knee-residual-correction'
     weight: 42
 
   - parent: project
-    name: 뽀모도로
-    pageRef: '/project/tomato'
+    name: 갑상선 영양제 CDSS
+    url: 'https://github.com/tunho/thyroid-supplement-cdss'
     weight: 43
 
   - name: 부가 정보

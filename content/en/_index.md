@@ -129,7 +129,7 @@ sections:
       title: ''
       items:
         - title: Squat OOD Safety Evaluation
-          text: 'A safety-evaluation study for single-RGB-camera squat analysis that estimates predictive uncertainty with MC-Dropout (BCNN1D) to reject out-of-distribution (OOD) motions. I led this as **first author and presenter**; accepted at KIISE 2026. [📄 View the KCC 2026 poster](/ood-poster-kcc2026.pdf)'
+          text: 'A safety-evaluation study for single-RGB-camera squat analysis that estimates predictive uncertainty with MC-Dropout (BCNN1D) to reject out-of-distribution (OOD) motions. I led this as **first author and presenter**; accepted at KIISE 2026. [📄 View the KIISE 2026 poster](/ood-poster-kiise2026.pdf)'
           feature_icon: check
           features:
             - '🏅 First author · Accepted at KIISE 2026 (Advisor: Prof. Kyungsu Lee)'
@@ -144,17 +144,18 @@ sections:
           text: 'A full-stack project that turns a deep-learning model for detecting Atypical Femoral Fractures (AFF) into a web-based diagnostic system usable by clinicians. I owned the system engineering that converts a lab-trained model into a deployable product.'
           feature_icon: check
           features:
-            - 'Research link: the clinical web system for an AFF-detection study (in preparation for IEEE JBHI)'
             - 'Medical viewer: Vue 3 + TypeScript, DICOM parsing/rendering, Window/Level and mm-scale ruler measurement'
             - 'Inference server: FastAPI 3-stage pipeline (region classification → femur detection → AFF lesion detection)'
+            - 'Deployment: AWS EC2, Express proxy, CORS and IP-whitelist access control'
           image: proj-aff.png
           button:
             text: View on GitHub
             url: 'https://github.com/tunho/aff-diagnosis-system'
         - title: Knee-Angle Residual Correction (Research)
-          text: 'Research that corrects the systematic knee-angle error of monocular 3D pose estimation (MediaPipe) via residual learning, validated across 4 independent datasets (84 subjects) with LOSO and LODO protocols.'
+          text: 'Research that corrects the systematic knee-angle error of monocular 3D pose estimation (MediaPipe) via residual learning, validated across 4 independent datasets (84 subjects) with LOSO and LODO protocols. In preparation for submission to IEEE JBHI.'
           feature_icon: check
           features:
+            - '📝 In preparation for IEEE JBHI (J. Biomedical and Health Informatics)'
             - 'An ExtraTrees regressor learns the residual (ground-truth angle − predicted angle) as a correction'
             - 'Knee-angle MAE 13.74° → 8.47° (+38.4%), and +43.5% in the clinically important deep-flexion range (<110°)'
             - 'Consistent across an 80–130° threshold sweep (Δ<3%p) — robust, not cherry-picked'
@@ -189,8 +190,8 @@ sections:
           description: |
             JBNU MacsLAB · Medical AI Laboratory (Jul 2025 – Present)  
             • OOD (out-of-distribution) safety research — accepted at KIISE 2026  
-            • AFF diagnosis model research — in preparation for IEEE JBHI  
-            • Deployed medical-imaging AI web services · read and presented deep-learning papers
+            • Knee-angle residual-correction research — in preparation for IEEE JBHI  
+            • Built AFF diagnosis web system · read and presented deep-learning papers
     design:
       spacing:
         padding: ['6rem', 0, 0, 0]

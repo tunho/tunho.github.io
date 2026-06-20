@@ -121,7 +121,7 @@ sections:
       title: ''
       items:
         - title: 스쿼트 OOD 안전성 평가
-          text: '단일 RGB 카메라 스쿼트 자세 분석에서 MC-Dropout(BCNN1D)으로 예측 불확실성을 추정해, 학습 분포 밖(OOD) 동작을 스스로 기각하는 안전성 평가 연구입니다. **제1저자·발표자**로 수행했으며 KIISE 2026 게재가 확정되었습니다. [📄 KCC 2026 포스터 보기](/ood-poster-kcc2026.pdf)'
+          text: '단일 RGB 카메라 스쿼트 자세 분석에서 MC-Dropout(BCNN1D)으로 예측 불확실성을 추정해, 학습 분포 밖(OOD) 동작을 스스로 기각하는 안전성 평가 연구입니다. **제1저자·발표자**로 수행했으며 KIISE 2026 게재가 확정되었습니다. [📄 KIISE 2026 포스터 보기](/ood-poster-kiise2026.pdf)'
           feature_icon: check
           features:
             - '🏅 제1저자 · KIISE 2026 게재 확정 (지도: 이경수 교수)'
@@ -136,17 +136,18 @@ sections:
           text: '비전형 대퇴골골절(AFF) 검출 딥러닝 모델을 의료진이 실제 임상에서 사용할 수 있는 웹 진단 시스템으로 구현한 풀스택 프로젝트입니다. 연구실에서 학습한 모델을 배포 가능한 제품으로 전환하는 시스템 엔지니어링을 담당했습니다.'
           feature_icon: check
           features:
-            - '연구 연계: AFF 검출 연구(IEEE JBHI 저널 투고 준비)의 임상 적용 웹 시스템'
             - '의료영상 뷰어: Vue 3 + TypeScript, DICOM 파싱·렌더링, Window/Level·mm 단위 룰러 측정'
             - 'AI 추론 서버: FastAPI 3단계 파이프라인(부위 분류 → 대퇴골 검출 → AFF 병변 검출) 통합·서빙'
+            - '배포: AWS EC2, Express 프록시, CORS·IP 화이트리스트 접근 제어'
           image: proj-aff.png
           button:
             text: GitHub에서 보기
             url: 'https://github.com/tunho/aff-diagnosis-system'
         - title: 무릎각 잔차 보정 연구
-          text: '단안 카메라 3D 자세추정(MediaPipe)의 체계적인 무릎각 오차를 잔차 학습으로 보정하는 연구입니다. 4개 독립 데이터셋(84명)에서 LOSO·LODO 프로토콜로 검증했습니다.'
+          text: '단안 카메라 3D 자세추정(MediaPipe)의 체계적인 무릎각 오차를 잔차 학습으로 보정하는 연구입니다. 4개 독립 데이터셋(84명)에서 LOSO·LODO 프로토콜로 검증했으며, IEEE JBHI 저널 투고를 준비 중입니다.'
           feature_icon: check
           features:
+            - '📝 IEEE JBHI(J. Biomedical and Health Informatics) 저널 투고 준비 중'
             - 'ExtraTrees 회귀로 (정답각 − 예측각) 잔차를 학습해 보정'
             - '무릎각 MAE 13.74° → 8.47°(+38.4%), 임상적으로 중요한 깊은 굴곡 구간(<110°)에서 +43.5%'
             - '80–130° 임계값 스윕에서 일관된 성능(Δ<3%p) — 체리피킹이 아닌 견고한 개선'
@@ -181,8 +182,8 @@ sections:
           description: |
             전북대학교 MacsLAB · 의료 AI 연구실 (2025.07 - 현재)  
             • OOD(분포 외) 안전성 연구 — KIISE 2026 게재 확정  
-            • AFF 진단 모델 연구 — IEEE JBHI 저널 투고 준비 중  
-            • 의료영상 AI 웹 서비스 배포 · 딥러닝 논문 리딩 및 발표
+            • 무릎각 잔차 보정 연구 — IEEE JBHI 저널 투고 준비 중  
+            • AFF 진단 웹 시스템 개발 · 딥러닝 논문 리딩 및 발표
     design:
       spacing:
         padding: ['6rem', 0, 0, 0]

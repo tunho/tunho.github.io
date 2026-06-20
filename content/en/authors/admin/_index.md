@@ -27,7 +27,7 @@ organizations:
   - name: Jeonbuk National University (JBNU)
     url: https://www.jbnu.ac.kr/
   - name: MacsLAB · Medical AI Lab
-    url: https://macslab.jbnu.ac.kr/
+    url: https://jbnu.macs.or.kr/ko/
 
 # Short bio (displayed in user profile at end of posts)
 bio:

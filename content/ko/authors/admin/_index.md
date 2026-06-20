@@ -27,7 +27,7 @@ organizations:
   - name: 전북대학교 (Jeonbuk National University, JBNU)
     url: https://www.jbnu.ac.kr/
   - name: MacsLAB · Medical AI 연구실
-    url: https://macslab.jbnu.ac.kr/
+    url: https://jbnu.macs.or.kr/ko/
 
 # 간단한 소개 (게시물 하단 프로필에 표시됨)
 bio: 전북대학교 컴퓨터인공지능학부 학부연구생으로,

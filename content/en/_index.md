@@ -49,9 +49,9 @@ sections:
         - statistic: 'KIISE 2026'
           description: |
             OOD safety research · accepted
-        - statistic: 'Medical CV'
+        - statistic: 'Medical CV · Pose'
           description: |
-            Medical-image detection · pose · OOD safety
+            Medical-image detection · human pose · OOD safety
         - statistic: 'LLM · RAG'
           description: |
             Clinical decision support · retrieval · Agentic
@@ -68,13 +68,13 @@ sections:
       items:
         # --- 👇 Keep a single item like this ---
         - title: 'Hello, I’m Junho Lee 👋'
-          text: 'An undergraduate researcher studying trustworthy medical AI along two tracks — Medical Computer Vision (CV) and LLM · RAG.'
+          text: 'An undergraduate researcher studying trustworthy medical AI along two tracks — Medical Computer Vision & Human Pose Estimation, and LLM · RAG.'
 
           feature_icon: check
           features:
             - '🏅 Accepted at KIISE 2026 — OOD (out-of-distribution) safety research'
             - 'Affiliation: Dept. of Computer & AI, JBNU · Undergraduate Researcher at MacsLAB (Medical AI Lab)'
-            - 'Medical Computer Vision (CV): medical-image detection & pose estimation — OOD safety, AFF diagnosis, knee-angle correction'
+            - 'Medical CV & Human Pose: medical-image detection & 3D pose estimation — OOD safety, AFF diagnosis, knee-angle correction'
             - 'LLM · RAG: clinical decision support & evidence retrieval — Thyroid CDSS, Healthcare RAG, Agentic CGR'
             - 'Email: tjens2322@gmail.com · GitHub: github.com/tunho'
 
@@ -96,24 +96,24 @@ sections:
       title: Core Competencies
       text: I’m a researcher and developer exploring trustworthy medical AI systems. 🤖
       items:
-        - name: AI Research
+        - name: Medical Computer Vision
           icon: cpu-chip
-          description: I design and optimize deep learning models with a focus on medical image analysis and diagnostic systems.
-        - name: Full-Stack Development
+          description: I research lesion detection from DICOM medical images and diagnostic models that clinicians can trust.
+        - name: Human Pose Estimation
+          icon: user
+          description: I correct the errors of single-RGB-camera 3D pose estimation and apply it to exercise and rehabilitation analysis.
+        - name: Uncertainty · OOD Safety
+          icon: shield-check
+          description: I quantify predictive uncertainty (e.g., MC-Dropout) and safely reject out-of-distribution inputs.
+        - name: LLM · RAG / Clinical Decision Support
+          icon: chat-bubble-left-right
+          description: I design evidence-grounded retrieval and judgment systems, with deterministic structures that reduce LLM hallucination.
+        - name: Full-Stack · Deployment
           icon: computer-desktop
-          description: I build end-to-end systems that bring AI models into real services using FastAPI and Vue.
-        - name: Data Analysis
-          icon: chart-bar
-          description: I improve model performance and reliability through diverse data preprocessing and visualization techniques.
-        - name: Problem Solving
-          icon: light-bulb
-          description: I analyze complex problems systematically and derive solutions through experimentation and iteration.
+          description: I turn research models into working, clinically applicable systems with FastAPI, Vue, and AWS.
         - name: Research Collaboration
           icon: users
-          description: I collaborate in lab and team project environments to deliver efficient and accurate outcomes.
-        - name: Continuous Learning
-          icon: book-open
-          description: I explore the latest AI papers and tech trends and apply new ideas to projects.
+          description: I work across lab, medical-school, and nursing-school collaborations to deliver accurate, reproducible results through data and code.
 
   - block: markdown
     id: project-title

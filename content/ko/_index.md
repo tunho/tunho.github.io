@@ -43,9 +43,9 @@ sections:
         - statistic: 'KIISE 2026'
           description: |
             OOD 안전성 연구 게재 확정
-        - statistic: '의료 CV'
+        - statistic: '의료 CV · Pose'
           description: |
-            의료영상 검출 · 자세추정 · OOD 안전성
+            의료영상 검출 · 인체 자세추정 · OOD 안전성
         - statistic: 'LLM · RAG'
           description: |
             임상 의사결정 지원 · 근거 검색 · Agentic
@@ -61,13 +61,13 @@ sections:
       items:
         # --- 👇 아이템을 이렇게 하나만 남깁니다 ---
         - title: '안녕하세요, 이준호입니다 👋'
-          text: '의료 컴퓨터비전(CV)과 LLM·RAG, 두 축에서 신뢰할 수 있는 의료 AI를 연구하는 학부연구생입니다.'
+          text: '의료 컴퓨터비전·인체 자세추정과 LLM·RAG, 두 축에서 신뢰할 수 있는 의료 AI를 연구하는 학부연구생입니다.'
 
           feature_icon: check
           features:
             - '🏅 KIISE 2026 게재 확정 — OOD(분포 외) 안전성 연구'
             - '소속: 전북대학교 컴퓨터인공지능학부 · MacsLAB(의료 AI 연구실) 학부연구생'
-            - '의료 컴퓨터비전(CV): 의료영상 병변 검출 · 자세추정 — OOD 안전성, AFF 진단, 무릎각 보정'
+            - '의료 CV · 인체 자세추정(Human Pose): 의료영상 병변 검출 · 3D 자세추정 — OOD 안전성, AFF 진단, 무릎각 보정'
             - 'LLM · RAG: 임상 의사결정 지원 · 근거 검색 — 갑상선 CDSS, Healthcare RAG, Agentic CGR'
             - '이메일: tjens2322@gmail.com · GitHub: github.com/tunho'
 
@@ -89,24 +89,24 @@ sections:
       title: 주요 역량
       text: 인공지능으로 신뢰할 수 있는 의료 시스템을 탐구하는 연구자이자 개발자입니다. 🤖
       items:
-        - name: 인공지능 연구
+        - name: 의료 컴퓨터비전 (Medical CV)
           icon: cpu-chip
-          description: 의료 영상 분석과 진단 시스템 개발을 중심으로 딥러닝 모델을 설계하고 최적화합니다.
-        - name: 풀스택 개발
+          description: DICOM 의료영상에서 병변을 검출하고, 임상에서 신뢰할 수 있는 진단 모델을 연구합니다.
+        - name: 인체 자세추정 (Human Pose)
+          icon: user
+          description: 단일 RGB 카메라 기반 3D 자세추정의 오차를 보정하고, 운동·재활 분석에 적용합니다.
+        - name: 불확실성 · OOD 안전성
+          icon: shield-check
+          description: MC-Dropout 등으로 예측 불확실성을 정량화하고, 분포 밖(OOD) 입력을 안전하게 걸러냅니다.
+        - name: LLM · RAG / 임상 의사결정 지원
+          icon: chat-bubble-left-right
+          description: 근거에 정합된 검색·판정 시스템을 설계하고, LLM 환각을 줄이는 결정론적 구조를 연구합니다.
+        - name: 풀스택 · 배포
           icon: computer-desktop
-          description: FastAPI와 Vue를 활용하여 AI 모델을 실제 서비스로 구현하는 엔드투엔드 시스템을 구축합니다.
-        - name: 데이터 분석
-          icon: chart-bar
-          description: 다양한 데이터 전처리 및 시각화 기법을 통해 모델 성능과 신뢰성을 높입니다.
-        - name: 문제 해결력
-          icon: light-bulb
-          description: 복잡한 문제를 체계적으로 분석하고, 실험과 개선을 통해 해결책을 도출합니다.
+          description: FastAPI·Vue·AWS로 연구 모델을 실제 동작하는 임상 적용 시스템으로 구현합니다.
         - name: 연구 협업
           icon: users
-          description: 연구실 및 팀 프로젝트 환경에서 협업하며, 효율적이고 정확한 결과를 도출합니다.
-        - name: 지속적인 학습
-          icon: book-open
-          description: 최신 AI 논문과 기술 트렌드를 탐구하며, 새로운 아이디어를 프로젝트에 적용합니다.
+          description: 연구실·의대·간호대 협업 환경에서 데이터와 코드를 통해 정확하고 재현 가능한 결과를 도출합니다.
   - block: markdown
     id: project-title
     content:

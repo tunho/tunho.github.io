@@ -34,11 +34,14 @@ I design and implement the entire backend–frontend–inference-server pipeline
 
 ---
 
-## 🧭 Future Goals
+## 🎯 Research Interests
 
-- Improve the **explainability** and reliability of medical-imaging CV models
-- Strengthen the evidence accuracy and safety of **LLM · RAG-based clinical decision support**
-- Commercialize both research tracks into **working systems** usable in clinical practice
+My interest is **trustworthy medical AI for clinical use**, approached from two directions:
+
+- **Generalizable and interpretable medical computer vision** — models that stay robust beyond a single dataset, across institutions and devices, and let clinicians understand the basis of a prediction. My *knee-angle residual correction* work, which quantifies the limits of cross-domain generalization via LODO (Leave-One-Dataset-Out), is a starting point.
+- **Evidence-grounded clinical decision support (LLM · RAG)** — systems that reduce hallucination by tying answers to verifiable evidence. The deterministic design of my *Thyroid CDSS*, which restricts the LLM to explanation rather than judgment, grew out of this concern.
+
+Ultimately, I want to research diagnostic-assistance systems that **quantify predictive uncertainty and that clinicians can trust and verify**, bridging these two tracks.
 
 ---
 

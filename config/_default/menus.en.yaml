@@ -19,10 +19,6 @@ main:
     url: /#experience
     weight: 35
 
-  - name: Interests
-    url: /#interest
-    weight: 39
-
   - name: Project Details
     identifier: project
     weight: 40

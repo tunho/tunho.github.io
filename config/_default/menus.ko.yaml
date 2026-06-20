@@ -19,10 +19,6 @@ main:
     url: /#experience
     weight: 35
 
-  - name: 관심사
-    url: /#interest
-    weight: 39
-
   - name: 프로젝트 상세
     identifier: project
     weight: 40

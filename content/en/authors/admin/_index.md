@@ -20,7 +20,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Undergraduate Student · Medical AI Researcher
+role: Undergraduate Researcher · Medical CV / LLM·RAG
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -31,8 +31,8 @@ organizations:
 
 # Short bio (displayed in user profile at end of posts)
 bio:
-  I'm an undergraduate student in Computer Science at Jeonbuk National University.
-  I’m passionate about AI-driven medical imaging systems and full-stack development integrating FastAPI and Vue.
+  An undergraduate researcher at Jeonbuk National University, connecting two AI research tracks —
+  Medical Computer Vision (CV) and LLM·RAG — through full-stack development.
 
 # Social Networking
 profiles:
@@ -52,8 +52,9 @@ highlight_name: true
 website: 'https://tunho.github.io/'
 ---
 
-Junho Lee is an undergraduate student in the Department of Computer Artificial Intelligence at **Jeonbuk National University (JBNU)**,  
-currently conducting research at **MacsLAB (Medical AI Laboratory)**.
+Junho Lee is an undergraduate researcher in the Department of Computer & Artificial Intelligence at **Jeonbuk National University (JBNU)**, working at **MacsLAB (Medical AI Laboratory)** along two research tracks:
 
-His work focuses on **AI-based medical imaging systems**, **DICOM analysis**, and **full-stack application development** using  
-**FastAPI (Python)** and **Vue 3 + TypeScript**. He aims to build intelligent, user-friendly diagnostic platforms integrating deep learning and clinical usability.
+- **Medical Computer Vision (CV)** — lesion detection and pose estimation from DICOM medical images
+- **LLM · RAG** — clinical decision support that retrieves, judges, and explains evidence (CDSS)
+
+On top of these, he brings **FastAPI · Vue 3 · AWS** full-stack skills to turn research into working products.

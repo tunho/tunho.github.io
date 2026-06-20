@@ -68,14 +68,13 @@ sections:
       items:
         # --- 👇 Keep a single item like this ---
         - title: 'Hello, I’m Junho Lee 👋'
-          text: 'An undergraduate researcher in the Department of Computer & AI at Jeonbuk National University, I work along two tracks: (1) Medical Computer Vision (CV) — detecting lesions and analyzing pose from DICOM medical images, and (2) LLM · RAG — clinical decision support that retrieves and judges evidence and explains it in natural language. On top of these, I build the full-stack systems that turn research into working products.'
+          text: 'Connecting two AI research tracks — Medical Computer Vision (CV) and LLM · RAG — through full-stack development, all the way to working products.'
 
           feature_icon: check
           features:
             - 'Affiliation: Dept. of Computer & AI, JBNU · Undergraduate Researcher at MacsLAB (Medical AI Lab)'
-            - 'Track ① — Medical Computer Vision (CV): medical-image detection & pose estimation (AFF diagnosis, knee-angle correction)'
-            - 'Track ② — LLM · RAG: clinical decision support & evidence retrieval (Thyroid CDSS, Healthcare RAG, Agentic CGR)'
-            - 'Foundation: Full-stack development (Vue 3 · FastAPI · AWS)'
+            - 'Medical Computer Vision (CV): medical-image detection & pose estimation — AFF diagnosis, knee-angle correction'
+            - 'LLM · RAG: clinical decision support & evidence retrieval — Thyroid CDSS, Healthcare RAG, Agentic CGR'
             - 'Email: tjens2322@gmail.com · GitHub: github.com/tunho'
 
           # Filename of your photo in the `assets/media/` folder

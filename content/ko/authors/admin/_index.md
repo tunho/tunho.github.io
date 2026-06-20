@@ -20,7 +20,7 @@ status:
 superuser: true
 
 # 역할 / 직함
-role: 전북대학교 컴퓨터인공지능학부 학부생 · 의료 AI 연구원
+role: 전북대학교 컴퓨터인공지능학부 학부연구생 · 의료 CV / LLM·RAG
 
 # 소속 (About 위젯에 표시됨)
 organizations:
@@ -30,8 +30,8 @@ organizations:
     url: https://macslab.jbnu.ac.kr/
 
 # 간단한 소개 (게시물 하단 프로필에 표시됨)
-bio: 전북대학교 컴퓨터인공지능학부 학부생으로,
-  AI 기반 의료 영상 시스템과 FastAPI · Vue 통합 풀스택 개발에 관심이 있습니다.
+bio: 전북대학교 컴퓨터인공지능학부 학부연구생으로,
+  의료 컴퓨터비전(CV)과 LLM·RAG 두 축의 AI 연구를 풀스택 개발로 잇습니다.
 
 # 소셜 네트워크
 profiles:
@@ -53,10 +53,9 @@ highlight_name: true
 website: 'https://tunho.github.io/'
 ---
 
-이준호는 **전북대학교(Jeonbuk National University, JBNU)**  
-**컴퓨터인공지능학부**에 재학 중이며, 현재 **MacsLAB(의료 AI 연구실)**에서 연구를 진행하고 있습니다.
+이준호는 **전북대학교(JBNU) 컴퓨터인공지능학부** 학부연구생으로, **MacsLAB(의료 AI 연구실)**에서 두 축의 AI 연구를 진행합니다.
 
-그의 연구는 **AI 기반 의료 영상 시스템**, **DICOM 분석**,  
-그리고 **FastAPI(Python)**와 **Vue 3 + TypeScript**를 활용한 **풀스택 애플리케이션 개발**에 중점을 두고 있습니다.
+- **의료 컴퓨터비전(CV)** — DICOM 의료영상에서 병변 검출·자세추정
+- **LLM · RAG** — 임상 근거를 검색·판정·설명하는 의사결정 지원(CDSS)
 
-그는 딥러닝과 임상적 사용성을 결합한 **지능적이고 사용자 친화적인 진단 플랫폼**을 구축하는 것을 목표로 하고 있습니다.
+여기에 **FastAPI · Vue 3 · AWS** 풀스택 역량을 더해, 연구 결과를 실제로 동작하는 제품으로 잇는 것을 목표로 합니다.

@@ -6,32 +6,39 @@ date: 2025-10-05
 
 <div class="text-justify">
 
-Hello! I’m **Junho Lee**, an undergraduate student in the **Department of Computer & Artificial Intelligence** at **Jeonbuk National University (JBNU)**.  
-At **MacsLAB (Medical AI Laboratory)** I study medical image analysis and deep learning, splitting my work between **turning research models into clinically usable systems** and **data-driven machine-learning research**.
+Hello! I’m **Junho Lee**, an undergraduate researcher in the **Department of Computer & Artificial Intelligence** at **Jeonbuk National University (JBNU)**.  
+At **MacsLAB (Medical AI Laboratory)** I pursue **two research tracks**:
 
-Centered on **FastAPI + Vue3 (TypeScript)** full-stack development, I design and implement the **entire backend–frontend–inference-server pipeline** myself to connect lab-developed AI models to real clinical use,  
-while also carrying out independent research in **pose estimation** and **clinical decision support (CDSS)**.
+- **① Medical Computer Vision (Medical CV)** — detecting lesions and analyzing pose from DICOM medical images
+- **② LLM · RAG** — clinical decision support that retrieves and judges evidence and explains it in natural language
 
-Balancing research and development, I aim not only to enhance performance but also to design **practically usable systems**.  
-In particular, I focus on **improving DICOM viewer UX/UI**, **AI result visualization**, and **interactive measurement tools**,  
-developing interfaces that can be applied directly in medical practice.
+On top of these, I bring **FastAPI + Vue 3 (TypeScript)** full-stack skills to connect research models to real clinical use as **working products**.  
+I design and implement the entire backend–frontend–inference-server pipeline myself, aiming not just for better metrics but for **systems people actually use**.
 
 ---
 
-## 🔬 Main Research & Projects
+## 🔬 Research Areas
 
-- **AFF Diagnosis System (Medical Imaging AI · Full-stack):** Turned a lab-trained **Atypical Femoral Fracture (AFF)** detection model into a clinically usable web diagnostic system. Owned the **system engineering** end-to-end — Vue3 + TypeScript DICOM viewer (Window/Level, mm-scale measurement), FastAPI 3-stage inference serving, and AWS deployment *(model training provided by the lab)*
-- **Knee-Angle Residual Correction (Pose Estimation · ML):** Corrects the systematic knee-angle error of monocular 3D pose estimation via residual learning. Validated across 4 independent datasets (84 subjects) with LOSO/LODO; MAE 13.74° → 8.47° (+38.4%)
-- **Thyroid Supplement CDSS (Clinical Decision Support):** Judges safety and evidence with a deterministic rule engine, using an LLM only for explanation. Integrates PubMed and MFDS public data; Docker/Render deployment with GitHub Actions CI
-- **MNIST Classification Model:** Early undergraduate-researcher task — trained an MLP for handwritten digit (0–9) recognition with a visualization dashboard
+### ① Medical Computer Vision
+
+- **AFF Diagnosis System — Medical Imaging AI · Full-stack:** Turned a lab-trained **Atypical Femoral Fracture (AFF)** detection model into a clinically usable web diagnostic system. Owned the **system engineering** end-to-end — Vue3 + TypeScript DICOM viewer (Window/Level, mm-scale measurement), FastAPI 3-stage inference serving, and AWS deployment *(model training provided by the lab)*
+- **Knee-Angle Residual Correction — Pose Estimation:** Corrects the systematic knee-angle error of monocular 3D pose estimation via residual learning. Validated across 4 independent datasets (84 subjects) with LOSO/LODO; MAE 13.74° → 8.47° (+38.4%)
+
+### ② LLM · RAG / Agentic
+
+- **Thyroid Supplement CDSS — Clinical Decision Support:** Judges safety and evidence with a deterministic rule engine, using an LLM only for explanation (reproducible, auditable). Integrates PubMed and MFDS public data; Docker/Render deployment with GitHub Actions CI
+- **Healthcare RAG — Retrieval-Augmented Generation:** Applies a RAPTOR (recursive tree-based retrieval) approach to medical-domain documents for evidence retrieval and summarization
+- **Agentic CGR — Agent Self-Correction Pattern:** Proposes and implements a new agent design pattern that adaptively allocates reflection budget to problem difficulty via confidence gating
+
+> Early work: implemented an MNIST handwritten-digit (0–9) MLP with a visualization dashboard (early undergraduate-researcher task)
 
 ---
 
 ## 🧭 Future Goals
 
-- Enhance **explainability** of AI models through visualization research
-- Commercialize and optimize **web-based diagnostic assistance systems** for medical imaging
-- Build a **general-purpose medical imaging platform** applicable to various medical datasets
+- Improve the **explainability** and reliability of medical-imaging CV models
+- Strengthen the evidence accuracy and safety of **LLM · RAG-based clinical decision support**
+- Commercialize both research tracks into **working systems** usable in clinical practice
 
 ---
 
@@ -49,21 +56,21 @@ developing interfaces that can be applied directly in medical practice.
 
 ```markmap {height="250px"}
 - Junho Lee
-  - Medical AI Systems
+  - Medical Computer Vision
     - AFF Diagnosis System
       - DICOM Viewer (Vue3 + TS)
-      - FastAPI Inference Serving
-      - AWS Deployment
-  - ML Research
+      - FastAPI Inference + AWS
     - Knee-Angle Residual Correction
       - Monocular Pose Estimation
       - LOSO / LODO Validation
+  - LLM / RAG / Agentic
     - Thyroid Supplement CDSS
-      - Deterministic Rule Engine
+      - Rule Engine + LLM Explanation
       - PubMed Evidence
-  - Future Work
-    - Explainable AI
-    - Clinical Deployment
+    - Healthcare RAG (RAPTOR)
+    - Agentic CGR (Confidence-Gated Reflection)
+  - Foundation
+    - Full-Stack (Vue · FastAPI · AWS)
 
 ```
 

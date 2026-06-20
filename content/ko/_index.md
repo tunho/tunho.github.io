@@ -40,15 +40,15 @@ sections:
   - block: stats
     content:
       items:
-        - statistic: '백엔드'
+        - statistic: '의료 CV'
           description: |
-            Fast API, Flask, express
-        - statistic: '프론트'
+            PyTorch · OpenCV · DICOM · Detection / Pose
+        - statistic: 'LLM · RAG'
           description: |
-            vue, react, react-native, Flutter
-        - statistic: 'AI'
+            RAG · GPT-4o-mini · PubMed · Agentic
+        - statistic: '풀스택'
           description: |
-            Pytorch, Tensorflow, Sklearn
+            FastAPI · Vue 3 · TypeScript · AWS
     design:
       # Section background color (CSS class)
       css_class: 'bg-gray-100 dark:bg-gray-900'
@@ -61,14 +61,15 @@ sections:
       items:
         # --- 👇 아이템을 이렇게 하나만 남깁니다 ---
         - title: '안녕하세요, 이준호입니다 👋'
-          text: '전북대학교 컴퓨터인공지능학부 학부연구생으로, 의료영상 AI와 이를 임상에서 쓸 수 있게 만드는 풀스택 시스템 개발을 함께 합니다. 연구실에서 개발한 모델을 실제 동작하는 웹 진단 제품으로 구현하고, 자세추정·임상 의사결정 지원(CDSS) 분야의 독립 연구도 수행합니다. 단순한 성능 향상을 넘어, 실제로 쓰이는 시스템을 만드는 것을 목표로 합니다.'
+          text: '전북대학교 컴퓨터인공지능학부 학부연구생으로, 두 축의 AI 연구를 합니다. ① 의료 컴퓨터비전(CV) — DICOM 의료영상에서 병변을 검출하고 자세를 분석하며, ② LLM·RAG — 임상 근거를 검색·판정하고 자연어로 설명하는 의사결정 지원을 만듭니다. 여기에 모델을 실제로 쓰이게 하는 풀스택 시스템 개발을 더해, 연구 결과를 동작하는 제품으로 잇습니다.'
 
           feature_icon: check
           features:
             - '소속: 전북대학교 컴퓨터인공지능학부 · MacsLAB(의료 AI 연구실) 학부연구생'
-            - '관심 분야: 의료영상 AI · 풀스택 개발 · 자세추정 · 임상 의사결정 지원(CDSS)'
-            - '이메일: tjens2322@gmail.com'
-            - 'GitHub: github.com/tunho'
+            - '연구 축 ① — 의료 컴퓨터비전(CV): 의료영상 병변 검출 · 자세추정 (AFF 진단, 무릎각 보정)'
+            - '연구 축 ② — LLM · RAG: 임상 의사결정 지원 · 근거 검색 (갑상선 CDSS, Healthcare RAG, Agentic CGR)'
+            - '기반 역량: 풀스택 개발 (Vue 3 · FastAPI · AWS)'
+            - '이메일: tjens2322@gmail.com · GitHub: github.com/tunho'
 
           # 'assets/media/' 폴더에 있는 본인 사진 파일명
           image: my-image.jpg

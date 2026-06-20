@@ -46,15 +46,15 @@ sections:
   - block: stats
     content:
       items:
-        - statistic: 'Backend'
+        - statistic: 'Medical CV'
           description: |
-            FastAPI, Flask, Express
-        - statistic: 'Frontend'
+            PyTorch · OpenCV · DICOM · Detection / Pose
+        - statistic: 'LLM · RAG'
           description: |
-            Vue, React, React Native, Flutter
-        - statistic: 'AI'
+            RAG · GPT-4o-mini · PubMed · Agentic
+        - statistic: 'Full-Stack'
           description: |
-            PyTorch, TensorFlow, scikit-learn
+            FastAPI · Vue 3 · TypeScript · AWS
     design:
       # Section background color (CSS class)
       css_class: 'bg-gray-100 dark:bg-gray-900'
@@ -68,14 +68,15 @@ sections:
       items:
         # --- 👇 Keep a single item like this ---
         - title: 'Hello, I’m Junho Lee 👋'
-          text: 'An undergraduate researcher in the Department of Computer & AI at Jeonbuk National University, I work at the intersection of medical imaging AI and the full-stack systems that make it clinically usable. I turn lab-developed models into working web diagnostic products, and also carry out independent research in pose estimation and clinical decision support (CDSS). My goal is not just better metrics, but systems people actually use.'
+          text: 'An undergraduate researcher in the Department of Computer & AI at Jeonbuk National University, I work along two tracks: (1) Medical Computer Vision (CV) — detecting lesions and analyzing pose from DICOM medical images, and (2) LLM · RAG — clinical decision support that retrieves and judges evidence and explains it in natural language. On top of these, I build the full-stack systems that turn research into working products.'
 
           feature_icon: check
           features:
             - 'Affiliation: Dept. of Computer & AI, JBNU · Undergraduate Researcher at MacsLAB (Medical AI Lab)'
-            - 'Focus: Medical Imaging AI · Full-Stack · Pose Estimation · Clinical Decision Support (CDSS)'
-            - 'Email: tjens2322@gmail.com'
-            - 'GitHub: github.com/tunho'
+            - 'Track ① — Medical Computer Vision (CV): medical-image detection & pose estimation (AFF diagnosis, knee-angle correction)'
+            - 'Track ② — LLM · RAG: clinical decision support & evidence retrieval (Thyroid CDSS, Healthcare RAG, Agentic CGR)'
+            - 'Foundation: Full-stack development (Vue 3 · FastAPI · AWS)'
+            - 'Email: tjens2322@gmail.com · GitHub: github.com/tunho'
 
           # Filename of your photo in the `assets/media/` folder
           image: my-image.jpg

@@ -131,7 +131,7 @@ sections:
           image: proj-ood.png
           button:
             text: GitHub에서 보기
-            url: 'https://github.com/tunho/kcc_paper_2026'
+            url: 'https://github.com/tunho/kiise_paper_2026'
         - title: AFF 진단 시스템
           text: '비전형 대퇴골골절(AFF) 검출 딥러닝 모델을 의료진이 실제 임상에서 사용할 수 있는 웹 진단 시스템으로 구현한 풀스택 프로젝트입니다. 연구실에서 학습한 모델을 배포 가능한 제품으로 전환하는 시스템 엔지니어링을 담당했습니다.'
           feature_icon: check

@@ -139,7 +139,7 @@ sections:
           image: proj-ood.png
           button:
             text: View on GitHub
-            url: 'https://github.com/tunho/kcc_paper_2026'
+            url: 'https://github.com/tunho/kiise_paper_2026'
         - title: AFF Diagnosis System
           text: 'A full-stack project that turns a deep-learning model for detecting Atypical Femoral Fractures (AFF) into a web-based diagnostic system usable by clinicians. I owned the system engineering that converts a lab-trained model into a deployable product.'
           feature_icon: check

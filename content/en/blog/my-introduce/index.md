@@ -7,12 +7,10 @@ date: 2025-10-05
 <div class="text-justify">
 
 Hello! I’m **Junho Lee**, an undergraduate student in the **Department of Computer & Artificial Intelligence** at **Jeonbuk National University (JBNU)**.  
-I am currently conducting research at **MacsLAB (Medical AI Laboratory)**, focusing on **medical image analysis** and **deep learning model development**.  
-My main interests include **improving AI model accuracy**, **automating medical data preprocessing**, and **developing web-based medical image viewers**.
+At **MacsLAB (Medical AI Laboratory)** I study medical image analysis and deep learning, splitting my work between **turning research models into clinically usable systems** and **data-driven machine-learning research**.
 
-I primarily work with **PyTorch** for modeling and **FastAPI + Vue3 (TypeScript)** for full-stack development.  
-To make AI models deployable in real clinical environments,  
-I design and implement the **entire pipeline**—from backend to frontend to AI model integration—myself.
+Centered on **FastAPI + Vue3 (TypeScript)** full-stack development, I design and implement the **entire backend–frontend–inference-server pipeline** myself to connect lab-developed AI models to real clinical use,  
+while also carrying out independent research in **pose estimation** and **clinical decision support (CDSS)**.
 
 Balancing research and development, I aim not only to enhance performance but also to design **practically usable systems**.  
 In particular, I focus on **improving DICOM viewer UX/UI**, **AI result visualization**, and **interactive measurement tools**,  
@@ -22,11 +20,10 @@ developing interfaces that can be applied directly in medical practice.
 
 ## 🔬 Main Research & Projects
 
-- **DICOM Viewer Development:** Displays medical images (CT, X-ray, etc.) with distance, angle, and area measurement tools and window-level adjustment functions
-- **AFF (Atypical Femoral Fracture) Detection Model:** Built PyTorch-based CNN model and Grad-CAM visualization pipeline
-- **Medical Image Analysis Web Platform:** Integrated FastAPI backend and Vue3 frontend, deployed on the cloud
-- **MNIST Classification Model:** Trained MLP model for handwritten digit (0–9) recognition and developed a visualization dashboard
-- **Automatic DICOM Metadata Parsing & Pixel Scaling:** Implemented precise measurements using actual physical units (mm/px)
+- **AFF Diagnosis System (Medical Imaging AI · Full-stack):** Turned a lab-trained **Atypical Femoral Fracture (AFF)** detection model into a clinically usable web diagnostic system. Owned the **system engineering** end-to-end — Vue3 + TypeScript DICOM viewer (Window/Level, mm-scale measurement), FastAPI 3-stage inference serving, and AWS deployment *(model training provided by the lab)*
+- **Knee-Angle Residual Correction (Pose Estimation · ML):** Corrects the systematic knee-angle error of monocular 3D pose estimation via residual learning. Validated across 4 independent datasets (84 subjects) with LOSO/LODO; MAE 13.74° → 8.47° (+38.4%)
+- **Thyroid Supplement CDSS (Clinical Decision Support):** Judges safety and evidence with a deterministic rule engine, using an LLM only for explanation. Integrates PubMed and MFDS public data; Docker/Render deployment with GitHub Actions CI
+- **MNIST Classification Model:** Early undergraduate-researcher task — trained an MLP for handwritten digit (0–9) recognition with a visualization dashboard
 
 ---
 
@@ -51,16 +48,19 @@ developing interfaces that can be applied directly in medical practice.
 ## 🗺️ Research Topic Mindmap
 
 ```markmap {height="250px"}
-- Medical AI Projects
-  - DICOM Viewer
-    - Measurement Tool
-    - Window Level / UI Optimization
-  - AFF Detection
-    - PyTorch CNN
-    - Grad-CAM Visualization
-  - Web Platform
-    - FastAPI Backend
-    - Vue3 Frontend
+- Junho Lee
+  - Medical AI Systems
+    - AFF Diagnosis System
+      - DICOM Viewer (Vue3 + TS)
+      - FastAPI Inference Serving
+      - AWS Deployment
+  - ML Research
+    - Knee-Angle Residual Correction
+      - Monocular Pose Estimation
+      - LOSO / LODO Validation
+    - Thyroid Supplement CDSS
+      - Deterministic Rule Engine
+      - PubMed Evidence
   - Future Work
     - Explainable AI
     - Clinical Deployment

@@ -28,18 +28,18 @@ main:
     weight: 40
 
   - parent: project
-    name: DICOM Viewer
-    pageRef: '/project/dicom'
+    name: AFF Diagnosis System
+    url: 'https://github.com/tunho/aff-diagnosis-system'
     weight: 41
 
   - parent: project
-    name: Outfit Recommendation
-    pageRef: '/project/cody'
+    name: Knee-Angle Residual Correction
+    url: 'https://github.com/tunho/squat-knee-residual-correction'
     weight: 42
 
   - parent: project
-    name: Pomodoro
-    pageRef: '/project/tomato'
+    name: Thyroid Supplement CDSS
+    url: 'https://github.com/tunho/thyroid-supplement-cdss'
     weight: 43
 
   - name: Additional Information

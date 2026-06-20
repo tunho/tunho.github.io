@@ -65,13 +65,11 @@ sections:
 
           feature_icon: check
           features:
-            - '소속: 전북대학교'
-            - '전공: 컴퓨터인공지능'
-            - '연락처: 010-4825-3355'
-            - '이메일: tjens2322@naver.com'
-            - '인스타그램: jjjjjjj_111'
-            - '나이 : 23세(03년생)'
-            - '소개 요약: 전북대학교 컴퓨터인공지능학부 학부생으로, AI 기반 의료 영상 시스템과 통합 풀스택 개발에 관심이 있습니다.'
+            - '소속: 전북대학교 컴퓨터인공지능학부'
+            - '전공: 컴퓨터인공지능 (의료 AI 연구)'
+            - '이메일: tjens2322@gmail.com'
+            - 'GitHub: github.com/tunho'
+            - '소개: 전북대학교 컴퓨터인공지능학부 학부생으로, AI 기반 의료 영상 시스템과 통합 풀스택 개발에 관심이 있습니다.'
 
           # 'assets/media/' 폴더에 있는 본인 사진 파일명
           image: my-image.jpg
@@ -120,42 +118,41 @@ sections:
   - block: cta-image-paragraph
     id: project
     content:
-      title: 프로젝트
+      title: ''
       items:
-        - title: Dicom 뷰어
-          text: ''
+        - title: AFF 진단 시스템
+          text: '비전형 대퇴골골절(AFF) 검출 딥러닝 모델을 의료진이 실제 임상에서 사용할 수 있는 웹 진단 시스템으로 구현한 풀스택 프로젝트입니다. 연구실에서 학습한 모델을 배포 가능한 제품으로 전환하는 시스템 엔지니어링을 담당했습니다.'
           feature_icon: check
           features:
-            - 'Dicom 파일을 해석하여 이미지로 보여준다.'
-            - '이미지를 조작하여 크기와 밝기/대비를 조절한다.'
-            - '백엔드에 파일을 보내서, 골절 부위를 반환한다.'
-          # Upload image to `assets/media/` and reference the filename here
-          image: dicom.jpg
+            - '의료영상 뷰어: Vue 3 + TypeScript, DICOM 파싱·렌더링, Window/Level·mm 단위 룰러 측정'
+            - 'AI 추론 서버: FastAPI 3단계 파이프라인(부위 분류 → 대퇴골 검출 → AFF 병변 검출) 통합·서빙'
+            - '배포: AWS EC2, Express 프록시, CORS·IP 화이트리스트 접근 제어'
+          image: proj-aff.png
           button:
-            text: 자세히 보기
-            url: /project/dicom
-        - title: 옷 정리 및 코디 추천 웹앱
-          text: ''
+            text: GitHub에서 보기
+            url: 'https://github.com/tunho/aff-diagnosis-system'
+        - title: 무릎각 잔차 보정 연구
+          text: '단안 카메라 3D 자세추정(MediaPipe)의 체계적인 무릎각 오차를 잔차 학습으로 보정하는 연구입니다. 4개 독립 데이터셋(84명)에서 LOSO·LODO 프로토콜로 검증했습니다.'
           feature_icon: check
           features:
-            - '현재 소유 중인 옷을 등록 및 정리한다.'
-            - '선호 스타일·날씨·장소를 고려해 코디를 추천한다.'
-            - '사용자 일상을 공유하는 커뮤니티 기능을 제공한다.'
-          image: cody.png
+            - 'ExtraTrees 회귀로 (정답각 − 예측각) 잔차를 학습해 보정'
+            - '무릎각 MAE 13.74° → 8.47°(+38.4%), 임상적으로 중요한 깊은 굴곡 구간(<110°)에서 +43.5%'
+            - '80–130° 임계값 스윕에서 일관된 성능(Δ<3%p) — 체리피킹이 아닌 견고한 개선'
+          image: proj-squat.png
           button:
-            text: 자세히 보기
-            url: /project/cody
-        - title: 뽀모도로 타이머 공부 앱
-          text: ''
+            text: GitHub에서 보기
+            url: 'https://github.com/tunho/squat-knee-residual-correction'
+        - title: 갑상선 영양제 CDSS
+          text: '갑상선 질환자의 영양제 복용 안전성·근거를 결정론적 규칙 엔진으로 판정하고, LLM은 판정 이후 자연어 설명 생성에만 사용하는 임상 의사결정 지원 서비스입니다.'
           feature_icon: check
           features:
-            - '원하는 시간을 설정하여 타이머 기능을 한다.'
-            - '특정 시간이 지나면, 표시된 시간의 색이 변한다.'
-            - '시간이 끝나면 알람이 울린다.'
-          image: tomato.png
+            - '안전성 엔진: 24개 카테고리 / 34개 규칙, CRITICAL 경고는 판정 전 조기 차단'
+            - '6-class 결정론적 판정으로 재현·추적 가능, 모든 판정을 감사 로그(JSONL)로 기록'
+            - 'PubMed·식약처 공공데이터 연동, Docker·Render 배포 + GitHub Actions CI'
+          image: proj-thyroid.png
           button:
-            text: 자세히 보기
-            url: /project/tomato
+            text: GitHub에서 보기
+            url: 'https://github.com/tunho/thyroid-supplement-cdss'
 
     design:
       # Section background color (CSS class)
@@ -174,16 +171,6 @@ sections:
             • MNIST 손글씨 숫자 예측 모델 구현  
             • 딥러닝 관련 논문 리딩 및 발표  
             • 의료 영상 AI 프로젝트용 웹 서비스 배포 수행
-        - name: '**대학원(예정)'
-          icon: computer-desktop
-          description: |
-            ??
-
-        - name: '??'
-          icon: computer-desktop
-          description: |
-            ??
-
     design:
       spacing:
         padding: ['6rem', 0, 0, 0]
@@ -372,47 +359,6 @@ sections:
       css_class: 'bg-gray-100 dark:bg-gray-900 py-12'
 
   - block: markdown
-    id: overlay-demo
-    content:
-      text: |
-        <!-- 🔹 제목 오버레이 (다크모드 대응 + 투명도 효과) -->
-        <div class="relative inline-block group mb-8">
-          <h2 class="relative z-20 text-3xl font-bold text-center mb-6 
-           text-gray-900 dark:text-white 
-           transition-all duration-300 
-           hover:scale-105 hover:text-white 
-           before:absolute before:inset-0 before:rounded-lg 
-           before:bg-black/50 before:opacity-0 hover:before:opacity-60 
-           before:transition-opacity before:duration-300 overflow-hidden">
-          <span class="relative z-10">연락 및 방문하기</span>
-            <span class="relative z-10 block text-base font-normal mt-2 text-gray-600 dark:text-gray-300">
-          (이미지 위에 투명도 레이어, 연락 및 방문하기 텍스트에 hover 시 오버레이를 적용(14번))
-        </span>
-        </h2>
-          <div class="absolute inset-0 
-                      bg-black/50 
-                      rounded-xl z-10 
-                      opacity-0 group-hover:opacity-100 
-                      transition-opacity duration-300"></div>
-        </div>
-
-        <!-- 🔹 이미지 오버레이 (투명도 + 텍스트 오버레이 적용 예시) -->
-        <div class="relative group w-full max-w-2xl mx-auto rounded-xl overflow-hidden shadow-lg">
-          <img src="contact.png" alt="예시 이미지" 
-              class="w-full transition-transform duration-300 group-hover:scale-105" />
-          <!-- 🩶 투명도 레이어 -->
-          <div class="absolute inset-0 
-                      bg-black/50 
-                      opacity-100 
-                      transition-opacity duration-300"></div>
-          <!-- ✍️ 텍스트 오버레이 -->
-          <div class="absolute inset-0 flex items-center justify-center 
-                      text-white font-semibold text-2xl text-center px-6">
-            
-          </div>
-        </div>
-
-  - block: markdown
     id: location
     content:
       title: '오시는 길'
@@ -436,7 +382,7 @@ sections:
       text: 새로운 의료 AI 기술을 통해 세상을 조금 더 정확하게 이해하고자 합니다.
       button:
         text: 협업 제안하기
-        url: 'mailto:tjens2322@naver.com'
+        url: 'mailto:tjens2322@gmail.com'
     design:
       card:
         css_class: 'bg-primary-300'
@@ -446,16 +392,12 @@ sections:
     content:
       title: ''
       text: |
-        <!-- ✅ Floating Action Buttons (6개 이상) -->
+        <!-- ✅ Floating Action Buttons -->
         <div class="fab-container">
           <a href="mailto:tjens2322@gmail.com" class="fab" title="E-mail">📧</a>
-          <a href="https://github.com/tunho" class="fab" title="GitHub">💻</a>
-          <a href="#" class="fab" title="X"
-             onclick="alert('X는 아직 준비 중입니다... (계정 없음)'); return false;">𝕏</a>
-          <a href="https://linkedin.com/in/준호-이-05a711310" class="fab" title="LinkedIn">💼</a>
-          <a href="#" class="fab" title="Instagram"
-             onclick="alert('Instagram은 아직 준비 중입니다... (계정 없음)'); return false;">📷</a>
-          <a href="resume.pdf" class="fab" title="Resume">📄</a>
+          <a href="https://github.com/tunho" class="fab" title="GitHub" target="_blank" rel="noopener">💻</a>
+          <a href="https://linkedin.com/in/준호-이-05a711310" class="fab" title="LinkedIn" target="_blank" rel="noopener">💼</a>
+          <a href="/resume.pdf" class="fab" title="Resume" target="_blank" rel="noopener">📄</a>
         </div>
 
         <style>
@@ -488,77 +430,4 @@ sections:
         }
         </style>
 
-  - block: markdown
-    id: gallery
-    content:
-      title: '나의 목표 (출처: unsplash)'
-      text: |
-        <div class="grid grid-cols-3 gap-4">
-          <img src="https://plus.unsplash.com/premium_photo-1681910241563-a3bd7a4c2ec9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687">
-          <img src="https://images.unsplash.com/photo-1550713450-94c9b4fc9f25?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1974" alt="marry" class="rounded-lg shadow-md">
-          <img src="https://plus.unsplash.com/premium_photo-1681469490618-c24cc20bef1c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=785" alt="money" class="rounded-lg shadow-md">
-        </div>
-  - block: markdown
-    id: theme-change-note
-    content:
-      title: ''
-      text: |
-
-  - block: markdown
-    id: hover-test
-    content:
-      title: '🎨 Hover 테스트 버튼(30번) 다른 버튼들에도 적용'
-      text: |
-        <div class="text-center my-8">
-          <button class="btn-test">(원래는 hover시 반투명,검정색 혹은 변화없음 -> red로 변경)</button>
-        </div>
-
-        <p class="text-center text-sm text-gray-500 dark:text-gray-400 mt-12">
-          &lt;버튼 혹은 link 등 기본 테마 색상 <span class="text-primary-600">검정과 하늘색으로 변경(32번)</span>&gt;
-        </p>
-
-        <p class="text-center text-sm text-gray-500 dark:text-gray-400 mt-12">
-          &lt;부가 정보와 프로젝트 자기개발 페이지들에<span class="text-primary-600"> 홈페이지에서 텍스트 양쪽 정렬이 최소 5군데 이상 적용되었는가 (후공개 14번) 적용</span>&gt;
-        </p>
-
-
-
-        <style>
-        .btn-test {
-          background-color: #2563eb;
-          color: white;
-          border: none;
-          padding: 16px 30px;
-          font-size: 1.1rem;
-          border-radius: 12px;
-          cursor: pointer;
-          transition: background-color 0.3s ease, transform 0.2s ease;
-        }
 ---
-
-<hr class="mt-12 mb-6 opacity-30">
-
-<p class="text-center text-sm text-gray-500 dark:text-gray-400">
-  &lt;버튼 혹은 link 등 기본 테마 색상 <span style="color:#38bdf8;">보라색 → 하늘색 변경</span>&gt;
-</p>
-<style>
-/* ===== 인라인 슬라이더 효과 ===== */
-.slider-section .wc-block-content {
-  display: flex;
-  overflow: hidden;
-  position: relative;
-}
-
-.slider-section .wc-block-content > div {
-flex: 0 0 100%;
-transition: transform 1s ease;
-animation: slide 12s infinite;
-}
-
-@keyframes slide {
-0% { transform: translateX(0); }
-33% { transform: translateX(-100%); }
-66% { transform: translateX(-200%); }
-100% { transform: translateX(0); }
-}
-</style>

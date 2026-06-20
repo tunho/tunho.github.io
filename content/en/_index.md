@@ -28,7 +28,7 @@ sections:
         icon: user
       secondary_action:
         text: 'View Resume'
-        url: '/resume.pdf'
+        url: '/resume-en.pdf'
         icon: document-text
 
     design:
@@ -72,13 +72,11 @@ sections:
 
           feature_icon: check
           features:
-            - 'Affiliation: Jeonbuk National University'
-            - 'Major: Computer & Artificial Intelligence'
-            - 'Phone: 010-4825-3355'
-            - 'Email: tjens2322@naver.com'
-            - 'Instagram: jjjjjjj_111'
-            - 'Age: 23 (born in 2003)'
-            - 'Introduction Summary: I am an undergraduate student in the Department of Computer and Artificial Intelligence at Chonbuk National University. I am interested in AI-based medical imaging systems and integrated full-stack development.'
+            - 'Affiliation: Department of Computer & AI, Jeonbuk National University'
+            - 'Major: Computer & Artificial Intelligence (Medical AI)'
+            - 'Email: tjens2322@gmail.com'
+            - 'GitHub: github.com/tunho'
+            - 'About: An undergraduate student in the Department of Computer & AI at Jeonbuk National University, interested in AI-based medical imaging systems and integrated full-stack development.'
 
           # Filename of your photo in the `assets/media/` folder
           image: my-image.jpg
@@ -128,42 +126,41 @@ sections:
   - block: cta-image-paragraph
     id: project
     content:
-      title: Projects
+      title: ''
       items:
-        - title: DICOM Viewer
-          text: ''
+        - title: AFF Diagnosis System
+          text: 'A full-stack project that turns a deep-learning model for detecting Atypical Femoral Fractures (AFF) into a web-based diagnostic system usable by clinicians. I owned the system engineering that converts a lab-trained model into a deployable product.'
           feature_icon: check
           features:
-            - 'Parses DICOM files and displays images.'
-            - 'Manipulates images to adjust size and brightness/contrast.'
-            - 'Sends files to the backend and returns fracture regions.'
-          # Upload image to `assets/media/` and reference the filename here
-          image: dicom.jpg
+            - 'Medical viewer: Vue 3 + TypeScript, DICOM parsing/rendering, Window/Level and mm-scale ruler measurement'
+            - 'Inference server: FastAPI 3-stage pipeline (region classification → femur detection → AFF lesion detection)'
+            - 'Deployment: AWS EC2, Express proxy, CORS and IP-whitelist access control'
+          image: proj-aff.png
           button:
-            text: Learn more
-            url: '/en/project/dicom'
-        - title: Wardrobe Organizer & Outfit Recommendation Web App
-          text: ''
+            text: View on GitHub
+            url: 'https://github.com/tunho/aff-diagnosis-system'
+        - title: Knee-Angle Residual Correction (Research)
+          text: 'Research that corrects the systematic knee-angle error of monocular 3D pose estimation (MediaPipe) via residual learning, validated across 4 independent datasets (84 subjects) with LOSO and LODO protocols.'
           feature_icon: check
           features:
-            - 'Register and organize currently owned clothes.'
-            - 'Recommend outfits considering preferred style, weather, and occasion.'
-            - 'Provide a community feature for sharing daily looks.'
-          image: cody.png
+            - 'An ExtraTrees regressor learns the residual (ground-truth angle − predicted angle) as a correction'
+            - 'Knee-angle MAE 13.74° → 8.47° (+38.4%), and +43.5% in the clinically important deep-flexion range (<110°)'
+            - 'Consistent across an 80–130° threshold sweep (Δ<3%p) — robust, not cherry-picked'
+          image: proj-squat.png
           button:
-            text: Learn more
-            url: '/en/project/cody'
-        - title: Pomodoro Study Timer App
-          text: ''
+            text: View on GitHub
+            url: 'https://github.com/tunho/squat-knee-residual-correction'
+        - title: Thyroid Supplement CDSS
+          text: 'A clinical decision-support service that judges the safety and evidence of supplement use for thyroid patients with a deterministic rule engine, using an LLM only to generate natural-language explanations after the decision.'
           feature_icon: check
           features:
-            - 'Set desired times and use the timer function.'
-            - 'Change the displayed time color after a specific duration.'
-            - 'Play an alarm when time is up.'
-          image: tomato.png
+            - 'Safety engine: 24 categories / 34 rules, with CRITICAL warnings blocked before the decision'
+            - 'Reproducible, traceable 6-class deterministic decisions, with every decision written to a JSONL audit log'
+            - 'Integrates PubMed and MFDS public data; Docker/Render deployment with GitHub Actions CI'
+          image: proj-thyroid.png
           button:
-            text: Learn more
-            url: '/en/project/tomato'
+            text: View on GitHub
+            url: 'https://github.com/tunho/thyroid-supplement-cdss'
 
     design:
       # Section background color (CSS class)
@@ -182,14 +179,6 @@ sections:
             • Implemented an MNIST handwritten digit prediction model  
             • Read and presented deep learning papers  
             • Deployed web services for medical imaging AI projects
-        - name: '**Graduate School (Planned)'
-          icon: computer-desktop
-          description: |
-            ??
-        - name: '??'
-          icon: computer-desktop
-          description: |
-            ??
     design:
       spacing:
         padding: ['6rem', 0, 0, 0]
@@ -380,47 +369,6 @@ sections:
       css_class: 'bg-gray-100 dark:bg-gray-900 py-12'
 
   - block: markdown
-    id: overlay-demo
-    content:
-      text: |
-        <!-- 🔹 Title overlay (dark-mode support + transparency effect) -->
-        <div class="relative inline-block group mb-8">
-          <h2 class="relative z-20 text-3xl font-bold text-center mb-6 
-           text-gray-900 dark:text-white 
-           transition-all duration-300 
-           hover:scale-105 hover:text-white 
-           before:absolute before:inset-0 before:rounded-lg 
-           before:bg-black/50 before:opacity-0 hover:before:opacity-60 
-           before:transition-opacity before:duration-300 overflow-hidden">
-          <span class="relative z-10">Contact & Visit</span>
-            <span class="relative z-10 block text-base font-normal mt-2 text-gray-600 dark:text-gray-300">
-          (Apply a transparency layer over the image; on hover over “Contact & Visit,” show the overlay — item 14)
-        </span>
-        </h2>
-          <div class="absolute inset-0 
-                      bg-black/50 
-                      rounded-xl z-10 
-                      opacity-0 group-hover:opacity-100 
-                      transition-opacity duration-300"></div>
-        </div>
-
-        <!-- 🔹 Image overlay (transparency + text overlay example) -->
-        <div class="relative group w-full max-w-2xl mx-auto rounded-xl overflow-hidden shadow-lg">
-          <img src="contact.png" alt="Sample Image" 
-              class="w-full transition-transform duration-300 group-hover:scale-105" />
-          <!-- 🩶 Transparency layer -->
-          <div class="absolute inset-0 
-                      bg-black/50 
-                      opacity-100 
-                      transition-opacity duration-300"></div>
-          <!-- ✍️ Text overlay -->
-          <div class="absolute inset-0 flex items-center justify-center 
-                      text-white font-semibold text-2xl text-center px-6">
-            
-          </div>
-        </div>
-
-  - block: markdown
     id: location
     content:
       title: 'Getting Here'
@@ -444,7 +392,7 @@ sections:
       text: I aim to help the world understand more precisely through new medical AI technologies.
       button:
         text: Propose Collaboration
-        url: 'mailto:tjens2322@naver.com'
+        url: 'mailto:tjens2322@gmail.com'
     design:
       card:
         css_class: 'bg-primary-300'
@@ -455,17 +403,12 @@ sections:
     content:
       title: ''
       text: |
-        <!-- ✅ Floating Action Buttons (6개 이상) -->
+        <!-- ✅ Floating Action Buttons -->
          <div class="fab-container">
           <a href="mailto:tjens2322@gmail.com" class="fab" title="E-mail">📧</a>
-          <a href="https://github.com/tunho" class="fab" title="GitHub">💻</a>
-          <a href="#" class="fab" title="X"
-             onclick="alert('X is under preparation... (No account yet)'); return false;">𝕏</a>
-          <a href="https://linkedin.com/in/준호-이-05a711310" class="fab" title="LinkedIn">💼</a>
-          <a href="#" class="fab" title="Instagram"
-             onclick="alert('Instagram is under preparation... (No account yet)'); return false;">📷</a>
-          <a href="resume.pdf" class="fab" title="Resume">📄</a>
-
+          <a href="https://github.com/tunho" class="fab" title="GitHub" target="_blank" rel="noopener">💻</a>
+          <a href="https://linkedin.com/in/준호-이-05a711310" class="fab" title="LinkedIn" target="_blank" rel="noopener">💼</a>
+          <a href="/resume-en.pdf" class="fab" title="Resume" target="_blank" rel="noopener">📄</a>
          </div>
 
         <style>
@@ -498,78 +441,4 @@ sections:
             }
         </style>
 
-  - block: markdown
-    id: gallery
-    content:
-      title: 'My Goals (Source: Unsplash)'
-      text: |
-        <div class="grid grid-cols-3 gap-4">
-          <img src="https://plus.unsplash.com/premium_photo-1681910241563-a3bd7a4c2ec9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687">
-          <img src="https://images.unsplash.com/photo-1550713450-94c9b4fc9f25?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1974" alt="marry" class="rounded-lg shadow-md">
-          <img src="https://plus.unsplash.com/premium_photo-1681469490618-c24cc20bef1c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=785" alt="money" class="rounded-lg shadow-md">
-        </div>
-
-  - block: markdown
-    id: theme-change-note
-    content:
-      title: ''
-      text: |
-
-  - block: markdown
-    id: hover-test
-    content:
-      title: '🎨 Hover Test Button (Item 30) — Apply to other buttons as well'
-      text: |
-        <div class="text-center my-8">
-          <button class="btn-test">(Originally semi-transparent/black or no change on hover → change to red)</button>
-        </div>
-
-        <p class="text-center text-sm text-gray-500 dark:text-gray-400 mt-12">
-          &lt;Change the base theme colors for buttons or links to <span class="text-primary-600">black and sky blue (Item 32)</span>&gt;
-        </p>
-
-        <p class="text-center text-sm text-gray-500 dark:text-gray-400 mt-12">
-          &lt;Apply across additional info and self-development/project pages: <span class="text-primary-600">ensure text-justify is used in at least five places on the site (Post-release item 14)</span>&gt;
-        </p>
-
-
-
-        <style>
-        .btn-test {
-          background-color: #2563eb;
-          color: white;
-          border: none;
-          padding: 16px 30px;
-          font-size: 1.1rem;
-          border-radius: 12px;
-          cursor: pointer;
-          transition: background-color 0.3s ease, transform 0.2s ease;
-        }
 ---
-
-<hr class="mt-12 mb-6 opacity-30">
-
-<p class="text-center text-sm text-gray-500 dark:text-gray-400">
-  &lt;Base theme colors for buttons or links: <span style="color:#38bdf8;">Purple → Sky Blue</span>&gt;
-</p>
-<style>
-/* ===== Inline slider effect ===== */
-.slider-section .wc-block-content {
-  display: flex;
-  overflow: hidden;
-  position: relative;
-}
-
-.slider-section .wc-block-content > div {
-flex: 0 0 100%;
-transition: transform 1s ease;
-animation: slide 12s infinite;
-}
-
-@keyframes slide {
-0% { transform: translateX(0); }
-33% { transform: translateX(-100%); }
-66% { transform: translateX(-200%); }
-100% { transform: translateX(0); }
-}
-</style>

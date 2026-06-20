@@ -128,6 +128,18 @@ sections:
     content:
       title: ''
       items:
+        - title: Squat OOD Safety Evaluation
+          text: 'A safety-evaluation study for single-RGB-camera squat analysis that estimates predictive uncertainty with MC-Dropout (BCNN1D) to reject out-of-distribution (OOD) motions. I led this as **first author and presenter**; accepted at KIISE 2026. [📄 View the KCC 2026 poster](/ood-poster-kcc2026.pdf)'
+          feature_icon: check
+          features:
+            - '🏅 First author · Accepted at KIISE 2026 (Advisor: Prof. Kyungsu Lee)'
+            - 'MC-Dropout (BCNN1D) T-sample inference estimates epistemic uncertainty → rejects OOD motions'
+            - 'Key finding: ID accuracy ≠ OOD detection — top accuracy ConvNeXt1D (90.1%) vs top OOD AUROC BCNN1D (74.8/75.1%)'
+            - 'Compared against 4 deterministic models (ResNet/ConvNeXt/Transformer/Mamba 1D), 5-fold (ID 712 + OOD 298)'
+          image: proj-ood.png
+          button:
+            text: View on GitHub
+            url: 'https://github.com/tunho/kcc_paper_2026'
         - title: AFF Diagnosis System
           text: 'A full-stack project that turns a deep-learning model for detecting Atypical Femoral Fractures (AFF) into a web-based diagnostic system usable by clinicians. I owned the system engineering that converts a lab-trained model into a deployable product.'
           feature_icon: check

@@ -120,6 +120,18 @@ sections:
     content:
       title: ''
       items:
+        - title: 스쿼트 OOD 안전성 평가
+          text: '단일 RGB 카메라 스쿼트 자세 분석에서 MC-Dropout(BCNN1D)으로 예측 불확실성을 추정해, 학습 분포 밖(OOD) 동작을 스스로 기각하는 안전성 평가 연구입니다. **제1저자·발표자**로 수행했으며 KIISE 2026 게재가 확정되었습니다. [📄 KCC 2026 포스터 보기](/ood-poster-kcc2026.pdf)'
+          feature_icon: check
+          features:
+            - '🏅 제1저자 · KIISE 2026 게재 확정 (지도: 이경수 교수)'
+            - 'MC-Dropout(BCNN1D) T회 샘플링으로 epistemic 불확실성 추정 → OOD 동작 기각'
+            - '핵심 발견: ID 정확도 ≠ OOD 탐지력 — 정확도 1위 ConvNeXt1D(90.1%) vs OOD AUROC 1위 BCNN1D(74.8/75.1%)'
+            - '결정론적 4종(ResNet/ConvNeXt/Transformer/Mamba 1D)과 동일 조건 비교 · 5-fold (ID 712 + OOD 298)'
+          image: proj-ood.png
+          button:
+            text: GitHub에서 보기
+            url: 'https://github.com/tunho/kcc_paper_2026'
         - title: AFF 진단 시스템
           text: '비전형 대퇴골골절(AFF) 검출 딥러닝 모델을 의료진이 실제 임상에서 사용할 수 있는 웹 진단 시스템으로 구현한 풀스택 프로젝트입니다. 연구실에서 학습한 모델을 배포 가능한 제품으로 전환하는 시스템 엔지니어링을 담당했습니다.'
           feature_icon: check

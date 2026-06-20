@@ -44,7 +44,7 @@ profiles:
   - icon: brands/linkedin
     url: https://linkedin.com/in/준호-이-05a711310
   - icon: academicons/cv
-    url: resume.pdf
+    url: /resume-en.pdf
     label: resume
 
 highlight_name: true

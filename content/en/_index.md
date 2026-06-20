@@ -28,7 +28,7 @@ sections:
         icon: user
       secondary_action:
         text: 'View Resume'
-        url: '/resume.pdf'
+        url: '/resume-en.pdf'
         icon: document-text
 
     design:
@@ -408,7 +408,7 @@ sections:
           <a href="mailto:tjens2322@gmail.com" class="fab" title="E-mail">📧</a>
           <a href="https://github.com/tunho" class="fab" title="GitHub" target="_blank" rel="noopener">💻</a>
           <a href="https://linkedin.com/in/준호-이-05a711310" class="fab" title="LinkedIn" target="_blank" rel="noopener">💼</a>
-          <a href="resume.pdf" class="fab" title="Resume" target="_blank" rel="noopener">📄</a>
+          <a href="/resume-en.pdf" class="fab" title="Resume" target="_blank" rel="noopener">📄</a>
          </div>
 
         <style>

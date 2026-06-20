@@ -40,15 +40,15 @@ sections:
   - block: stats
     content:
       items:
+        - statistic: 'KIISE 2026'
+          description: |
+            OOD 안전성 연구 채택 · 발표 예정
         - statistic: '의료 CV'
           description: |
-            PyTorch · OpenCV · DICOM · Detection / Pose
+            의료영상 검출 · 자세추정 · OOD 안전성
         - statistic: 'LLM · RAG'
           description: |
-            RAG · GPT-4o-mini · PubMed · Agentic
-        - statistic: '풀스택'
-          description: |
-            FastAPI · Vue 3 · TypeScript · AWS
+            임상 의사결정 지원 · 근거 검색 · Agentic
     design:
       # Section background color (CSS class)
       css_class: 'bg-gray-100 dark:bg-gray-900'
@@ -61,12 +61,13 @@ sections:
       items:
         # --- 👇 아이템을 이렇게 하나만 남깁니다 ---
         - title: '안녕하세요, 이준호입니다 👋'
-          text: '의료 컴퓨터비전(CV)과 LLM·RAG, 두 축의 AI 연구를 풀스택 개발로 실제 동작하는 제품까지 잇습니다.'
+          text: '의료 컴퓨터비전(CV)과 LLM·RAG, 두 축에서 신뢰할 수 있는 의료 AI를 연구하는 학부연구생입니다.'
 
           feature_icon: check
           features:
+            - '🏅 KIISE 2026 채택 — OOD(분포 외) 안전성 연구 (2026 발표 예정)'
             - '소속: 전북대학교 컴퓨터인공지능학부 · MacsLAB(의료 AI 연구실) 학부연구생'
-            - '의료 컴퓨터비전(CV): 의료영상 병변 검출 · 자세추정 — AFF 진단, 무릎각 보정'
+            - '의료 컴퓨터비전(CV): 의료영상 병변 검출 · 자세추정 — OOD 안전성, AFF 진단, 무릎각 보정'
             - 'LLM · RAG: 임상 의사결정 지원 · 근거 검색 — 갑상선 CDSS, Healthcare RAG, Agentic CGR'
             - '이메일: tjens2322@gmail.com · GitHub: github.com/tunho'
 
@@ -86,7 +87,7 @@ sections:
     id: features
     content:
       title: 주요 역량
-      text: 인공지능 기술을 기반으로 의미 있는 가치를 만드는 개발자이자 연구자입니다. 🤖
+      text: 인공지능으로 신뢰할 수 있는 의료 시스템을 탐구하는 연구자이자 개발자입니다. 🤖
       items:
         - name: 인공지능 연구
           icon: cpu-chip
@@ -123,9 +124,9 @@ sections:
           text: '비전형 대퇴골골절(AFF) 검출 딥러닝 모델을 의료진이 실제 임상에서 사용할 수 있는 웹 진단 시스템으로 구현한 풀스택 프로젝트입니다. 연구실에서 학습한 모델을 배포 가능한 제품으로 전환하는 시스템 엔지니어링을 담당했습니다.'
           feature_icon: check
           features:
+            - '연구 연계: AFF 검출 연구(IEEE JBHI 저널 투고 준비)의 임상 적용 웹 시스템'
             - '의료영상 뷰어: Vue 3 + TypeScript, DICOM 파싱·렌더링, Window/Level·mm 단위 룰러 측정'
             - 'AI 추론 서버: FastAPI 3단계 파이프라인(부위 분류 → 대퇴골 검출 → AFF 병변 검출) 통합·서빙'
-            - '배포: AWS EC2, Express 프록시, CORS·IP 화이트리스트 접근 제어'
           image: proj-aff.png
           button:
             text: GitHub에서 보기
@@ -166,10 +167,10 @@ sections:
         - name: '메디컬 인공지능 학부연구생'
           icon: beaker
           description: |
-            전북대학교 의공학과 MACS 연구실 (2025.07 - 현재)  
-            • MNIST 손글씨 숫자 예측 모델 구현  
-            • 딥러닝 관련 논문 리딩 및 발표  
-            • 의료 영상 AI 프로젝트용 웹 서비스 배포 수행
+            전북대학교 MacsLAB · 의료 AI 연구실 (2025.07 - 현재)  
+            • OOD(분포 외) 안전성 연구 — KIISE 2026 채택 (2026 발표 예정)  
+            • AFF 진단 모델 연구 — IEEE JBHI 저널 투고 준비 중  
+            • 의료영상 AI 웹 서비스 배포 · 딥러닝 논문 리딩 및 발표
     design:
       spacing:
         padding: ['6rem', 0, 0, 0]

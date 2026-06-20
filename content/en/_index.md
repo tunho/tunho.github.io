@@ -46,15 +46,15 @@ sections:
   - block: stats
     content:
       items:
+        - statistic: 'KIISE 2026'
+          description: |
+            OOD safety research accepted · to present
         - statistic: 'Medical CV'
           description: |
-            PyTorch · OpenCV · DICOM · Detection / Pose
+            Medical-image detection · pose · OOD safety
         - statistic: 'LLM · RAG'
           description: |
-            RAG · GPT-4o-mini · PubMed · Agentic
-        - statistic: 'Full-Stack'
-          description: |
-            FastAPI · Vue 3 · TypeScript · AWS
+            Clinical decision support · retrieval · Agentic
     design:
       # Section background color (CSS class)
       css_class: 'bg-gray-100 dark:bg-gray-900'
@@ -68,12 +68,13 @@ sections:
       items:
         # --- 👇 Keep a single item like this ---
         - title: 'Hello, I’m Junho Lee 👋'
-          text: 'Connecting two AI research tracks — Medical Computer Vision (CV) and LLM · RAG — through full-stack development, all the way to working products.'
+          text: 'An undergraduate researcher studying trustworthy medical AI along two tracks — Medical Computer Vision (CV) and LLM · RAG.'
 
           feature_icon: check
           features:
+            - '🏅 Accepted at KIISE 2026 — OOD (out-of-distribution) safety research (to be presented in 2026)'
             - 'Affiliation: Dept. of Computer & AI, JBNU · Undergraduate Researcher at MacsLAB (Medical AI Lab)'
-            - 'Medical Computer Vision (CV): medical-image detection & pose estimation — AFF diagnosis, knee-angle correction'
+            - 'Medical Computer Vision (CV): medical-image detection & pose estimation — OOD safety, AFF diagnosis, knee-angle correction'
             - 'LLM · RAG: clinical decision support & evidence retrieval — Thyroid CDSS, Healthcare RAG, Agentic CGR'
             - 'Email: tjens2322@gmail.com · GitHub: github.com/tunho'
 
@@ -93,7 +94,7 @@ sections:
     id: features
     content:
       title: Core Competencies
-      text: I’m a developer and researcher who creates meaningful value with AI technology. 🤖
+      text: I’m a researcher and developer exploring trustworthy medical AI systems. 🤖
       items:
         - name: AI Research
           icon: cpu-chip
@@ -131,9 +132,9 @@ sections:
           text: 'A full-stack project that turns a deep-learning model for detecting Atypical Femoral Fractures (AFF) into a web-based diagnostic system usable by clinicians. I owned the system engineering that converts a lab-trained model into a deployable product.'
           feature_icon: check
           features:
+            - 'Research link: the clinical web system for an AFF-detection study (in preparation for IEEE JBHI)'
             - 'Medical viewer: Vue 3 + TypeScript, DICOM parsing/rendering, Window/Level and mm-scale ruler measurement'
             - 'Inference server: FastAPI 3-stage pipeline (region classification → femur detection → AFF lesion detection)'
-            - 'Deployment: AWS EC2, Express proxy, CORS and IP-whitelist access control'
           image: proj-aff.png
           button:
             text: View on GitHub
@@ -174,10 +175,10 @@ sections:
         - name: 'Undergraduate Researcher in Medical AI'
           icon: beaker
           description: |
-            JBNU MACS Lab, Department of Biomedical Engineering (Jul 2025 – Present)  
-            • Implemented an MNIST handwritten digit prediction model  
-            • Read and presented deep learning papers  
-            • Deployed web services for medical imaging AI projects
+            JBNU MacsLAB · Medical AI Laboratory (Jul 2025 – Present)  
+            • OOD (out-of-distribution) safety research — accepted at KIISE 2026 (to present in 2026)  
+            • AFF diagnosis model research — in preparation for IEEE JBHI  
+            • Deployed medical-imaging AI web services · read and presented deep-learning papers
     design:
       spacing:
         padding: ['6rem', 0, 0, 0]

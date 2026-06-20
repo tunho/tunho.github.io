@@ -42,7 +42,7 @@ sections:
       items:
         - statistic: 'KIISE 2026'
           description: |
-            OOD 안전성 연구 채택 · 발표 예정
+            OOD 안전성 연구 게재 확정
         - statistic: '의료 CV'
           description: |
             의료영상 검출 · 자세추정 · OOD 안전성
@@ -65,7 +65,7 @@ sections:
 
           feature_icon: check
           features:
-            - '🏅 KIISE 2026 채택 — OOD(분포 외) 안전성 연구 (2026 발표 예정)'
+            - '🏅 KIISE 2026 게재 확정 — OOD(분포 외) 안전성 연구'
             - '소속: 전북대학교 컴퓨터인공지능학부 · MacsLAB(의료 AI 연구실) 학부연구생'
             - '의료 컴퓨터비전(CV): 의료영상 병변 검출 · 자세추정 — OOD 안전성, AFF 진단, 무릎각 보정'
             - 'LLM · RAG: 임상 의사결정 지원 · 근거 검색 — 갑상선 CDSS, Healthcare RAG, Agentic CGR'
@@ -168,7 +168,7 @@ sections:
           icon: beaker
           description: |
             전북대학교 MacsLAB · 의료 AI 연구실 (2025.07 - 현재)  
-            • OOD(분포 외) 안전성 연구 — KIISE 2026 채택 (2026 발표 예정)  
+            • OOD(분포 외) 안전성 연구 — KIISE 2026 게재 확정  
             • AFF 진단 모델 연구 — IEEE JBHI 저널 투고 준비 중  
             • 의료영상 AI 웹 서비스 배포 · 딥러닝 논문 리딩 및 발표
     design:

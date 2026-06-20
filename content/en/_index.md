@@ -48,7 +48,7 @@ sections:
       items:
         - statistic: 'KIISE 2026'
           description: |
-            OOD safety research accepted · to present
+            OOD safety research · accepted
         - statistic: 'Medical CV'
           description: |
             Medical-image detection · pose · OOD safety
@@ -72,7 +72,7 @@ sections:
 
           feature_icon: check
           features:
-            - '🏅 Accepted at KIISE 2026 — OOD (out-of-distribution) safety research (to be presented in 2026)'
+            - '🏅 Accepted at KIISE 2026 — OOD (out-of-distribution) safety research'
             - 'Affiliation: Dept. of Computer & AI, JBNU · Undergraduate Researcher at MacsLAB (Medical AI Lab)'
             - 'Medical Computer Vision (CV): medical-image detection & pose estimation — OOD safety, AFF diagnosis, knee-angle correction'
             - 'LLM · RAG: clinical decision support & evidence retrieval — Thyroid CDSS, Healthcare RAG, Agentic CGR'
@@ -176,7 +176,7 @@ sections:
           icon: beaker
           description: |
             JBNU MacsLAB · Medical AI Laboratory (Jul 2025 – Present)  
-            • OOD (out-of-distribution) safety research — accepted at KIISE 2026 (to present in 2026)  
+            • OOD (out-of-distribution) safety research — accepted at KIISE 2026  
             • AFF diagnosis model research — in preparation for IEEE JBHI  
             • Deployed medical-imaging AI web services · read and presented deep-learning papers
     design:
